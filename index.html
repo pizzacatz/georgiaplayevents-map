@@ -23,101 +23,119 @@
         .leaflet-control-zoom a { background-color: #1f2937 !important; color: #fff !important; border-color: #374151 !important; }
         .leaflet-control-zoom a:hover { background-color: #374151 !important; }
         
-        .glass-panel { max-height: 95vh; overflow-y: auto; scrollbar-width: thin; scrollbar-color: #4b5563 transparent; }
+        .glass-panel { scrollbar-width: thin; scrollbar-color: #4b5563 transparent; }
     </style>
 </head>
 <body class="overflow-hidden">
 
-    <div class="glass-panel absolute z-[1000] top-4 left-4 w-80 bg-gray-900/70 backdrop-blur-md border border-gray-700/50 rounded-2xl p-6 text-white shadow-2xl flex flex-col gap-6">
+    <div id="mainControlPanel" class="glass-panel absolute z-[1000] bottom-4 left-4 right-4 md:bottom-auto md:right-auto md:top-4 md:left-4 md:w-80 bg-gray-900/90 backdrop-blur-md border border-gray-700/50 rounded-2xl text-white shadow-2xl flex flex-col transition-all duration-500 overflow-hidden">
         
-        <div>
-            <h1 class="text-xl font-bold tracking-wider text-gray-100 flex items-center gap-2">
-                <i data-lucide="map" class="w-5 h-5 text-blue-400"></i> GA PokéMap
-            </h1>
-            <p class="text-xs text-gray-400 mt-1">Organized Play Event Finder</p>
+        <div id="collapsibleSection" class="transition-all duration-700 ease-in-out overflow-hidden max-h-[1000px] opacity-100 md:!max-h-none md:!opacity-100">
+            <div class="p-5 md:p-6 flex flex-col gap-6">
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider text-gray-100 flex items-center gap-2">
+                        <i data-lucide="map" class="w-5 h-5 text-blue-400"></i> GA PokéMap
+                    </h1>
+                    <p class="text-xs text-gray-400 mt-1">Organized Play Event Finder</p>
+                </div>
+
+                <div class="flex flex-col gap-3">
+                    <label class="text-sm font-semibold text-gray-300">Event Filters</label>
+                    
+                    <div class="flex flex-col gap-1.5">
+                        <span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider">TCG</span>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterTcgChallenge" checked class="w-4 h-4 accent-blue-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Challenge</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterTcgCup" checked class="w-4 h-4 accent-blue-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Cup</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterTcgPrerelease" checked class="w-4 h-4 accent-blue-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Prerelease</span>
+                        </label>
+                    </div>
+
+                    <div class="flex flex-col gap-1.5 mt-1">
+                        <span class="text-[10px] font-bold text-red-400 uppercase tracking-wider">VGC</span>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterVgcChallenge" checked class="w-4 h-4 accent-red-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Challenge</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterVgcCup" checked class="w-4 h-4 accent-red-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Cup</span>
+                        </label>
+                    </div>
+
+                    <div class="flex flex-col gap-1.5 mt-1">
+                        <span class="text-[10px] font-bold text-green-400 uppercase tracking-wider">GO</span>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterGoChallenge" checked class="w-4 h-4 accent-green-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Challenge</span>
+                        </label>
+                        <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
+                            <input type="checkbox" id="filterGoCup" checked class="w-4 h-4 accent-green-500 bg-gray-800 border-gray-600 rounded">
+                            <span>Cup</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <label class="text-sm font-semibold text-gray-300">Home Base</label>
+                    <div class="flex gap-2">
+                        <input type="text" id="homeInput" placeholder="Enter address..." class="flex-1 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500 min-w-0" />
+                        <button id="goHomeBtn" class="px-3 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors flex items-center justify-center shrink-0" title="Go to Home Location">
+                            <i data-lucide="home" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="flex flex-col gap-2">
-            <div class="flex justify-between items-center">
-                <label class="text-sm font-semibold text-gray-300">Select Date</label>
-                <button id="todayBtn" class="text-xs bg-blue-600/20 text-blue-400 hover:bg-blue-600/40 px-2 py-1 rounded transition-colors font-semibold cursor-pointer">Today</button>
-            </div>
-            <div class="flex items-center gap-2">
-                <button id="prevDayBtn" class="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors" title="Previous Day">
-                    <i data-lucide="chevron-left" class="w-4 h-4"></i>
-                </button>
-                <input type="date" id="datePicker" class="flex-1 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500 w-full color-white" />
-                <button id="nextDayBtn" class="p-2 bg-gray-800 hover:bg-gray-700 rounded-lg transition-colors" title="Next Day">
-                    <i data-lucide="chevron-right" class="w-4 h-4"></i>
-                </button>
-            </div>
-        </div>
-
-        <div class="flex flex-col gap-3">
-            <label class="text-sm font-semibold text-gray-300">Event Filters</label>
+        <div class="p-3 md:p-6 md:pt-0 bg-gray-900/95 md:bg-transparent border-t border-gray-700/50 md:border-none flex flex-col gap-2">
             
-            <div class="flex flex-col gap-1.5">
-                <span class="text-[10px] font-bold text-blue-400 uppercase tracking-wider">TCG</span>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterTcgChallenge" checked class="w-4 h-4 accent-blue-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Challenge</span>
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterTcgCup" checked class="w-4 h-4 accent-blue-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Cup</span>
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterTcgPrerelease" checked class="w-4 h-4 accent-blue-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Prerelease</span>
-                </label>
+            <div class="flex justify-between items-center px-1 md:hidden hidden" id="mobileDateLabel">
+                <label class="text-xs font-semibold text-gray-300">Select Date</label>
+                <button id="todayBtnMobile" class="text-[10px] bg-blue-600/20 text-blue-400 px-2 py-0.5 rounded transition-colors font-bold uppercase tracking-wide">Today</button>
             </div>
 
-            <div class="flex flex-col gap-1.5 mt-1">
-                <span class="text-[10px] font-bold text-red-400 uppercase tracking-wider">VGC</span>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterVgcChallenge" checked class="w-4 h-4 accent-red-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Challenge</span>
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterVgcCup" checked class="w-4 h-4 accent-red-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Cup</span>
-                </label>
-            </div>
+            <div class="flex items-center gap-2 w-full justify-between">
+                
+                <div class="hidden md:flex justify-between items-center w-full absolute -top-8 left-0 right-0">
+                    <label class="text-sm font-semibold text-gray-300">Select Date</label>
+                    <button id="todayBtnDesktop" class="text-xs bg-blue-600/20 text-blue-400 hover:bg-blue-600/40 px-2 py-1 rounded transition-colors font-semibold cursor-pointer">Today</button>
+                </div>
 
-            <div class="flex flex-col gap-1.5 mt-1">
-                <span class="text-[10px] font-bold text-green-400 uppercase tracking-wider">GO</span>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterGoChallenge" checked class="w-4 h-4 accent-green-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Challenge</span>
-                </label>
-                <label class="flex items-center gap-2 cursor-pointer text-sm hover:text-gray-300 transition-colors ml-2">
-                    <input type="checkbox" id="filterGoCup" checked class="w-4 h-4 accent-green-500 bg-gray-800 border-gray-600 rounded">
-                    <span>Cup</span>
-                </label>
-            </div>
-        </div>
+                <button id="prevDayBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0" title="Previous Day">
+                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                </button>
+                
+                <input type="date" id="datePicker" class="block w-full flex-1 bg-gray-800 border border-gray-600 rounded-lg px-2 py-2.5 text-sm focus:outline-none focus:border-blue-500 text-white text-center appearance-none" style="min-height: 42px;" />
+                
+                <button id="nextDayBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0" title="Next Day">
+                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                </button>
 
-        <div class="flex flex-col gap-2">
-            <label class="text-sm font-semibold text-gray-300">Home Base</label>
-            <div class="flex gap-2">
-                <input type="text" id="homeInput" placeholder="Enter address..." class="flex-1 bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500" />
-                <button id="goHomeBtn" class="px-3 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg transition-colors flex items-center justify-center" title="Go to Home Location">
-                    <i data-lucide="home" class="w-4 h-4"></i>
+                <button id="mobileMenuToggle" class="p-2.5 md:hidden bg-blue-600 hover:bg-blue-500 rounded-lg text-white transition-colors shadow-lg shrink-0 border border-blue-500">
+                    <i data-lucide="sliders-horizontal" class="w-5 h-5"></i>
                 </button>
             </div>
         </div>
     </div>
 
-    <div id="noEventsAlert" class="hidden absolute z-[1000] bottom-10 left-1/2 -translate-x-1/2 bg-gray-900/90 backdrop-blur-md border border-gray-700/50 rounded-2xl p-4 text-white shadow-2xl flex items-center gap-4">
-        <i data-lucide="calendar-x" class="w-6 h-6 text-red-400"></i>
-        <div>
-            <p class="font-bold text-gray-100">No events today.</p>
-            <p class="text-sm text-gray-400">
+    <div id="noEventsAlert" class="hidden absolute z-[1000] bottom-24 md:bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-sm md:w-auto bg-gray-900/95 backdrop-blur-md border border-gray-700/50 rounded-2xl p-4 text-white shadow-2xl flex items-center gap-4">
+        <i data-lucide="calendar-x" class="w-6 h-6 text-red-400 shrink-0"></i>
+        <div class="flex-1">
+            <p class="font-bold text-gray-100 text-sm md:text-base">No events today.</p>
+            <p class="text-xs md:text-sm text-gray-400 mt-0.5">
                 <span id="alertPrefix">Next event is on </span>
                 <a href="#" id="nextEventLink" class="text-blue-400 hover:text-blue-300 underline font-semibold">...</a>
             </p>
         </div>
-        <button id="closeAlertBtn" class="ml-2 text-gray-400 hover:text-white transition-colors"><i data-lucide="x" class="w-5 h-5"></i></button>
+        <button id="closeAlertBtn" class="p-1 text-gray-400 hover:text-white transition-colors shrink-0"><i data-lucide="x" class="w-5 h-5"></i></button>
     </div>
 
     <div id="map"></div>
@@ -126,6 +144,55 @@
         lucide.createIcons();
         document.getElementById('datePicker').valueAsDate = new Date();
 
+        // --- NEW: Mobile Animation Logic ---
+        var isPanelOpen = true;
+        var collapsibleSection = document.getElementById('collapsibleSection');
+        var mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        var mobileDateLabel = document.getElementById('mobileDateLabel');
+
+        function toggleMobileMenu() {
+            if (window.innerWidth >= 768) return; // Do nothing on desktop
+
+            isPanelOpen = !isPanelOpen;
+            
+            if (isPanelOpen) {
+                collapsibleSection.classList.remove('max-h-0', 'opacity-0', 'scale-y-95');
+                collapsibleSection.classList.add('max-h-[1000px]', 'opacity-100', 'scale-y-100');
+                mobileMenuToggle.classList.add('bg-blue-800');
+                mobileDateLabel.classList.add('hidden');
+            } else {
+                collapsibleSection.classList.remove('max-h-[1000px]', 'opacity-100', 'scale-y-100');
+                collapsibleSection.classList.add('max-h-0', 'opacity-0', 'scale-y-95');
+                mobileMenuToggle.classList.remove('bg-blue-800');
+                mobileDateLabel.classList.remove('hidden');
+            }
+        }
+
+        mobileMenuToggle.addEventListener('click', toggleMobileMenu);
+
+        // The "Hint" Animation: Wait 1.8 seconds, then slide closed if on mobile
+        window.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth < 768) {
+                setTimeout(function() {
+                    if (isPanelOpen) {
+                        toggleMobileMenu();
+                    }
+                }, 1800);
+            }
+        });
+
+        // Today Button Logic (Hooks up both desktop and mobile buttons)
+        function setDateToToday() {
+            document.getElementById('datePicker').valueAsDate = new Date();
+            document.getElementById('noEventsAlert').classList.add('hidden');
+            renderEventsForDate();
+        }
+        document.getElementById('todayBtnMobile').addEventListener('click', setDateToToday);
+        if (document.getElementById('todayBtnDesktop')) {
+            document.getElementById('todayBtnDesktop').addEventListener('click', setDateToToday);
+        }
+
+        // Standard Map Init
         const map = L.map('map', { zoomControl: false }).setView([33.9526, -84.5499], 8);
         L.control.zoom({ position: 'topright' }).addTo(map);
         L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
@@ -395,13 +462,6 @@
                 alertBox.classList.add('hidden'); 
             }
         }
-
-        // --- NEW: Today Button Event Listener ---
-        document.getElementById('todayBtn').addEventListener('click', function() {
-            document.getElementById('datePicker').valueAsDate = new Date();
-            document.getElementById('noEventsAlert').classList.add('hidden');
-            renderEventsForDate();
-        });
 
         document.getElementById('datePicker').addEventListener('change', renderEventsForDate);
         document.getElementById('prevDayBtn').addEventListener('click', () => { document.getElementById('datePicker').stepDown(); renderEventsForDate(); });

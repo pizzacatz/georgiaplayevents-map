@@ -320,24 +320,26 @@
             let hrefMatch = desc.match(/href="([^"]+)"/i);
             if (hrefMatch) eventUrl = hrefMatch[1];
             
-            let anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
-            let innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
-            
-            let realTitle = innerText || event.summary || "";
-
+            // 1. GAME TYPE DETECTION: Use RAW summary to prevent misclassifying GO/VGC as TCG
+            const rawSummaryUp = (event.summary || "").toUpperCase();
             const urlUp = eventUrl.toString().toUpperCase();
-            const titleUp = realTitle.toUpperCase();
 
-            let isTcg = urlUp.indexOf('_TCG') !== -1 || titleUp.indexOf('TCG') !== -1;
-            let isVgc = urlUp.indexOf('_VG') !== -1 || titleUp.indexOf('VGC') !== -1 || titleUp.indexOf('VG ') !== -1;
-            let isGo = urlUp.indexOf('_GO') !== -1 || titleUp.indexOf(' GO ') !== -1 || titleUp.indexOf('GO ') === 0;
+            let isTcg = urlUp.indexOf('_TCG') !== -1 || rawSummaryUp.indexOf('TCG') !== -1 || rawSummaryUp.indexOf('TRADING CARD') !== -1;
+            let isVgc = urlUp.indexOf('_VG') !== -1 || rawSummaryUp.indexOf('VGC') !== -1 || rawSummaryUp.indexOf('VG ') !== -1 || rawSummaryUp.indexOf('VIDEO GAME') !== -1;
+            let isGo = urlUp.indexOf('_GO') !== -1 || rawSummaryUp.indexOf(' GO ') !== -1 || rawSummaryUp.indexOf('GO ') === 0 || rawSummaryUp.indexOf('POKEMON GO') !== -1;
 
             if (!isTcg && !isVgc && !isGo) isTcg = true; 
 
-            let isCup = titleUp.indexOf('CUP') !== -1;
-            let isChallenge = titleUp.indexOf('CHALLENGE') !== -1;
-            let isPrerelease = titleUp.indexOf('PRERELEASE') !== -1 || titleUp.indexOf('PRE-RELEASE') !== -1 || titleUp.indexOf('PRE RELEASE') !== -1;
+            // 2. TIER DETECTION: Use CLEAN inner text to accurately catch Cups/Challenges/Showdowns
+            let anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
+            let innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
+            let cleanTitleUp = (innerText || event.summary || "").toUpperCase();
 
+            let isCup = cleanTitleUp.indexOf('CUP') !== -1 || cleanTitleUp.indexOf('SHOWDOWN') !== -1;
+            let isChallenge = cleanTitleUp.indexOf('CHALLENGE') !== -1;
+            let isPrerelease = cleanTitleUp.indexOf('PRERELEASE') !== -1 || cleanTitleUp.indexOf('PRE-RELEASE') !== -1 || cleanTitleUp.indexOf('PRE RELEASE') !== -1;
+
+            // 3. FILTER MATRIX
             if (isTcg) {
                 if (isCup && showTcgCup) return true;
                 if (isChallenge && showTcgChallenge) return true;
@@ -394,17 +396,18 @@
                         let hrefMatch = desc.match(/href="([^"]+)"/i);
                         if (hrefMatch) eventUrl = hrefMatch[1];
 
+                        // MATCH GAME TYPE using RAW summary to sync with the filter
+                        const rawSummaryUp = (event.summary || "").toUpperCase();
+                        const urlUp = eventUrl.toString().toUpperCase();
+
+                        let isVgc = urlUp.indexOf('_VG') !== -1 || rawSummaryUp.indexOf('VGC') !== -1 || rawSummaryUp.indexOf('VG ') !== -1 || rawSummaryUp.indexOf('VIDEO GAME') !== -1;
+                        let isGo = urlUp.indexOf('_GO') !== -1 || rawSummaryUp.indexOf(' GO ') !== -1 || rawSummaryUp.indexOf('GO ') === 0 || rawSummaryUp.indexOf('POKEMON GO') !== -1;
+
+                        // FORMAT TITLE using CLEAN inner text
                         let anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
                         let innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
 
                         let title = innerText || event.summary || "Event";
-                        
-                        const urlUp = eventUrl.toString().toUpperCase();
-                        const titleUp = title.toUpperCase();
-
-                        let isVgc = urlUp.indexOf('_VG') !== -1 || titleUp.indexOf('VGC') !== -1 || titleUp.indexOf('VG ') !== -1;
-                        let isGo = urlUp.indexOf('_GO') !== -1 || titleUp.indexOf(' GO ') !== -1 || titleUp.indexOf('GO ') === 0;
-
                         title = title.replace(/\bLeague\b/gi, '').replace(/\s*@\s*/g, ' @ ').replace(/\s+/g, ' ').trim();
 
                         let prefix = "TCG ";
@@ -441,6 +444,27 @@
                     }
                 }
             }
+            
+            const alertBox = document.getElementById('noEventsAlert');
+            const alertPrefix = document.getElementById('alertPrefix');
+            const nextLink = document.getElementById('nextEventLink');
+
+            if (count === 0) {
+                const next = findNextDate(selDate);
+                if (next) {
+                    alertPrefix.textContent = "Next event is on ";
+                    nextLink.style.display = "inline";
+                    nextLink.textContent = next;
+                    nextLink.setAttribute('data-date', next);
+                } else {
+                    alertPrefix.textContent = "There are no planned events at this time.";
+                    nextLink.style.display = "none";
+                }
+                alertBox.classList.remove('hidden');
+            } else { 
+                alertBox.classList.add('hidden'); 
+            }
+        }
             
             const alertBox = document.getElementById('noEventsAlert');
             const alertPrefix = document.getElementById('alertPrefix');
@@ -514,4 +538,5 @@
     </script>
 </body>
 </html>
+
 

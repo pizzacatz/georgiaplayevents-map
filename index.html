@@ -142,7 +142,14 @@
 
     <script>
         lucide.createIcons();
-        document.getElementById('datePicker').valueAsDate = new Date();
+        function getLocalDateString() {
+            const today = new Date();
+            const yyyy = today.getFullYear();
+            const mm = String(today.getMonth() + 1).padStart(2, '0');
+            const dd = String(today.getDate()).padStart(2, '0');
+            return yyyy + '-' + mm + '-' + dd;
+        }
+    document.getElementById('datePicker').value = getLocalDateString();
 
         // 1. Mobile Animation Logic
         var isPanelOpen = true;
@@ -463,7 +470,7 @@
 
         // 6. Event Listeners
         function setDateToToday() {
-            document.getElementById('datePicker').valueAsDate = new Date();
+            document.getElementById('datePicker').value = getLocalDateString();
             document.getElementById('noEventsAlert').classList.add('hidden');
             renderEventsForDate();
         }
@@ -526,5 +533,6 @@
     </script>
 </body>
 </html>
+
 
 

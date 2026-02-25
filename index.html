@@ -291,7 +291,9 @@
         async function fetchPokemonEvents() {
             try {
                 const BASE_URL = 'https://pokedata.ovh/events/api/_tcg/cups/challenges/pre/_go/cups/challenges/_vg/cups/challenges/_country/US/_state/GA/Georgia/_start/2026-02-20/ics';
-                const PROXY_URL = 'https://corsproxy.io/?' + encodeURIComponent(BASE_URL);
+                
+                // FIXED: Swapped corsproxy.io for AllOrigins to support the custom domain
+                const PROXY_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(BASE_URL);
 
                 console.log("Fetching: " + BASE_URL);
                 const response = await fetch(PROXY_URL);
@@ -534,6 +536,7 @@
     </script>
 </body>
 </html>
+
 
 
 

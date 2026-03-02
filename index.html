@@ -291,9 +291,17 @@
 
         async function fetchPokemonEvents() {
             try {
-                const BASE_URL = 'https://pokedata.ovh/events/api/_tcg/cups/challenges/pre/_go/cups/challenges/_vg/cups/challenges/_country/US/_state/GA/Georgia/_start/2026-02-20/ics';
+                // Generate a rolling date string to fetch recent/future events
+                const fetchDate = new Date();
+                fetchDate.setDate(fetchDate.getDate() - 2); // Buffer 2 days
+                const yyyy = fetchDate.getFullYear();
+                const mm = String(fetchDate.getMonth() + 1).padStart(2, '0');
+                const dd = String(fetchDate.getDate()).padStart(2, '0');
+                const dynamicDateStr = yyyy + '-' + mm + '-' + dd;
+
+                // Inject the dynamic date into the Pokedata URL
+                const BASE_URL = 'https://pokedata.ovh/events/api/_tcg/cups/challenges/pre/_go/cups/challenges/_vg/cups/challenges/_country/US/_state/GA/Georgia/_start/' + dynamicDateStr + '/ics';
                 
-                // FIXED: Swapped corsproxy.io for AllOrigins to support the custom domain
                 const PROXY_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(BASE_URL);
 
                 console.log("Fetching: " + BASE_URL);
@@ -537,6 +545,7 @@
     </script>
 </body>
 </html>
+
 
 
 

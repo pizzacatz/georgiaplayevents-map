@@ -5,7 +5,7 @@ name: Update events feed
 
 on:
   schedule:
-    - cron: '0 */6 * * *'   # every 6 hours
+    - cron: '0 8 * * *'   # once a day at 08:00 UTC (~3-4am ET)
   workflow_dispatch:          # allow manual runs
   push:
     branches: [main]

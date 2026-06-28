@@ -48,12 +48,22 @@ jobs:
 
       - name: Commit if changed
         run: |
-          if [ -n "$(git status --porcelain events.ics)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add events.ics
-            git commit -m "Update events feed [skip ci]"
-            git push
-          else
+          if [ -z "$(git status --porcelain events.ics)" ]; then
             echo "events.ics unchanged; nothing to commit."
+            exit 0
           fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add events.ics
+          git commit -m "Update events feed [skip ci]"
+          # Retry around the rare race where another run pushed first.
+          for attempt in 1 2 3; do
+            if git push; then
+              echo "Pushed on attempt $attempt."
+              exit 0
+            fi
+            echo "Push rejected (attempt $attempt); rebasing on latest main and retrying."
+            git pull --rebase origin main
+          done
+          echo "::error::Failed to push events.ics after multiple attempts."
+          exit 1

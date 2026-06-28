@@ -142,7 +142,7 @@
     <div id="map"></div>
 
     <script>
-        lucide.createIcons();
+        try { lucide.createIcons(); } catch (e) { console.warn("Lucide icons failed to load:", e); }
         function getLocalDateString() {
             const today = new Date();
             const yyyy = today.getFullYear();
@@ -289,7 +289,59 @@
         // 4. Data Pipeline
         let globalEventsList = [];
 
+        // A status banner so the user is never left staring at a silent blank map.
+        function showStatus(message, opts) {
+            opts = opts || {};
+            const alertBox = document.getElementById('noEventsAlert');
+            const alertPrefix = document.getElementById('alertPrefix');
+            const nextLink = document.getElementById('nextEventLink');
+            alertPrefix.textContent = message;
+            if (opts.retry) {
+                nextLink.style.display = "inline";
+                nextLink.textContent = "Retry";
+                nextLink.removeAttribute('data-date');
+            } else {
+                nextLink.style.display = "none";
+            }
+            alertBox.classList.remove('hidden');
+        }
+        function hideStatus() {
+            document.getElementById('noEventsAlert').classList.add('hidden');
+        }
+
+        // Build the proxied URL for a given CORS proxy and target.
+        const CORS_PROXIES = [
+            target => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target),
+            target => 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(target),
+            target => 'https://corsproxy.io/?url=' + encodeURIComponent(target),
+            target => 'https://thingproxy.freeboard.io/fetch/' + target
+        ];
+
+        // Fetch the feed through whichever proxy responds with a real calendar.
+        async function fetchViaProxies(target) {
+            for (let i = 0; i < CORS_PROXIES.length; i++) {
+                const url = CORS_PROXIES[i](target);
+                try {
+                    console.log("Trying proxy " + (i + 1) + "/" + CORS_PROXIES.length + ": " + url);
+                    const response = await fetch(url);
+                    if (!response.ok) {
+                        console.warn("Proxy returned HTTP " + response.status);
+                        continue;
+                    }
+                    const text = await response.text();
+                    if (text && text.indexOf('BEGIN:VCALENDAR') !== -1) {
+                        return text; // Looks like a real ICS feed.
+                    }
+                    console.warn("Proxy response was not a valid calendar (got " + text.length + " chars).");
+                } catch (e) {
+                    console.warn("Proxy attempt failed:", e);
+                }
+            }
+            return null;
+        }
+
         async function fetchPokemonEvents() {
+            showStatus("Loading events…");
             try {
                 // Generate a rolling date string to fetch recent/future events
                 const fetchDate = new Date();
@@ -301,20 +353,26 @@
 
                 // Inject the dynamic date into the Pokedata URL
                 const BASE_URL = 'https://pokedata.ovh/events/api/_tcg/cups/challenges/pre/_go/cups/challenges/_vg/cups/challenges/_country/US/_state/GA/Georgia/_start/' + dynamicDateStr + '/ics';
-                
-                const PROXY_URL = 'https://api.allorigins.win/raw?url=' + encodeURIComponent(BASE_URL);
 
                 console.log("Fetching: " + BASE_URL);
-                const response = await fetch(PROXY_URL);
-                const rawText = await response.text();
-                
+                const rawText = await fetchViaProxies(BASE_URL);
+
+                if (!rawText) {
+                    showStatus("Couldn't load events. Check your connection and ", { retry: true });
+                    return;
+                }
+
                 const jcal = ICAL.parse(rawText);
                 const comp = new ICAL.Component(jcal);
                 globalEventsList = comp.getAllSubcomponents('vevent');
-                
+
                 console.log("Loaded " + globalEventsList.length + " events.");
+                hideStatus();
                 renderEventsForDate();
-            } catch (e) { console.error("Pipeline Failed:", e); }
+            } catch (e) {
+                console.error("Pipeline Failed:", e);
+                showStatus("Couldn't load events. ", { retry: true });
+            }
         }
 
         // 5. The "Split Brain" Filter Logic
@@ -499,7 +557,13 @@
         document.getElementById('nextEventLink').addEventListener('click', function(e) {
             e.preventDefault();
             const d = this.getAttribute('data-date');
-            if (d) { document.getElementById('datePicker').value = d; renderEventsForDate(); }
+            if (d) {
+                document.getElementById('datePicker').value = d;
+                renderEventsForDate();
+            } else {
+                // No date attached means this is the "Retry" action after a load failure.
+                fetchPokemonEvents();
+            }
         });
 
         // 7. Home Base Feature

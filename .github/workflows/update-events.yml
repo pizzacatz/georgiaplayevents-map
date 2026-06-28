@@ -1,0 +1,59 @@
+name: Update events feed
+
+# Fetches the pokedata.ovh ICS feed server-side (no browser CORS limits) and
+# commits it into the repo as events.ics, so the site can load it same-origin.
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'   # every 6 hours
+  workflow_dispatch:          # allow manual runs
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/update-events.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-events
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch ICS feed
+        run: |
+          set -uo pipefail
+          START=$(date -u -d '-2 days' +%Y-%m-%d)
+          URL="https://pokedata.ovh/events/api/_tcg/cups/challenges/pre/_go/cups/challenges/_vg/cups/challenges/_country/US/_state/GA/Georgia/_start/${START}/ics"
+          echo "Fetching: $URL"
+          CODE=$(curl -sS --max-time 60 \
+            -A "Mozilla/5.0 (compatible; GA-Play-Events-Map/1.0; +https://georgiaplayeventsmap.com)" \
+            -w '%{http_code}' -o events.ics.tmp "$URL" || echo "000")
+          echo "Upstream HTTP status: $CODE"
+          echo "----- first 600 bytes of response -----"
+          head -c 600 events.ics.tmp || true
+          echo
+          echo "---------------------------------------"
+          if ! grep -q 'BEGIN:VCALENDAR' events.ics.tmp; then
+            echo "::error::pokedata.ovh did not return a valid VCALENDAR feed (status $CODE). See response above."
+            exit 1
+          fi
+          mv events.ics.tmp events.ics
+          echo "Events in feed: $(grep -c 'BEGIN:VEVENT' events.ics)"
+
+      - name: Commit if changed
+        run: |
+          if [ -n "$(git status --porcelain events.ics)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add events.ics
+            git commit -m "Update events feed [skip ci]"
+            git push
+          else
+            echo "events.ics unchanged; nothing to commit."
+          fi

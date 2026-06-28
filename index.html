@@ -309,18 +309,44 @@
             document.getElementById('noEventsAlert').classList.add('hidden');
         }
 
-        // Build the proxied URL for a given CORS proxy and target.
+        // The site's primary source is a copy of the feed committed to the repo
+        // by a scheduled GitHub Action (see .github/workflows/update-events.yml).
+        // Served same-origin, it needs no CORS proxy at all.
+        const LOCAL_FEED_URL = './events.ics';
+
+        // Live CORS proxies, used only as a fallback if the committed feed is
+        // missing/stale. Public proxies rot often; allorigins /get is used
+        // because it reliably sends CORS headers and reports the upstream status.
         const CORS_PROXIES = [
-            target => 'https://api.allorigins.win/raw?url=' + encodeURIComponent(target),
-            target => 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(target),
-            target => 'https://corsproxy.io/?url=' + encodeURIComponent(target),
-            target => 'https://thingproxy.freeboard.io/fetch/' + target
+            { url: target => 'https://api.allorigins.win/get?url=' + encodeURIComponent(target), json: true },
+            { url: target => 'https://api.codetabs.com/v1/proxy/?quest=' + encodeURIComponent(target), json: false }
         ];
+
+        // Try the same-origin committed feed first.
+        async function fetchLocalFeed() {
+            try {
+                const response = await fetch(LOCAL_FEED_URL, { cache: 'no-cache' });
+                if (!response.ok) {
+                    console.warn("Local feed returned HTTP " + response.status);
+                    return null;
+                }
+                const text = await response.text();
+                if (text && text.indexOf('BEGIN:VCALENDAR') !== -1) {
+                    console.log("Loaded feed from same-origin events.ics");
+                    return text;
+                }
+                console.warn("Local feed was not a valid calendar.");
+            } catch (e) {
+                console.warn("Local feed fetch failed:", e);
+            }
+            return null;
+        }
 
         // Fetch the feed through whichever proxy responds with a real calendar.
         async function fetchViaProxies(target) {
             for (let i = 0; i < CORS_PROXIES.length; i++) {
-                const url = CORS_PROXIES[i](target);
+                const proxy = CORS_PROXIES[i];
+                const url = proxy.url(target);
                 try {
                     console.log("Trying proxy " + (i + 1) + "/" + CORS_PROXIES.length + ": " + url);
                     const response = await fetch(url);
@@ -328,11 +354,18 @@
                         console.warn("Proxy returned HTTP " + response.status);
                         continue;
                     }
-                    const text = await response.text();
+                    let text;
+                    if (proxy.json) {
+                        const data = await response.json();
+                        if (data && data.status) console.log("Upstream (pokedata.ovh) status: " + data.status.http_code);
+                        text = (data && data.contents) ? data.contents : "";
+                    } else {
+                        text = await response.text();
+                    }
                     if (text && text.indexOf('BEGIN:VCALENDAR') !== -1) {
                         return text; // Looks like a real ICS feed.
                     }
-                    console.warn("Proxy response was not a valid calendar (got " + text.length + " chars).");
+                    console.warn("Proxy response was not a valid calendar (got " + (text ? text.length : 0) + " chars).");
                 } catch (e) {
                     console.warn("Proxy attempt failed:", e);
                 }
@@ -355,7 +388,9 @@
                 const BASE_URL = 'https://pokedata.ovh/events/api/_tcg/cups/challenges/pre/_go/cups/challenges/_vg/cups/challenges/_country/US/_state/GA/Georgia/_start/' + dynamicDateStr + '/ics';
 
                 console.log("Fetching: " + BASE_URL);
-                const rawText = await fetchViaProxies(BASE_URL);
+                // Prefer the same-origin committed feed; fall back to live proxies.
+                let rawText = await fetchLocalFeed();
+                if (!rawText) rawText = await fetchViaProxies(BASE_URL);
 
                 if (!rawText) {
                     showStatus("Couldn't load events. Check your connection and ", { retry: true });

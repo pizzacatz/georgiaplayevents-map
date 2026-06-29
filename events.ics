@@ -852,6 +852,36 @@ LOCATION:108 S COMMERCE ST, HINESVILLE, GA 31313, US, , Hinesville/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001518/
 END:VEVENT
 BEGIN:VEVENT
+UID:2c67e5d8-0619-493b-8cb0-7761861ea044
+DTSTAMP:20260719T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260719T140000
+DTEND;TZID=America/Kentucky/Monticello:20260719T180000
+SUMMARY:Dabbers Norcross TCG Mid Year
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015040/">League Cup @ DABBERS GAMING CAFE</a>
+LOCATION:4935 JIMMY CARTER BLVD #200, NORCROSS, GA 30093, USA, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015040/
+END:VEVENT
+BEGIN:VEVENT
+UID:19e43541-cbf3-4dbf-8b48-5f3ac4b81398
+DTSTAMP:20260725T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260725T120000
+DTEND;TZID=America/Kentucky/Monticello:20260725T160000
+SUMMARY:Calhoun GO Mid Year Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015022/">League Cup @ 1UP GAMES</a>
+LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015022/
+END:VEVENT
+BEGIN:VEVENT
+UID:5c6aa614-d01d-46d5-bd65-1391b42594b6
+DTSTAMP:20260725T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260725T140000
+DTEND;TZID=America/Kentucky/Monticello:20260725T180000
+SUMMARY:Calhoun VGC Mid Year Celebration!
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015023/">League Cup @ 1UP GAMES</a>
+LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015023/
+END:VEVENT
+BEGIN:VEVENT
 UID:fc962048-1ea8-4719-87b0-dd9e69f7eaff
 DTSTAMP:20260725T160000
 DTSTART;TZID=America/Kentucky/Monticello:20260725T160000

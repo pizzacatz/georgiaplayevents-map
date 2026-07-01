@@ -2,46 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:08796e0a-13db-40c5-9fb0-1fe085bb5e5f
-DTSTAMP:20260628T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260628T180000
-DTEND;TZID=America/Kentucky/Monticello:20260628T220000
-SUMMARY:Mid year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-002390/">League Cup @ XP STORE</a>
-LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery Branch/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-002390/
-END:VEVENT
-BEGIN:VEVENT
-UID:3744b722-53ca-49f1-89f9-25c8c5d8c488
-DTSTAMP:20260628T130000
-DTSTART;TZID=America/Kentucky/Monticello:20260628T130000
-DTEND;TZID=America/Kentucky/Monticello:20260628T170000
-SUMMARY:CCPL TCG STANDARD OFF META TOURNAMENT
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-006081/">League Cup @ DRAGON STAR HOBBIES</a>
-LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-006081/
-END:VEVENT
-BEGIN:VEVENT
-UID:63f8f11b-986d-4632-b4f3-d94c43c76c4c
-DTSTAMP:20260628T110000
-DTSTART;TZID=America/Kentucky/Monticello:20260628T110000
-DTEND;TZID=America/Kentucky/Monticello:20260628T150000
-SUMMARY:GLC Event
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-018264/">League Cup @ CARDBOARD CASTLE GAMES</a>
-LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-018264/
-END:VEVENT
-BEGIN:VEVENT
-UID:e2c58c91-e367-42bb-94d1-5cec15b0ebbc
-DTSTAMP:20260628T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260628T140000
-DTEND;TZID=America/Kentucky/Monticello:20260628T180000
-SUMMARY:Calhoun G-J regulation Tournament
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-010088/">League Cup @ 1UP GAMES</a>
-LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-010088/
-END:VEVENT
-BEGIN:VEVENT
 UID:22bedfd3-995b-4c57-9c13-d30b70f96d88
 DTSTAMP:20260629T180000
 DTSTART;TZID=America/Kentucky/Monticello:20260629T180000
@@ -110,6 +70,16 @@ SUMMARY:PITCH BLACK PRERELEASE
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004805/">Pre Release @ 1ST AND GOAL COLLECTIBLES</a>
 LOCATION:6109 HICKORY FLAT HWY, CANTON, GA 30115, USA, , Canton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004805/
+END:VEVENT
+BEGIN:VEVENT
+UID:06bda308-9026-4b22-8f60-84208dcc0074
+DTSTAMP:20260704T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260704T140000
+DTEND;TZID=America/Kentucky/Monticello:20260704T180000
+SUMMARY:Pitch Black Prerelease
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010001/">Pre Release @ THE DWARVEN DICE HALL</a>
+LOCATION:144 MALL BLVD C04B, BRUNSWICK, GA 31525, USA, , Glynn County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010001/
 END:VEVENT
 BEGIN:VEVENT
 UID:08c4ab8a-8870-41f1-847d-fc4f8e266826
@@ -300,16 +270,6 @@ SUMMARY:PITCH BLACK PRERELEASE EVENT AT LHV
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009468/">Pre Release @ LAKE HARTWELL COLLECTIBLES</a>
 LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009468/
-END:VEVENT
-BEGIN:VEVENT
-UID:06bda308-9026-4b22-8f60-84208dcc0074
-DTSTAMP:20260705T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260705T140000
-DTEND;TZID=America/Kentucky/Monticello:20260705T180000
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010001/">Pre Release @ THE DWARVEN DICE HALL</a>
-LOCATION:144 MALL BLVD C04B, BRUNSWICK, GA 31525, USA, , Glynn County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010001/
 END:VEVENT
 BEGIN:VEVENT
 UID:23de6faf-82a4-4311-b175-83bb5900dea1
@@ -850,6 +810,16 @@ SUMMARY:TCG Mid Year Celebration
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001518/">League Cup @ LEGENDARY PHOENIX GAMES</a>
 LOCATION:108 S COMMERCE ST, HINESVILLE, GA 31313, US, , Hinesville/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001518/
+END:VEVENT
+BEGIN:VEVENT
+UID:15b957d3-746b-45ae-b071-b2a6d22d397f
+DTSTAMP:20260719T123000
+DTSTART;TZID=America/Kentucky/Monticello:20260719T123000
+DTEND;TZID=America/Kentucky/Monticello:20260719T163000
+SUMMARY:GuuBuu Hobby VGC Mid Year Celebration Tournament - July
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-016056/">League Cup @ GUUBUU HOBBY</a>
+LOCATION:3334 STONE MOUNTAIN HWY SUITE E, SNELLVILLE, GA 30078, US, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-016056/
 END:VEVENT
 BEGIN:VEVENT
 UID:2c67e5d8-0619-493b-8cb0-7761861ea044

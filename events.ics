@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:da6daefb-0f4f-4891-a16c-06289708eb2d
-DTSTAMP:20260630T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260630T180000
-DTEND;TZID=America/Kentucky/Monticello:20260630T220000
-SUMMARY:Pokemon VG Mid-Year Celebration at LHC
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-009340/">League Cup @ LAKE HARTWELL COLLECTIBLES</a>
-LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-06-009340/
-END:VEVENT
-BEGIN:VEVENT
 UID:a8f318c1-526a-43d1-b590-30e9a9b7b3a2
 DTSTAMP:20260701T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260701T183000

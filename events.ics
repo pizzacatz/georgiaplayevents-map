@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:a8f318c1-526a-43d1-b590-30e9a9b7b3a2
-DTSTAMP:20260701T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260701T183000
-DTEND;TZID=America/Kentucky/Monticello:20260701T223000
-SUMMARY:The Sports Shack Mid Year Tournament 1
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010860/">League Cup @ THE SPORTS SHACK</a>
-LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010860/
-END:VEVENT
-BEGIN:VEVENT
 UID:45526580-335f-4e03-88d9-876a2c19d00d
 DTSTAMP:20260703T193000
 DTSTART;TZID=America/Kentucky/Monticello:20260703T193000
@@ -120,6 +110,16 @@ SUMMARY:Pokémon TCG: Mega Evolution—Pitch Black Prerelease!
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002987/">Pre Release @ YOU WANNA SMASH</a>
 LOCATION:4800 LAWRENCEVILLE HWY, LILBURN, GA 30047, US, , Lilburn/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002987/
+END:VEVENT
+BEGIN:VEVENT
+UID:9ed422cd-eb64-43f2-a511-38c30496cea6
+DTSTAMP:20260704T123000
+DTSTART;TZID=America/Kentucky/Monticello:20260704T123000
+DTEND;TZID=America/Kentucky/Monticello:20260704T163000
+SUMMARY:July 4th Mid year mini bash
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-018212/">League Cup @ HOBBYTOWN USA</a>
+LOCATION:840 ERNEST W BARRETT PKWY NW SUITE 650, KENNESAW, GA 30144, US, , Kennesaw/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-018212/
 END:VEVENT
 BEGIN:VEVENT
 UID:a2594eff-68b2-450a-bead-4c3994c9a0cf
@@ -290,6 +290,16 @@ SUMMARY:Pitch Black Prerelease
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010330/">Pre Release @ BOARD 2 BOARD</a>
 LOCATION:250 GOLDEN ISLES PLZ STE 106, BRUNSWICK, GA 31520, USA, , Glynn County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010330/
+END:VEVENT
+BEGIN:VEVENT
+UID:47ac0692-88ac-4aa8-a8df-98522484f498
+DTSTAMP:20260705T123000
+DTSTART;TZID=America/Kentucky/Monticello:20260705T123000
+DTEND;TZID=America/Kentucky/Monticello:20260705T163000
+SUMMARY:Wasteland Gaming Chaos Rising MIDNIGHT Prerelease- Flight #2
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-018756/">Pre Release @ THE WASTELAND GAMING</a>
+LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-018756/
 END:VEVENT
 BEGIN:VEVENT
 UID:6cf9aa1c-5e4e-4a0c-a070-0e2a6f421c93

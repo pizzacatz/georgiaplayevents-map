@@ -2,46 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:5104119c-7504-43fa-909d-45a26a5967ff
-DTSTAMP:20260706T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260706T183000
-DTEND;TZID=America/Kentucky/Monticello:20260706T223000
-SUMMARY:CBA Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002671/">Pre Release @ CARDBOARDS ANONYMOUS</a>
-LOCATION:6035 PEACHTREE RD STE C205, ATLANTA, GA 30360, USA, , Doraville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002671/
-END:VEVENT
-BEGIN:VEVENT
-UID:c85b334a-5f7a-45fc-8bbb-8fe425a722bb
-DTSTAMP:20260706T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260706T190000
-DTEND;TZID=America/Kentucky/Monticello:20260706T230000
-SUMMARY:Prerelease on League Night
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-019576/">Pre Release @ SUPER GAMES, INC.</a>
-LOCATION:13093 GA-9, MILTON, GA 30004, US, , Milton/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-019576/
-END:VEVENT
-BEGIN:VEVENT
-UID:cf4dcf4f-9761-450a-94ec-35ef0587a11c
-DTSTAMP:20260706T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260706T180000
-DTEND;TZID=America/Kentucky/Monticello:20260706T220000
-SUMMARY:Pitch Black Pre-Release Flight 2 @ VGT
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005716/">Pre Release @ VIDEO GAME TRADER</a>
-LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005716/
-END:VEVENT
-BEGIN:VEVENT
-UID:ff3fbb06-800a-4863-ac04-6fb81ed60e35
-DTSTAMP:20260706T230000
-DTSTART;TZID=America/Kentucky/Monticello:20260706T230000
-DTEND;TZID=America/Kentucky/Monticello:20260707T030000
-SUMMARY:Full Circle Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-020069/">Pre Release @ FULL CIRCLE TOYS</a>
-LOCATION:372 NEWNAN CROSSING BYPASS, NEWNAN, GA 30265, USA, , Newnan/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-020069/
-END:VEVENT
-BEGIN:VEVENT
 UID:7c5003e6-a2cc-4ac2-8b3d-fb4f6f5d8bf7
 DTSTAMP:20260707T180000
 DTSTART;TZID=America/Kentucky/Monticello:20260707T180000
@@ -70,6 +30,16 @@ SUMMARY:Pitch Black Prerelease
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005399/">Pre Release @ INFINITE REALITIES- COMICS, GAMES & MORE</a>
 LOCATION:5007 LAVISTA RD, TUCKER, GA 30084, US, , Tucker/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005399/
+END:VEVENT
+BEGIN:VEVENT
+UID:07801356-5186-4bae-bbf6-481474ad5c39
+DTSTAMP:20260708T180000
+DTSTART;TZID=America/Kentucky/Monticello:20260708T180000
+DTEND;TZID=America/Kentucky/Monticello:20260708T220000
+SUMMARY:Pre Release
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-021731/">Pre Release @ ATLANTATCG</a>
+LOCATION:626 HOLCOMB BRIDGE RD UNIT 600, ROSWELL, GA 30076, USA, , Roswell/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-021731/
 END:VEVENT
 BEGIN:VEVENT
 UID:119d2f2d-419b-4028-b0bb-b0f3d063f2a9

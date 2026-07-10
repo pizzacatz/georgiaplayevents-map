@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:7c5003e6-a2cc-4ac2-8b3d-fb4f6f5d8bf7
-DTSTAMP:20260707T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260707T180000
-DTEND;TZID=America/Kentucky/Monticello:20260707T220000
-SUMMARY:LHC'S POKEMON PITCH BLACK PRERELEASE EVENT
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009469/">Pre Release @ LAKE HARTWELL COLLECTIBLES</a>
-LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009469/
-END:VEVENT
-BEGIN:VEVENT
-UID:e80b9028-b858-4062-9ad0-cf5d930a3f5c
-DTSTAMP:20260707T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260707T190000
-DTEND;TZID=America/Kentucky/Monticello:20260707T230000
-SUMMARY:Mega Evolution - Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009150/">Pre Release @ MEEPLE MADNESS</a>
-LOCATION:7400 SPOUT SPRINGS RD STE 205, FLOWERY BRANCH, GA 30542, US, , Braselton/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009150/
-END:VEVENT
-BEGIN:VEVENT
-UID:ec7eb2ff-ba3e-42ac-af4f-5bf6658e9908
-DTSTAMP:20260707T161500
-DTSTART;TZID=America/Kentucky/Monticello:20260707T161500
-DTEND;TZID=America/Kentucky/Monticello:20260707T201500
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005399/">Pre Release @ INFINITE REALITIES- COMICS, GAMES & MORE</a>
-LOCATION:5007 LAVISTA RD, TUCKER, GA 30084, US, , Tucker/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005399/
-END:VEVENT
-BEGIN:VEVENT
 UID:07801356-5186-4bae-bbf6-481474ad5c39
 DTSTAMP:20260708T180000
 DTSTART;TZID=America/Kentucky/Monticello:20260708T180000

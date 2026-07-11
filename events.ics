@@ -2,46 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:07801356-5186-4bae-bbf6-481474ad5c39
-DTSTAMP:20260708T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260708T180000
-DTEND;TZID=America/Kentucky/Monticello:20260708T220000
-SUMMARY:Pre Release
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-021731/">Pre Release @ ATLANTATCG</a>
-LOCATION:626 HOLCOMB BRIDGE RD UNIT 600, ROSWELL, GA 30076, USA, , Roswell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-021731/
-END:VEVENT
-BEGIN:VEVENT
-UID:119d2f2d-419b-4028-b0bb-b0f3d063f2a9
-DTSTAMP:20260708T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260708T180000
-DTEND;TZID=America/Kentucky/Monticello:20260708T220000
-SUMMARY:1Up Games Calhoun Pitch Black Prerelease Flight #2
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-021004/">Pre Release @ 1UP GAMES</a>
-LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-021004/
-END:VEVENT
-BEGIN:VEVENT
-UID:5b36db04-7b2d-4cfd-8e5a-afff12419021
-DTSTAMP:20260708T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260708T190000
-DTEND;TZID=America/Kentucky/Monticello:20260708T230000
-SUMMARY:Pitch Black Pre Released
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004446/">Pre Release @ TEAM NET</a>
-LOCATION:2250 LAKE HARBIN RD #108, MORROW, GA 30260, USA, , Woodstone/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004446/
-END:VEVENT
-BEGIN:VEVENT
-UID:f97d6fac-73f3-4c68-8eb4-a1a7a608e7cd
-DTSTAMP:20260708T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260708T183000
-DTEND;TZID=America/Kentucky/Monticello:20260708T223000
-SUMMARY:Sports Shack Pitch Black Prerelease Tournament
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010854/">Pre Release @ THE SPORTS SHACK</a>
-LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010854/
-END:VEVENT
-BEGIN:VEVENT
 UID:6a0a197b-4762-4b69-9047-2e1f0829ab51
 DTSTAMP:20260709T190000
 DTSTART;TZID=America/Kentucky/Monticello:20260709T190000

@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:6a0a197b-4762-4b69-9047-2e1f0829ab51
-DTSTAMP:20260709T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260709T190000
-DTEND;TZID=America/Kentucky/Monticello:20260709T230000
-SUMMARY:TCF - Pitch Black Prerelease Wave 3
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003786/">Pre Release @ TCF GAMING ARENA</a>
-LOCATION:561 JONESBORO RD, MCDONOUGH, GA 30253, USA, , Henry County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003786/
-END:VEVENT
-BEGIN:VEVENT
-UID:6ca99328-b8c5-472c-aca7-8bf15b67741c
-DTSTAMP:20260709T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260709T183000
-DTEND;TZID=America/Kentucky/Monticello:20260709T223000
-SUMMARY:SilverShield Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010480/">Pre Release @ SILVERSHIELD GAMING</a>
-LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-010480/
-END:VEVENT
-BEGIN:VEVENT
-UID:72447c56-6948-4a83-ad5c-04ac5837a3d3
-DTSTAMP:20260709T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260709T183000
-DTEND;TZID=America/Kentucky/Monticello:20260709T223000
-SUMMARY:The Cool Place Pitch Black Pre-release
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003150/">Pre Release @ THE COOL PLACE</a>
-LOCATION:7830 VETERANS PKWY SUITE E, COLUMBUS, GA 31909, USA, , Columbus/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003150/
-END:VEVENT
-BEGIN:VEVENT
 UID:5440e796-c77a-47ab-9cd8-3d2eb8e7b07f
 DTSTAMP:20260710T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260710T183000
@@ -110,6 +80,16 @@ SUMMARY:Pitch Black Prerelease
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009755/">Pre Release @ HEROES & VILLAINS COMICS AND GAMES</a>
 LOCATION:117 RUSSELL PKWY SUITE F, WARNER ROBINS, GA 31088, US, , Warner Robins/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009755/
+END:VEVENT
+BEGIN:VEVENT
+UID:785dfa7d-0a78-4873-9a38-0ab3a01e9315
+DTSTAMP:20260711T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
+DTEND;TZID=America/Kentucky/Monticello:20260711T180000
+SUMMARY:Pitch Black Prerelease
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-023689/">Pre Release @ NERD STREET</a>
+LOCATION:135 S BROAD ST, MONROE, GA 30655, USA, , Monroe/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-023689/
 END:VEVENT
 BEGIN:VEVENT
 UID:9ea093d4-7d21-4ba5-9c8c-26870983c828

@@ -2,186 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:2b045a74-e0aa-49f9-8943-b6a0edb733cc
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014058/">Pre Release @ CARDBOARD CASTLE GAMES</a>
-LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014058/
-END:VEVENT
-BEGIN:VEVENT
-UID:393c59ee-6a56-4052-9682-d12cf381dc68
-DTSTAMP:20260711T143000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T143000
-DTEND;TZID=America/Kentucky/Monticello:20260711T183000
-SUMMARY:Pitch Black Pre Release
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-013197/">Pre Release @ HOBBYTOWN USA</a>
-LOCATION:840 ERNEST W BARRETT PKWY NW SUITE 650, KENNESAW, GA 30144, US, , Kennesaw/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-013197/
-END:VEVENT
-BEGIN:VEVENT
-UID:4b0f5e71-067d-41f2-9447-7342be46924a
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004034/">Pre Release @ THE BATTLEGROUNDS GAMES AND COMICS</a>
-LOCATION:2708 AIRPORT RD SUITE 1, DALTON, GA 30721, US, , Dalton/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004034/
-END:VEVENT
-BEGIN:VEVENT
-UID:4b4f7c6a-0b1a-4529-a163-392df5ca2e4b
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Mid Year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001502/">League Cup @ CARDSHQ</a>
-LOCATION:3101 COBB PKWY SE SUITE 100, ATLANTA, GA 30339, USA, , Atlanta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001502/
-END:VEVENT
-BEGIN:VEVENT
-UID:4f7e3cbd-2ce5-4353-8cd5-5b18c984fc7a
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Pitch Black PreRelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-006214/">Pre Release @ CARDCO</a>
-LOCATION:3162 JOHNSON FERRY RD #118, MARIETTA, GA 30062, USA, , Cobb County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-006214/
-END:VEVENT
-BEGIN:VEVENT
-UID:7183825d-505f-439b-ba27-e2f103474a8b
-DTSTAMP:20260711T110000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T110000
-DTEND;TZID=America/Kentucky/Monticello:20260711T150000
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009755/">Pre Release @ HEROES & VILLAINS COMICS AND GAMES</a>
-LOCATION:117 RUSSELL PKWY SUITE F, WARNER ROBINS, GA 31088, US, , Warner Robins/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009755/
-END:VEVENT
-BEGIN:VEVENT
-UID:785dfa7d-0a78-4873-9a38-0ab3a01e9315
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-023689/">Pre Release @ NERD STREET</a>
-LOCATION:135 S BROAD ST, MONROE, GA 30655, USA, , Monroe/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-023689/
-END:VEVENT
-BEGIN:VEVENT
-UID:9ea093d4-7d21-4ba5-9c8c-26870983c828
-DTSTAMP:20260711T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T180000
-DTEND;TZID=America/Kentucky/Monticello:20260711T220000
-SUMMARY:ME—Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002541/">Pre Release @ PRIME TIME GAMING</a>
-LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002541/
-END:VEVENT
-BEGIN:VEVENT
-UID:a065a5b6-8374-40d7-8f17-d49edbbe653a
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Pitch Black Prerelease Flight 2
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009815/">Pre Release @ GALACTIC COMICS & GAMES</a>
-LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-009815/
-END:VEVENT
-BEGIN:VEVENT
-UID:b0dd7fe4-8a56-477e-bdcc-1078e34a04aa
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:Rose City Tabletop Pitch Black Pre-Release
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005270/">Pre Release @ ROSE CITY TABLETOP</a>
-LOCATION:1210 E JACKSON ST STE E, THOMASVILLE, GA 31792, USA, , Thomasville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-005270/
-END:VEVENT
-BEGIN:VEVENT
-UID:c72dc93e-214b-4359-bd1e-85216b7d116b
-DTSTAMP:20260711T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T140000
-DTEND;TZID=America/Kentucky/Monticello:20260711T180000
-SUMMARY:RTB Presents: Summer Mid-Year Celebration (GLC)
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-000545/">League Cup @ ROLL THE BONES</a>
-LOCATION:7400 ABERCORN ST STE 704, SAVANNAH, GA 31406, USA, , Savannah/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-000545/
-END:VEVENT
-BEGIN:VEVENT
-UID:cf27a6e6-1a0b-45a6-b465-6161fcc82b8e
-DTSTAMP:20260711T130000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T130000
-DTEND;TZID=America/Kentucky/Monticello:20260711T170000
-SUMMARY:Kapow Comics Pitch Black Pre-Release
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-012794/">Pre Release @ KAPOW COMICS</a>
-LOCATION:540 LAKE CENTER PKWY SUITE 108, CUMMING, GA 30040, USA, , Cumming/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-012794/
-END:VEVENT
-BEGIN:VEVENT
-UID:cfc6e5a3-ea18-4090-b080-1b5ff2ee47fa
-DTSTAMP:20260711T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T190000
-DTEND;TZID=America/Kentucky/Monticello:20260711T230000
-SUMMARY:ME—Pitch Black AT - Home Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002561/">Pre Release @ PRIME TIME GAMING</a>
-LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002561/
-END:VEVENT
-BEGIN:VEVENT
-UID:e424d6ec-ff82-4a8d-9118-4d1065773561
-DTSTAMP:20260711T120000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T120000
-DTEND;TZID=America/Kentucky/Monticello:20260711T160000
-SUMMARY:pitch black pre release
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003787/">Pre Release @ GIANT SPORTS CARDS</a>
-LOCATION:5530 WINDWARD PKWY STE 110E, ALPHARETTA, GA 30004, USA, , Alpharetta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003787/
-END:VEVENT
-BEGIN:VEVENT
-UID:e6208754-8a45-4ffb-b0ce-38781d2238f1
-DTSTAMP:20260711T130000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T130000
-DTEND;TZID=America/Kentucky/Monticello:20260711T170000
-SUMMARY:Olympus Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004503/">Pre Release @ OLYMPUS CARDS AND GAMES</a>
-LOCATION:451 W BANKHEAD HWY #119, VILLA RICA, GA 30180, USA, , Villa Rica/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-004503/
-END:VEVENT
-BEGIN:VEVENT
-UID:e7aa0c29-772d-456f-8023-60da30ee8515
-DTSTAMP:20260711T123000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T123000
-DTEND;TZID=America/Kentucky/Monticello:20260711T163000
-SUMMARY:wolcow pitch black prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002539/">Pre Release @ WOLCOW GAMING</a>
-LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-002539/
-END:VEVENT
-BEGIN:VEVENT
-UID:f8ad8f16-a28e-4c68-b2a5-f2f797ab6995
-DTSTAMP:20260711T170000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T170000
-DTEND;TZID=America/Kentucky/Monticello:20260711T210000
-SUMMARY:Papa Joey's Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003506/">Pre Release @ LEXINGTON</a>
-LOCATION:777 ATHENS RD #101, LEXINGTON, GA 30648, USA, , Oglethorpe County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-003506/
-END:VEVENT
-BEGIN:VEVENT
-UID:fb79cdb0-d569-4104-9f67-33851a157e6a
-DTSTAMP:20260711T110000
-DTSTART;TZID=America/Kentucky/Monticello:20260711T110000
-DTEND;TZID=America/Kentucky/Monticello:20260711T150000
-SUMMARY:Pitch Black Prerelease
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-007247/">Pre Release @ COOL STUFF GAMES AUGUSTA</a>
-LOCATION:3435 WRIGHTSBORO RD #1102, AUGUSTA, GA 30909, USA, , Augusta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-007247/
-END:VEVENT
-BEGIN:VEVENT
 UID:1581f86b-8378-4c34-add9-f169a2235026
 DTSTAMP:20260712T140000
 DTSTART;TZID=America/Kentucky/Monticello:20260712T140000
@@ -470,5 +290,15 @@ SUMMARY:TCP Albany Mid Year Celebration
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-000457/">League Cup @ THE COOL PLACE ALBANY</a>
 LOCATION:2601 DAWSON RD D23, ALBANY, GA 31707, USA, , Albany/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-000457/
+END:VEVENT
+BEGIN:VEVENT
+UID:9e968786-e331-4404-9170-8ccd77d90204
+DTSTAMP:20260813T190000
+DTSTART;TZID=America/Kentucky/Monticello:20260813T190000
+DTEND;TZID=America/Kentucky/Monticello:20260813T230000
+SUMMARY:TCF Mid-Year Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002138/">League Cup @ TCF GAMING ARENA</a>
+LOCATION:561 JONESBORO RD, MCDONOUGH, GA 30253, USA, , Henry County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002138/
 END:VEVENT
 END:VCALENDAR

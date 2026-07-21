@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:63a7f002-2783-450a-a175-1b7d73d05072
-DTSTAMP:20260718T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260718T140000
-DTEND;TZID=America/Kentucky/Monticello:20260718T180000
-SUMMARY:Mid Year Celebrations Expanded Tournament
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-016623/">League Cup @ GALACTIC COMICS & GAMES</a>
-LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-016623/
-END:VEVENT
-BEGIN:VEVENT
-UID:ec968293-6dc1-4177-a516-2196ca79ce3e
-DTSTAMP:20260718T130000
-DTSTART;TZID=America/Kentucky/Monticello:20260718T130000
-DTEND;TZID=America/Kentucky/Monticello:20260718T170000
-SUMMARY:TCG Mid Year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001518/">League Cup @ LEGENDARY PHOENIX GAMES</a>
-LOCATION:108 S COMMERCE ST, HINESVILLE, GA 31313, US, , Hinesville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-001518/
-END:VEVENT
-BEGIN:VEVENT
 UID:15b957d3-746b-45ae-b071-b2a6d22d397f
 DTSTAMP:20260719T123000
 DTSTART;TZID=America/Kentucky/Monticello:20260719T123000

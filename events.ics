@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:15b957d3-746b-45ae-b071-b2a6d22d397f
-DTSTAMP:20260719T123000
-DTSTART;TZID=America/Kentucky/Monticello:20260719T123000
-DTEND;TZID=America/Kentucky/Monticello:20260719T163000
-SUMMARY:GuuBuu Hobby VGC Mid Year Celebration Tournament - July
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-016056/">League Cup @ GUUBUU HOBBY</a>
-LOCATION:3334 STONE MOUNTAIN HWY SUITE E, SNELLVILLE, GA 30078, US, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-016056/
-END:VEVENT
-BEGIN:VEVENT
-UID:2c67e5d8-0619-493b-8cb0-7761861ea044
-DTSTAMP:20260719T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260719T140000
-DTEND;TZID=America/Kentucky/Monticello:20260719T180000
-SUMMARY:Dabbers Norcross TCG Mid Year
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015040/">League Cup @ DABBERS GAMING CAFE</a>
-LOCATION:4935 JIMMY CARTER BLVD #200, NORCROSS, GA 30093, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015040/
-END:VEVENT
-BEGIN:VEVENT
 UID:19e43541-cbf3-4dbf-8b48-5f3ac4b81398
 DTSTAMP:20260725T120000
 DTSTART;TZID=America/Kentucky/Monticello:20260725T120000

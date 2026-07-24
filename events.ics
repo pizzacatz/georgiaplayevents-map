@@ -72,6 +72,16 @@ LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014744/
 END:VEVENT
 BEGIN:VEVENT
+UID:11860cc1-ddb9-4fe3-bbf0-18253424f881
+DTSTAMP:20260728T190000
+DTSTART;TZID=America/Kentucky/Monticello:20260728T190000
+DTEND;TZID=America/Kentucky/Monticello:20260728T230000
+SUMMARY:Mid Year Celebration Gym Leader Challenge
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-025489/">League Cup @ MEEPLE MADNESS</a>
+LOCATION:7400 SPOUT SPRINGS RD STE 205, FLOWERY BRANCH, GA 30542, US, , Braselton/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-025489/
+END:VEVENT
+BEGIN:VEVENT
 UID:1aba81e5-0f44-4fcf-92e4-e1dfcf0ac7c3
 DTSTAMP:20260730T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260730T183000
@@ -92,6 +102,26 @@ LOCATION:2601 DAWSON RD D23, ALBANY, GA 31707, USA, , Albany/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-000457/
 END:VEVENT
 BEGIN:VEVENT
+UID:94aa1d06-369f-4331-ab16-a29f103f1794
+DTSTAMP:20260802T130000
+DTSTART;TZID=America/Kentucky/Monticello:20260802T130000
+DTEND;TZID=America/Kentucky/Monticello:20260802T170000
+SUMMARY:POGO - Mid Year Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002624/">League Cup @ GUUBUU HOBBY</a>
+LOCATION:3334 STONE MOUNTAIN HWY, SNELLVILLE, GA 30078, US, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002624/
+END:VEVENT
+BEGIN:VEVENT
+UID:c336e94c-0905-429f-81f1-bfb9f3e2f4bd
+DTSTAMP:20260802T150000
+DTSTART;TZID=America/Kentucky/Monticello:20260802T150000
+DTEND;TZID=America/Kentucky/Monticello:20260802T190000
+SUMMARY:POGO - Mid Year Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002625/">League Cup @ GUUBUU GAMES</a>
+LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002625/
+END:VEVENT
+BEGIN:VEVENT
 UID:9e968786-e331-4404-9170-8ccd77d90204
 DTSTAMP:20260813T190000
 DTSTART;TZID=America/Kentucky/Monticello:20260813T190000
@@ -100,5 +130,35 @@ SUMMARY:TCF Mid-Year Celebration
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002138/">League Cup @ TCF GAMING ARENA</a>
 LOCATION:561 JONESBORO RD, MCDONOUGH, GA 30253, USA, , Henry County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002138/
+END:VEVENT
+BEGIN:VEVENT
+UID:59b12c47-d8a5-4d44-a8a4-cb669ce9f672
+DTSTAMP:20260814T190000
+DTSTART;TZID=America/Kentucky/Monticello:20260814T190000
+DTEND;TZID=America/Kentucky/Monticello:20260814T230000
+SUMMARY:Scout Battles - Draft Format
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002621/">League Cup @ THE WASTELAND GAMING</a>
+LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002621/
+END:VEVENT
+BEGIN:VEVENT
+UID:ea71a6d8-2c10-40a7-ad08-5e5a285f2b5d
+DTSTAMP:20260822T130000
+DTSTART;TZID=America/Kentucky/Monticello:20260822T130000
+DTEND;TZID=America/Kentucky/Monticello:20260822T170000
+SUMMARY:Worlds Celebration 2026
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003758/">League Challenge @ WOLCOW GAMING</a>
+LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003758/
+END:VEVENT
+BEGIN:VEVENT
+UID:6a7c2716-97fb-458f-a655-ac3e1c966826
+DTSTAMP:20260830T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T140000
+DTEND;TZID=America/Kentucky/Monticello:20260830T180000
+SUMMARY:1Up Games Calhoun Worlds 2026 Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003696/">League Challenge @ 1UP GAMES</a>
+LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003696/
 END:VEVENT
 END:VCALENDAR

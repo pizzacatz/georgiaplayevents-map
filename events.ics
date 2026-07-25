@@ -142,6 +142,26 @@ LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002621/
 END:VEVENT
 BEGIN:VEVENT
+UID:a81f8987-a1d6-4880-9af3-a13aa2483815
+DTSTAMP:20260816T123000
+DTSTART;TZID=America/Kentucky/Monticello:20260816T123000
+DTEND;TZID=America/Kentucky/Monticello:20260816T163000
+SUMMARY:GuuBuu Games VGC Mid Year Celebration Tournament
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002835/">League Cup @ GUUBUU GAMES</a>
+LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002835/
+END:VEVENT
+BEGIN:VEVENT
+UID:c9e38f15-5f1f-4435-a510-a3992c4c4c4b
+DTSTAMP:20260822T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260822T120000
+DTEND;TZID=America/Kentucky/Monticello:20260822T160000
+SUMMARY:Pokémon Worlds Championship Tournament
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004379/">League Challenge @ MEEPLE MADNESS</a>
+LOCATION:7400 SPOUT SPRINGS RD STE 205, FLOWERY BRANCH, GA 30542, US, , Braselton/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004379/
+END:VEVENT
+BEGIN:VEVENT
 UID:ea71a6d8-2c10-40a7-ad08-5e5a285f2b5d
 DTSTAMP:20260822T130000
 DTSTART;TZID=America/Kentucky/Monticello:20260822T130000
@@ -152,6 +172,46 @@ LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003758/
 END:VEVENT
 BEGIN:VEVENT
+UID:5d1e5977-a29d-4c51-a3f7-da45742ca353
+DTSTAMP:20260823T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260823T120000
+DTEND;TZID=America/Kentucky/Monticello:20260823T160000
+SUMMARY:Classic City VGC Champions Worlds Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004280/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004280/
+END:VEVENT
+BEGIN:VEVENT
+UID:e959f4e8-3024-4079-933b-71dd952592b7
+DTSTAMP:20260823T180000
+DTSTART;TZID=America/Kentucky/Monticello:20260823T180000
+DTEND;TZID=America/Kentucky/Monticello:20260823T220000
+SUMMARY:Worlds Celebration Event
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004322/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004322/
+END:VEVENT
+BEGIN:VEVENT
+UID:b14f4484-c749-4553-a881-79b92e7b2db5
+DTSTAMP:20260826T183000
+DTSTART;TZID=America/Kentucky/Monticello:20260826T183000
+DTEND;TZID=America/Kentucky/Monticello:20260826T223000
+SUMMARY:2026 Pokemon World Championships Celebration Tournament
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004132/">League Challenge @ THE SPORTS SHACK</a>
+LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004132/
+END:VEVENT
+BEGIN:VEVENT
+UID:837184b2-bd41-47b3-a1f0-8b22101d7adc
+DTSTAMP:20260829T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260829T140000
+DTEND;TZID=America/Kentucky/Monticello:20260829T180000
+SUMMARY:RTB Presents: "You Can Do It!" - 2026 Pokemon World's Celebr
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004317/">League Challenge @ ROLL THE BONES</a>
+LOCATION:7400 ABERCORN ST STE 704, SAVANNAH, GA 31406, USA, , Savannah/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004317/
+END:VEVENT
+BEGIN:VEVENT
 UID:6a7c2716-97fb-458f-a655-ac3e1c966826
 DTSTAMP:20260830T140000
 DTSTART;TZID=America/Kentucky/Monticello:20260830T140000
@@ -160,5 +220,15 @@ SUMMARY:1Up Games Calhoun Worlds 2026 Celebration
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003696/">League Challenge @ 1UP GAMES</a>
 LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003696/
+END:VEVENT
+BEGIN:VEVENT
+UID:a96d0578-6e30-4dc0-9b2b-9da1af9ddf6c
+DTSTAMP:20260830T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T120000
+DTEND;TZID=America/Kentucky/Monticello:20260830T160000
+SUMMARY:Classic City Worlds TCG Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004275/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004275/
 END:VEVENT
 END:VCALENDAR

@@ -152,6 +152,16 @@ LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002835/
 END:VEVENT
 BEGIN:VEVENT
+UID:9a123796-2e9e-470f-b629-39a274cf145d
+DTSTAMP:20260822T113000
+DTSTART;TZID=America/Kentucky/Monticello:20260822T113000
+DTEND;TZID=America/Kentucky/Monticello:20260822T153000
+SUMMARY:World Celebration Event - GuuBuu Games
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004813/">League Challenge @ GUUBUU GAMES</a>
+LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004813/
+END:VEVENT
+BEGIN:VEVENT
 UID:c9e38f15-5f1f-4435-a510-a3992c4c4c4b
 DTSTAMP:20260822T120000
 DTSTART;TZID=America/Kentucky/Monticello:20260822T120000
@@ -180,6 +190,16 @@ SUMMARY:Classic City VGC Champions Worlds Celebration
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004280/">League Challenge @ DRAGON STAR HOBBIES</a>
 LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004280/
+END:VEVENT
+BEGIN:VEVENT
+UID:d5bf43eb-802d-4990-8349-8fb4226e0454
+DTSTAMP:20260823T113000
+DTSTART;TZID=America/Kentucky/Monticello:20260823T113000
+DTEND;TZID=America/Kentucky/Monticello:20260823T153000
+SUMMARY:World Celebration Event - GuuBuu Hobby
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004812/">League Challenge @ GUUBUU HOBBY</a>
+LOCATION:3334 STONE MOUNTAIN HWY, SNELLVILLE, GA 30078, US, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004812/
 END:VEVENT
 BEGIN:VEVENT
 UID:e959f4e8-3024-4079-933b-71dd952592b7

@@ -242,6 +242,16 @@ LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-003696/
 END:VEVENT
 BEGIN:VEVENT
+UID:6ecda7e6-08e9-49c4-8f4f-a3ac083f0435
+DTSTAMP:20260830T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T120000
+DTEND;TZID=America/Kentucky/Monticello:20260830T160000
+SUMMARY:2026 World's Celebration Level Up Athens
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004954/">League Challenge @ LEVEL UP ATHENS</a>
+LOCATION:8851 MACON HWY, ATHENS, GA 30606, US, , Athens/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004954/
+END:VEVENT
+BEGIN:VEVENT
 UID:a96d0578-6e30-4dc0-9b2b-9da1af9ddf6c
 DTSTAMP:20260830T120000
 DTSTART;TZID=America/Kentucky/Monticello:20260830T120000

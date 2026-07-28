@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:19e43541-cbf3-4dbf-8b48-5f3ac4b81398
-DTSTAMP:20260725T120000
-DTSTART;TZID=America/Kentucky/Monticello:20260725T120000
-DTEND;TZID=America/Kentucky/Monticello:20260725T160000
-SUMMARY:Calhoun GO Mid Year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015022/">League Cup @ 1UP GAMES</a>
-LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015022/
-END:VEVENT
-BEGIN:VEVENT
-UID:5c6aa614-d01d-46d5-bd65-1391b42594b6
-DTSTAMP:20260725T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260725T140000
-DTEND;TZID=America/Kentucky/Monticello:20260725T180000
-SUMMARY:Calhoun VGC Mid Year Celebration!
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015023/">League Cup @ 1UP GAMES</a>
-LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-015023/
-END:VEVENT
-BEGIN:VEVENT
-UID:fc962048-1ea8-4719-87b0-dd9e69f7eaff
-DTSTAMP:20260725T160000
-DTSTART;TZID=America/Kentucky/Monticello:20260725T160000
-DTEND;TZID=America/Kentucky/Monticello:20260725T200000
-SUMMARY:TNS MID-YEAR CELEBRATION (TCG)
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014776/">League Cup @ THE NERD STORE</a>
-LOCATION:2726 LEDO RD STE 9, ALBANY, GA 31707, US, , Albany/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014776/
-END:VEVENT
-BEGIN:VEVENT
 UID:8e860755-e68d-4ce9-813e-5e1512ea9a11
 DTSTAMP:20260726T150000
 DTSTART;TZID=America/Kentucky/Monticello:20260726T150000
@@ -210,6 +180,16 @@ SUMMARY:Worlds Celebration Event
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004322/">League Challenge @ CARDBOARD CASTLE GAMES</a>
 LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004322/
+END:VEVENT
+BEGIN:VEVENT
+UID:94e2f8f0-3ead-4d5d-89c8-61da755783f7
+DTSTAMP:20260824T143000
+DTSTART;TZID=America/Kentucky/Monticello:20260824T143000
+DTEND;TZID=America/Kentucky/Monticello:20260824T183000
+SUMMARY:Pokémon TCG Worlds Celebration Tournament
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005469/">League Challenge @ VIDEO GAME TRADER</a>
+LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005469/
 END:VEVENT
 BEGIN:VEVENT
 UID:b14f4484-c749-4553-a881-79b92e7b2db5

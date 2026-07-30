@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:3720ce4b-6743-401b-9376-2af5e53e7420
-DTSTAMP:20260727T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260727T180000
-DTEND;TZID=America/Kentucky/Monticello:20260727T220000
-SUMMARY:Pokemon TCG Mid Year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014744/">League Cup @ VIDEO GAME TRADER</a>
-LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-014744/
-END:VEVENT
-BEGIN:VEVENT
 UID:11860cc1-ddb9-4fe3-bbf0-18253424f881
 DTSTAMP:20260728T190000
 DTSTART;TZID=America/Kentucky/Monticello:20260728T190000
@@ -200,6 +190,36 @@ SUMMARY:Pokemon Worlds Celebration @LHC
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005942/">League Challenge @ LAKE HARTWELL COLLECTIBLES</a>
 LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005942/
+END:VEVENT
+BEGIN:VEVENT
+UID:9dbe850f-aa01-4707-8b66-885007205d2a
+DTSTAMP:20260829T123000
+DTSTART;TZID=America/Kentucky/Monticello:20260829T123000
+DTEND;TZID=America/Kentucky/Monticello:20260829T163000
+SUMMARY:Super Heroes Worlds Celebration Tournament
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006647/">League Challenge @ SUPER HEROES COMICS CARDS AND GAMES</a>
+LOCATION:66 BULLSBORO DR, NEWNAN, GA 30263, US, , Newnan/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006647/
+END:VEVENT
+BEGIN:VEVENT
+UID:39f5f586-7a76-4a13-b442-3b4afea9bd08
+DTSTAMP:20260830T110000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T110000
+DTEND;TZID=America/Kentucky/Monticello:20260830T150000
+SUMMARY:HNG Worlds Celebration Event!
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006445/">League Challenge @ HAWK'S NEST GAMING</a>
+LOCATION:6721 BELLS FERRY RD D104, WOODSTOCK, GA 30189, USA, , Cherokee County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006445/
+END:VEVENT
+BEGIN:VEVENT
+UID:423a69d9-ab55-4065-9e99-6c4ce62374a6
+DTSTAMP:20260830T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T140000
+DTEND;TZID=America/Kentucky/Monticello:20260830T180000
+SUMMARY:Dabbers Norcross TCG Worlds Celebration
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006634/">League Challenge @ DABBERS GAMING CAFE</a>
+LOCATION:4935 JIMMY CARTER BLVD #200, NORCROSS, GA 30093, USA, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006634/
 END:VEVENT
 BEGIN:VEVENT
 UID:6a7c2716-97fb-458f-a655-ac3e1c966826

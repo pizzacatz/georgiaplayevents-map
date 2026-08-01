@@ -212,6 +212,16 @@ LOCATION:4935 JIMMY CARTER BLVD #200, NORCROSS, GA 30093, USA, , Gwinnett County
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006634/
 END:VEVENT
 BEGIN:VEVENT
+UID:5606e229-1bdd-4bff-84b0-68acaef76864
+DTSTAMP:20260830T143000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T143000
+DTEND;TZID=America/Kentucky/Monticello:20260830T183000
+SUMMARY:the Cool Place World Championships Celebration and Store Cha
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-007447/">League Challenge @ THE COOL PLACE</a>
+LOCATION:7830 VETERANS PKWY SUITE E, COLUMBUS, GA 31909, US, , Columbus/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-007447/
+END:VEVENT
+BEGIN:VEVENT
 UID:6a7c2716-97fb-458f-a655-ac3e1c966826
 DTSTAMP:20260830T140000
 DTSTART;TZID=America/Kentucky/Monticello:20260830T140000

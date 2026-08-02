@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:1aba81e5-0f44-4fcf-92e4-e1dfcf0ac7c3
-DTSTAMP:20260730T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260730T183000
-DTEND;TZID=America/Kentucky/Monticello:20260730T223000
-SUMMARY:The Cool Place Mid Season Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-011712/">League Cup @ THE COOL PLACE</a>
-LOCATION:7830 VETERANS PKWY SUITE E, COLUMBUS, GA 31909, USA, , Columbus/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-07-011712/
-END:VEVENT
-BEGIN:VEVENT
 UID:0e85de82-5988-4cfa-89eb-69e5499d844a
 DTSTAMP:20260801T160000
 DTSTART;TZID=America/Kentucky/Monticello:20260801T160000

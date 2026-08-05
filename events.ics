@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:94aa1d06-369f-4331-ab16-a29f103f1794
-DTSTAMP:20260802T130000
-DTSTART;TZID=America/Kentucky/Monticello:20260802T130000
-DTEND;TZID=America/Kentucky/Monticello:20260802T170000
-SUMMARY:POGO - Mid Year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002624/">League Cup @ GUUBUU HOBBY</a>
-LOCATION:3334 STONE MOUNTAIN HWY, SNELLVILLE, GA 30078, US, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002624/
-END:VEVENT
-BEGIN:VEVENT
-UID:c336e94c-0905-429f-81f1-bfb9f3e2f4bd
-DTSTAMP:20260802T150000
-DTSTART;TZID=America/Kentucky/Monticello:20260802T150000
-DTEND;TZID=America/Kentucky/Monticello:20260802T190000
-SUMMARY:POGO - Mid Year Celebration
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002625/">League Cup @ GUUBUU GAMES</a>
-LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002625/
-END:VEVENT
-BEGIN:VEVENT
 UID:a513ed67-81f6-4b57-8f78-6fd9b8bce51b
 DTSTAMP:20260803T180000
 DTSTART;TZID=America/Kentucky/Monticello:20260803T180000

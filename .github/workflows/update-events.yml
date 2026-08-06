@@ -53,8 +53,13 @@ jobs:
       # URL to the list below (space- or newline-separated).
       - name: Merge names from Google Calendars
         env:
+          # Pokemon GO / TCG Challenges / TCG Cups / TCG Prereleases / VGC
           GOOGLE_CALENDAR_ICS_URLS: >-
             https://calendar.google.com/calendar/ical/6266d34b4ebc12683acd051f9caac81e9cbdf123505bc6f733a7fe60451804a9%40group.calendar.google.com/public/basic.ics
+            https://calendar.google.com/calendar/ical/1e75db32a0ea41bc4e7e4aa16b3555f5a67cf80ae652c9e6ffc7e18c84302a67%40group.calendar.google.com/public/basic.ics
+            https://calendar.google.com/calendar/ical/86e309612473b346e0bdec61b2638bf9915dbb5961f924d2d40e69032b56c344%40group.calendar.google.com/public/basic.ics
+            https://calendar.google.com/calendar/ical/24b6777e29ee1fb3e942d1eea996fc257b099474cfff9ac297a571d73b9c2586%40group.calendar.google.com/public/basic.ics
+            https://calendar.google.com/calendar/ical/96c9ca92cfdbee45cc3e0cb314ba47c11ef88705bab2f12dca14cefcf24a1706%40group.calendar.google.com/public/basic.ics
         run: python3 .github/scripts/merge_events.py events.ics $GOOGLE_CALENDAR_ICS_URLS
 
       - name: Commit if changed

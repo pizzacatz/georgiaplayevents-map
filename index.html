@@ -514,22 +514,17 @@
                         let anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
                         let innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
 
-                        let title = innerText || event.summary || "Event";
-                        title = title.replace(/\bLeague\b/gi, '').replace(/\s*@\s*/g, ' @ ').replace(/\s+/g, ' ').trim();
+                        // Show the calendar event's name exactly as written; the
+                        // description anchor text is only a fallback for events
+                        // that somehow lack a SUMMARY.
+                        let finalTitle = event.summary || innerText || "Event";
 
-                        let prefix = "TCG ";
                         let markerColor = iconBlue;
-
                         if (isVgc) {
-                            prefix = "VGC ";
                             markerColor = iconRed;
                         } else if (isGo) {
-                            prefix = "GO ";
                             markerColor = iconGreen;
                         }
-
-                        title = title.replace(/^(TCG|VGC|VG|GO|Pokémon GO|Pokemon GO)\s+/i, '').trim();
-                        let finalTitle = prefix + title;
                         let timeStr = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
 
                         let cleanLocation = loc.replace(/,\s*USA?.*$/i, '').trim();

@@ -46,6 +46,17 @@ jobs:
           mv events.ics.tmp events.ics
           echo "Events in feed: $(grep -c 'BEGIN:VEVENT' events.ics)"
 
+      # Overlay custom event names from the Georgia Play! Google Calendars.
+      # Events are matched by their pokemon.com tournament URL; only SUMMARY
+      # is replaced, so locations/filters keep using pokedata's data.
+      # To cover another calendar (e.g. TCG or VGC), append its public ICS
+      # URL to the list below (space- or newline-separated).
+      - name: Merge names from Google Calendars
+        env:
+          GOOGLE_CALENDAR_ICS_URLS: >-
+            https://calendar.google.com/calendar/ical/6266d34b4ebc12683acd051f9caac81e9cbdf123505bc6f733a7fe60451804a9%40group.calendar.google.com/public/basic.ics
+        run: python3 .github/scripts/merge_events.py events.ics $GOOGLE_CALENDAR_ICS_URLS
+
       - name: Commit if changed
         run: |
           if [ -z "$(git status --porcelain events.ics)" ]; then

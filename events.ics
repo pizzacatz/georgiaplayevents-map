@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:a513ed67-81f6-4b57-8f78-6fd9b8bce51b
-DTSTAMP:20260803T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260803T180000
-DTEND;TZID=America/Kentucky/Monticello:20260803T220000
-SUMMARY:Titan Midyear Celebration Part 2
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006129/">League Cup @ TITAN GAMES & COMICS</a>
-LOCATION:2512 COBB PKWY SE, SMYRNA, GA 30080, US, , Smyrna/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006129/
-END:VEVENT
-BEGIN:VEVENT
 UID:9e968786-e331-4404-9170-8ccd77d90204
 DTSTAMP:20260813T190000
 DTSTART;TZID=America/Kentucky/Monticello:20260813T190000

@@ -72,6 +72,16 @@ LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County 
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004280/
 END:VEVENT
 BEGIN:VEVENT
+UID:94e2f8f0-3ead-4d5d-89c8-61da755783f7
+DTSTAMP:20260823T143000
+DTSTART;TZID=America/Kentucky/Monticello:20260823T143000
+DTEND;TZID=America/Kentucky/Monticello:20260823T183000
+SUMMARY:TCG Worlds Celebration @ VIDEO GAME TRADER
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005469/">League Challenge @ VIDEO GAME TRADER</a>
+LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005469/
+END:VEVENT
+BEGIN:VEVENT
 UID:d5bf43eb-802d-4990-8349-8fb4226e0454
 DTSTAMP:20260823T113000
 DTSTART;TZID=America/Kentucky/Monticello:20260823T113000
@@ -92,16 +102,6 @@ LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004322/
 END:VEVENT
 BEGIN:VEVENT
-UID:94e2f8f0-3ead-4d5d-89c8-61da755783f7
-DTSTAMP:20260824T143000
-DTSTART;TZID=America/Kentucky/Monticello:20260824T143000
-DTEND;TZID=America/Kentucky/Monticello:20260824T183000
-SUMMARY:TCG Worlds Celebration @ VIDEO GAME TRADER
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005469/">League Challenge @ VIDEO GAME TRADER</a>
-LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-005469/
-END:VEVENT
-BEGIN:VEVENT
 UID:b14f4484-c749-4553-a881-79b92e7b2db5
 DTSTAMP:20260826T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260826T183000
@@ -110,6 +110,16 @@ SUMMARY:TCG Worlds Celebration @ THE SPORTS SHACK
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004132/">League Challenge @ THE SPORTS SHACK</a>
 LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004132/
+END:VEVENT
+BEGIN:VEVENT
+UID:5f2dca95-eadd-49f1-9f10-86994de03325
+DTSTAMP:20260827T180000
+DTSTART;TZID=America/Kentucky/Monticello:20260827T180000
+DTEND;TZID=America/Kentucky/Monticello:20260827T220000
+SUMMARY:TCG Challenge @ KILLERFINDS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-011983/">League Challenge @ KILLERFINDS</a>
+LOCATION:4215 JIMMY LEE SMITH PKWY, HIRAM, GA 30141, US, , Indian Lake/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-011983/
 END:VEVENT
 BEGIN:VEVENT
 UID:837184b2-bd41-47b3-a1f0-8b22101d7adc
@@ -140,6 +150,16 @@ SUMMARY:TCG Worlds Celebration @ SUPER HEROES COMICS CARDS AND GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006647/">League Challenge @ SUPER HEROES COMICS CARDS AND GAMES</a>
 LOCATION:66 BULLSBORO DR, NEWNAN, GA 30263, US, , Newnan/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-006647/
+END:VEVENT
+BEGIN:VEVENT
+UID:bd4f640b-2c75-46f5-a3f1-5a72cd07f99c
+DTSTAMP:20260829T124500
+DTSTART;TZID=America/Kentucky/Monticello:20260829T124500
+DTEND;TZID=America/Kentucky/Monticello:20260829T164500
+SUMMARY:TCG Challenge @ TCF GAMING ARENA
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-013941/">League Challenge @ TCF GAMING ARENA</a>
+LOCATION:561 JONESBORO RD, MCDONOUGH, GA 30253, USA, , Henry County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-013941/
 END:VEVENT
 BEGIN:VEVENT
 UID:39f5f586-7a76-4a13-b442-3b4afea9bd08

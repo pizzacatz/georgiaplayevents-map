@@ -32,6 +32,16 @@ LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002835/
 END:VEVENT
 BEGIN:VEVENT
+UID:8332c778-3c12-4952-bf04-011d8bc00080
+DTSTAMP:20260822T130000
+DTSTART;TZID=America/Kentucky/Monticello:20260822T130000
+DTEND;TZID=America/Kentucky/Monticello:20260822T170000
+SUMMARY:VGC Challenge @ THE WASTELAND GAMING
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-011211/">League Challenge @ THE WASTELAND GAMING</a>
+LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-011211/
+END:VEVENT
+BEGIN:VEVENT
 UID:9a123796-2e9e-470f-b629-39a274cf145d
 DTSTAMP:20260822T113000
 DTSTART;TZID=America/Kentucky/Monticello:20260822T113000
@@ -220,5 +230,15 @@ SUMMARY:TCG Worlds Celebration @ DRAGON STAR HOBBIES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004275/">League Challenge @ DRAGON STAR HOBBIES</a>
 LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-004275/
+END:VEVENT
+BEGIN:VEVENT
+UID:f4dc0679-954a-48c5-aa68-95fded9b9e39
+DTSTAMP:20260830T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260830T140000
+DTEND;TZID=America/Kentucky/Monticello:20260830T180000
+SUMMARY:TCG Challenge @ SAVANNAH LION GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-014100/">League Challenge @ SAVANNAH LION GAMES</a>
+LOCATION:1108 US-80 SUITE 300, POOLER, GA 31322, US, , Pooler/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-014100/
 END:VEVENT
 END:VCALENDAR

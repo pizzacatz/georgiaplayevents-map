@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:9e968786-e331-4404-9170-8ccd77d90204
-DTSTAMP:20260813T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260813T190000
-DTEND;TZID=America/Kentucky/Monticello:20260813T230000
-SUMMARY:TCG Mid Year Celebration @ TCF GAMING ARENA
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002138/">League Cup @ TCF GAMING ARENA</a>
-LOCATION:561 JONESBORO RD, MCDONOUGH, GA 30253, USA, , Henry County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002138/
-END:VEVENT
-BEGIN:VEVENT
 UID:59b12c47-d8a5-4d44-a8a4-cb669ce9f672
 DTSTAMP:20260814T190000
 DTSTART;TZID=America/Kentucky/Monticello:20260814T190000

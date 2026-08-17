@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:59b12c47-d8a5-4d44-a8a4-cb669ce9f672
-DTSTAMP:20260814T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260814T190000
-DTEND;TZID=America/Kentucky/Monticello:20260814T230000
-SUMMARY:VGC Mid Year Celebration @ THE WASTELAND GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002621/">League Cup @ THE WASTELAND GAMING</a>
-LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002621/
-END:VEVENT
-BEGIN:VEVENT
 UID:a81f8987-a1d6-4880-9af3-a13aa2483815
 DTSTAMP:20260816T123000
 DTSTART;TZID=America/Kentucky/Monticello:20260816T123000

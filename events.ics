@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:a81f8987-a1d6-4880-9af3-a13aa2483815
-DTSTAMP:20260816T123000
-DTSTART;TZID=America/Kentucky/Monticello:20260816T123000
-DTEND;TZID=America/Kentucky/Monticello:20260816T163000
-SUMMARY:VGC Mid Year Celebration @ GUUBUU GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002835/">League Cup @ GUUBUU GAMES</a>
-LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-002835/
-END:VEVENT
-BEGIN:VEVENT
 UID:8332c778-3c12-4952-bf04-011d8bc00080
 DTSTAMP:20260822T130000
 DTSTART;TZID=America/Kentucky/Monticello:20260822T130000

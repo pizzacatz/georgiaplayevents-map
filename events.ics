@@ -302,6 +302,16 @@ LOCATION:10 BARNARD ST, SAVANNAH, GA 31401, USA, , Savannah/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005606/
 END:VEVENT
 BEGIN:VEVENT
+UID:eca7da25-d797-431c-a5f5-99f1c80757f1
+DTSTAMP:20260908T190000
+DTSTART;TZID=America/Kentucky/Monticello:20260908T190000
+DTEND;TZID=America/Kentucky/Monticello:20260908T230000
+SUMMARY:TCG Challenge @ DECATUR
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006297/">League Challenge @ DECATUR</a>
+LOCATION:2752 E PONCE DE LEON AVE B, DECATUR, GA 30030, USA, , Scottdale/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006297/
+END:VEVENT
+BEGIN:VEVENT
 UID:62883baf-4970-404f-a8b1-a49f21a2427e
 DTSTAMP:20260909T193000
 DTSTART;TZID=America/Kentucky/Monticello:20260909T193000
@@ -326,7 +336,7 @@ UID:35b7e30c-f287-4646-8963-7ceae51932af
 DTSTAMP:20260910T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260910T183000
 DTEND;TZID=America/Kentucky/Monticello:20260910T223000
-SUMMARY:Silvershield September Challenge
+SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005854/">League Challenge @ SILVERSHIELD GAMING</a>
 LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005854/
@@ -412,6 +422,16 @@ LOCATION:13093 GA-9, MILTON, GA 30004, US, , Milton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005108/
 END:VEVENT
 BEGIN:VEVENT
+UID:6015bc7c-899b-46bb-a00a-56947b77cbad
+DTSTAMP:20260915T190000
+DTSTART;TZID=America/Kentucky/Monticello:20260915T190000
+DTEND;TZID=America/Kentucky/Monticello:20260915T230000
+SUMMARY:TCG Challenge @ DABBERS SANDYSPRINGS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006296/">League Challenge @ DABBERS SANDYSPRINGS</a>
+LOCATION:8833 ROSWELL RD, SANDY SPRINGS, GA 30350, USA, , Sandy Springs/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006296/
+END:VEVENT
+BEGIN:VEVENT
 UID:785b8843-853b-47b5-a9e8-87f0fc8dbf87
 DTSTAMP:20260916T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260916T183000
@@ -440,6 +460,16 @@ SUMMARY:VGC Challenge @ GALACTIC COMICS & GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-003289/">League Challenge @ GALACTIC COMICS & GAMES</a>
 LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-003289/
+END:VEVENT
+BEGIN:VEVENT
+UID:186a331f-1455-4af8-8221-2ccd98c052c8
+DTSTAMP:20260919T130000
+DTSTART;TZID=America/Kentucky/Monticello:20260919T130000
+DTEND;TZID=America/Kentucky/Monticello:20260919T170000
+SUMMARY:Olympus September 2026 challenge
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006654/">League Challenge @ OLYMPUS CARDS AND GAMES</a>
+LOCATION:451 W BANKHEAD HWY #119, VILLA RICA, GA 30180, USA, , Villa Rica/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006654/
 END:VEVENT
 BEGIN:VEVENT
 UID:3807fa77-493c-4a88-9971-d2dcabe083ed
@@ -476,7 +506,7 @@ UID:c85b849f-5746-47c2-bd9f-febf66f409b2
 DTSTAMP:20260919T150000
 DTSTART;TZID=America/Kentucky/Monticello:20260919T150000
 DTEND;TZID=America/Kentucky/Monticello:20260919T190000
-SUMMARY:Prime Time Gaming Pokemon League Challenge
+SUMMARY:TCG Challenge @ PRIME TIME GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006002/">League Challenge @ PRIME TIME GAMING</a>
 LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006002/
@@ -486,7 +516,7 @@ UID:fdf02c2e-4101-4beb-8930-efc8d9f82944
 DTSTAMP:20260919T140000
 DTSTART;TZID=America/Kentucky/Monticello:20260919T140000
 DTEND;TZID=America/Kentucky/Monticello:20260919T180000
-SUMMARY:Pokemon League Challenge
+SUMMARY:TCG Challenge @ THE BATTLEGROUNDS GAMES AND COMICS
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006001/">League Challenge @ THE BATTLEGROUNDS GAMES AND COMICS</a>
 LOCATION:2708 AIRPORT RD SUITE 1, DALTON, GA 30721, US, , Dalton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006001/
@@ -590,6 +620,16 @@ SUMMARY:TCG Challenge @ GUUBUU HOBBY
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001557/">League Challenge @ GUUBUU HOBBY</a>
 LOCATION:3334 STONE MOUNTAIN HWY, SNELLVILLE, GA 30078, US, , Gwinnett County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001557/
+END:VEVENT
+BEGIN:VEVENT
+UID:0bc2f15b-4bfd-435f-b3e9-466e61e3f598
+DTSTAMP:20260928T180000
+DTSTART;TZID=America/Kentucky/Monticello:20260928T180000
+DTEND;TZID=America/Kentucky/Monticello:20260928T220000
+SUMMARY:TCG Challenge @ TITAN GAMES & COMICS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006489/">League Challenge @ TITAN GAMES & COMICS</a>
+LOCATION:2512 COBB PKWY SE, SMYRNA, GA 30080, US, , Smyrna/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006489/
 END:VEVENT
 BEGIN:VEVENT
 UID:231b7653-05e0-48b6-ab3d-b74c94a44ed5
@@ -746,7 +786,7 @@ UID:3065c360-b32d-4b2f-9ef9-2cbe0d788ffe
 DTSTAMP:20261015T183000
 DTSTART;TZID=America/Kentucky/Monticello:20261015T183000
 DTEND;TZID=America/Kentucky/Monticello:20261015T223000
-SUMMARY:Silvershield October Challenge
+SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002872/">League Challenge @ SILVERSHIELD GAMING</a>
 LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002872/
@@ -756,7 +796,7 @@ UID:5f695376-512c-4b79-a6fb-f72761d5d229
 DTSTAMP:20261017T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261017T140000
 DTEND;TZID=America/Kentucky/Monticello:20261017T180000
-SUMMARY:Pokemon League Challenge
+SUMMARY:TCG Challenge @ THE BATTLEGROUNDS GAMES AND COMICS
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002952/">League Challenge @ THE BATTLEGROUNDS GAMES AND COMICS</a>
 LOCATION:2708 AIRPORT RD SUITE 1, DALTON, GA 30721, US, , Dalton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002952/
@@ -786,7 +826,7 @@ UID:e4099fef-0628-43d2-91e6-d5895a0c8057
 DTSTAMP:20261017T150000
 DTSTART;TZID=America/Kentucky/Monticello:20261017T150000
 DTEND;TZID=America/Kentucky/Monticello:20261017T190000
-SUMMARY:Prime Time Gaming Pokemon League Challenge
+SUMMARY:TCG Challenge @ PRIME TIME GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002953/">League Challenge @ PRIME TIME GAMING</a>
 LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002953/
@@ -832,6 +872,26 @@ LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-001516/
 END:VEVENT
 BEGIN:VEVENT
+UID:663adb5b-0b06-4caf-8399-c18d4f9afe57
+DTSTAMP:20261031T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261031T120000
+DTEND;TZID=America/Kentucky/Monticello:20261031T160000
+SUMMARY:TCG Cup @ TITAN GAMES & COMICS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003222/">League Cup @ TITAN GAMES & COMICS</a>
+LOCATION:2512 COBB PKWY SE, SMYRNA, GA 30080, US, , Smyrna/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003222/
+END:VEVENT
+BEGIN:VEVENT
+UID:9cd96c9b-fb88-4c12-aac9-71ab5f19d014
+DTSTAMP:20261031T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261031T130000
+DTEND;TZID=America/Kentucky/Monticello:20261031T170000
+SUMMARY:Olympus October Challenge
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003297/">League Challenge @ OLYMPUS CARDS AND GAMES</a>
+LOCATION:451 W BANKHEAD HWY #119, VILLA RICA, GA 30180, USA, , Villa Rica/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003297/
+END:VEVENT
+BEGIN:VEVENT
 UID:cbc93906-9ede-4dab-9b78-62dd9b5fface
 DTSTAMP:20261106T190000
 DTSTART;TZID=America/Kentucky/Monticello:20261106T190000
@@ -846,7 +906,7 @@ UID:08d894d4-ccd8-4713-b71d-22277499bc74
 DTSTAMP:20261107T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261107T130000
 DTEND;TZID=America/Kentucky/Monticello:20261107T170000
-SUMMARY:Prime Time Gaming Pokemon League Cup
+SUMMARY:TCG Cup @ PRIME TIME GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002349/">League Cup @ PRIME TIME GAMING</a>
 LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002349/
@@ -906,7 +966,7 @@ UID:e11d491d-95fb-48e2-b975-88526fe9c8eb
 DTSTAMP:20261112T183000
 DTSTART;TZID=America/Kentucky/Monticello:20261112T183000
 DTEND;TZID=America/Kentucky/Monticello:20261112T223000
-SUMMARY:Silvershield November Challenge
+SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002296/">League Challenge @ SILVERSHIELD GAMING</a>
 LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002296/
@@ -936,7 +996,7 @@ UID:935295b2-23ba-4ede-94f7-fc29e6ba3d84
 DTSTAMP:20261114T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261114T140000
 DTEND;TZID=America/Kentucky/Monticello:20261114T180000
-SUMMARY:Pokemon League Challenge
+SUMMARY:TCG Challenge @ THE BATTLEGROUNDS GAMES AND COMICS
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002347/">League Challenge @ THE BATTLEGROUNDS GAMES AND COMICS</a>
 LOCATION:2708 AIRPORT RD SUITE 1, DALTON, GA 30721, US, , Dalton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002347/
@@ -992,11 +1052,21 @@ LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-000187/
 END:VEVENT
 BEGIN:VEVENT
+UID:966fc3ac-9543-40ef-85c0-da3869504eac
+DTSTAMP:20261121T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261121T130000
+DTEND;TZID=America/Kentucky/Monticello:20261121T170000
+SUMMARY:Olympus Cup 2026
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002641/">League Cup @ OLYMPUS CARDS AND GAMES</a>
+LOCATION:451 W BANKHEAD HWY #119, VILLA RICA, GA 30180, USA, , Villa Rica/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002641/
+END:VEVENT
+BEGIN:VEVENT
 UID:df5a35af-58e4-427b-8cf5-b9e33ac2a6bb
 DTSTAMP:20261121T150000
 DTSTART;TZID=America/Kentucky/Monticello:20261121T150000
 DTEND;TZID=America/Kentucky/Monticello:20261121T190000
-SUMMARY:Prime Time Gaming Pokemon League Challenge
+SUMMARY:TCG Challenge @ PRIME TIME GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002348/">League Challenge @ PRIME TIME GAMING</a>
 LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002348/
@@ -1020,6 +1090,16 @@ SUMMARY:TCG Challenge @ MEEPLE MADNESS
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-000913/">League Challenge @ MEEPLE MADNESS</a>
 LOCATION:7400 SPOUT SPRINGS RD STE 205, FLOWERY BRANCH, GA 30542, US, , Braselton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-000913/
+END:VEVENT
+BEGIN:VEVENT
+UID:5768b2b6-c200-4ec5-aa87-d5e79eeac713
+DTSTAMP:20261128T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261128T130000
+DTEND;TZID=America/Kentucky/Monticello:20261128T170000
+SUMMARY:Olympus November 2026 Challenge
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002642/">League Challenge @ OLYMPUS CARDS AND GAMES</a>
+LOCATION:451 W BANKHEAD HWY #119, VILLA RICA, GA 30180, USA, , Villa Rica/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002642/
 END:VEVENT
 BEGIN:VEVENT
 UID:5ed5378f-34c8-46d2-9398-99c4bb512134

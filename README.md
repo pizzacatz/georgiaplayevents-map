@@ -5,8 +5,8 @@ Interactive map of Pokémon play events in Georgia — companion to the
 the domain in [CNAME](CNAME), served by GitHub Pages from this repo.
 
 The map plots upcoming TCG / VGC / Pokémon GO events as colored pins
-(blue / red / green), with per-game and per-tier filters, a date picker,
-and a "home base" address marker.
+(blue / red / green), with per-game and per-tier filters, a day/month
+view switcher, and a "home base" address marker.
 
 ## How the data flows
 
@@ -40,12 +40,39 @@ pokedata.ovh ICS feed          Georgia Play! Google Calendars (public ICS)
   each matched event's `SUMMARY`. Locations, times, descriptions, and
   URLs stay pokedata's, so geocoding and filters are unaffected.
 
+## Day and month views
+
+The switcher above the date picker toggles what the map shows:
+
+- **Day** — a single date, stepped with the arrows or picked from the
+  date field.
+- **Month** — every event in a whole month. The dropdown lists each
+  month the feed covers (plus the current one) with the number of
+  events matching the active filters, e.g. "October 2026 (23)"; the
+  arrows step between months and grey out at either end. "This Month"
+  jumps back to the current month.
+
+The chosen view is remembered in `localStorage`, and switching between
+the two keeps you in the same month.
+
+In both views, events sharing a venue collapse into one pin whose popup
+lists them in start-time order — a month at a busy store is one pin, not
+a stack. Such a pin keeps its game color when every event there is the
+same game, and turns violet when a venue mixes games.
+
+Month view may need to geocode many venues on a first visit; because
+Nominatim is rate-limited to roughly one lookup per second, the map
+keeps showing the previous pins and a "Locating N venues…" banner until
+they all resolve. After that the addresses are cached, so switching
+months is instant.
+
 ## Basemap
 
 The map is [MapLibre GL JS](https://maplibre.org/) rendering CARTO's
 **Dark Matter** vector basemap. Event pins live in a single clustered
-GeoJSON source; the pins themselves are inline SVG, so the map depends
-on no third-party image host to draw its own markers.
+GeoJSON source; the pins themselves are inline SVG (blue / red / green
+per game, violet for a mixed-game venue, gold for home base), so the map
+depends on no third-party image host to draw its own markers.
 
 The `CARTO_KEY` near the top of the map code is a **public, client-side
 basemap token**. This is a static site with no server and no build step,

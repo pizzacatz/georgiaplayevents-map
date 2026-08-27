@@ -101,26 +101,45 @@
         <div class="p-3 md:p-6 md:pt-2 bg-gray-900/95 md:bg-transparent border-t border-gray-700/50 md:border-none flex flex-col gap-2">
             
             <div class="flex justify-between items-center px-1 md:hidden hidden" id="mobileDateLabel">
-                <label class="text-xs font-semibold text-gray-300">Select Date</label>
+                <label class="text-xs font-semibold text-gray-300" id="rangeLabelMobile">Select Date</label>
                 <button id="todayBtnMobile" class="text-[10px] bg-blue-600/20 text-blue-400 px-2 py-0.5 rounded transition-colors font-bold uppercase tracking-wide">Today</button>
             </div>
 
             <div class="hidden md:flex justify-between items-center w-full px-1">
-                <label class="text-sm font-semibold text-gray-300">Select Date</label>
+                <label class="text-sm font-semibold text-gray-300" id="rangeLabelDesktop">Select Date</label>
                 <button id="todayBtnDesktop" class="text-xs bg-blue-600/20 text-blue-400 hover:bg-blue-600/40 px-2 py-1 rounded transition-colors font-semibold cursor-pointer">Today</button>
             </div>
 
+            <div class="flex items-center gap-1 w-full bg-gray-800 border border-gray-600 rounded-lg p-1" role="group" aria-label="View mode">
+                <button id="viewDayBtn" type="button" aria-pressed="true" class="flex-1 py-1.5 rounded-md text-xs font-semibold transition-colors cursor-pointer">Day</button>
+                <button id="viewMonthBtn" type="button" aria-pressed="false" class="flex-1 py-1.5 rounded-md text-xs font-semibold transition-colors cursor-pointer">Month</button>
+            </div>
+
             <div class="flex items-center gap-2 w-full justify-between relative">
-                
-                <button id="prevDayBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0" title="Previous Day">
-                    <i data-lucide="chevron-left" class="w-5 h-5"></i>
-                </button>
-                
-                <input type="date" id="datePicker" class="block w-full flex-1 bg-gray-800 border border-gray-600 rounded-lg px-2 py-2.5 text-sm focus:outline-none focus:border-blue-500 text-white text-center appearance-none" style="min-height: 42px;" />
-                
-                <button id="nextDayBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0" title="Next Day">
-                    <i data-lucide="chevron-right" class="w-5 h-5"></i>
-                </button>
+
+                <div id="dayControls" class="flex items-center gap-2 flex-1 min-w-0">
+                    <button id="prevDayBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0" title="Previous Day">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+
+                    <input type="date" id="datePicker" class="block w-full flex-1 min-w-0 bg-gray-800 border border-gray-600 rounded-lg px-2 py-2.5 text-sm focus:outline-none focus:border-blue-500 text-white text-center appearance-none" style="min-height: 42px;" />
+
+                    <button id="nextDayBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0" title="Next Day">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
+
+                <div id="monthControls" class="hidden flex items-center gap-2 flex-1 min-w-0">
+                    <button id="prevMonthBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0 disabled:opacity-40 disabled:hover:bg-gray-800 disabled:cursor-default" title="Previous Month">
+                        <i data-lucide="chevron-left" class="w-5 h-5"></i>
+                    </button>
+
+                    <select id="monthPicker" class="block w-full flex-1 min-w-0 bg-gray-800 border border-gray-600 rounded-lg px-2 py-2.5 text-sm focus:outline-none focus:border-blue-500 text-white text-center appearance-none cursor-pointer" style="min-height: 42px;" aria-label="Select month"></select>
+
+                    <button id="nextMonthBtn" class="p-2.5 bg-gray-800 hover:bg-gray-700 border border-gray-600 md:border-none rounded-lg transition-colors shrink-0 disabled:opacity-40 disabled:hover:bg-gray-800 disabled:cursor-default" title="Next Month">
+                        <i data-lucide="chevron-right" class="w-5 h-5"></i>
+                    </button>
+                </div>
 
                 <button id="mobileMenuToggle" class="p-2.5 md:hidden bg-blue-600 hover:bg-blue-500 rounded-lg text-white transition-colors shadow-lg shrink-0 border border-blue-500">
                     <i data-lucide="sliders-horizontal" class="w-5 h-5"></i>
@@ -132,7 +151,7 @@
     <div id="noEventsAlert" class="hidden absolute z-[1000] bottom-32 md:bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-sm md:w-auto bg-gray-900/95 backdrop-blur-md border border-gray-700/50 rounded-2xl p-4 text-white shadow-2xl flex items-center gap-4">
         <i data-lucide="calendar-x" class="w-6 h-6 text-red-400 shrink-0"></i>
         <div class="flex-1">
-            <p class="font-bold text-gray-100 text-sm md:text-base">No events today.</p>
+            <p id="alertTitle" class="font-bold text-gray-100 text-sm md:text-base">No events today.</p>
             <p class="text-xs md:text-sm text-gray-400 mt-0.5">
                 <span id="alertPrefix">Next event is on </span>
                 <a href="#" id="nextEventLink" class="text-blue-400 hover:text-blue-300 underline font-semibold">...</a>
@@ -152,6 +171,39 @@
             const dd = String(today.getDate()).padStart(2, '0');
             return yyyy + '-' + mm + '-' + dd;
         }
+        function getLocalMonthString() { return getLocalDateString().slice(0, 7); }
+
+        // Event start dates are local wall-clock; shift by the offset so
+        // toISOString() doesn't roll evening events onto the next day.
+        function toDateStr(d) {
+            return new Date(d.getTime() - (d.getTimezoneOffset() * 60000)).toISOString().split('T')[0];
+        }
+
+        const MONTH_NAMES = ['January', 'February', 'March', 'April', 'May', 'June',
+                             'July', 'August', 'September', 'October', 'November', 'December'];
+
+        // Months are handled as plain "YYYY-MM" keys: they sort and compare as strings.
+        function monthLabel(key) {
+            const parts = key.split('-');
+            return MONTH_NAMES[parseInt(parts[1], 10) - 1] + ' ' + parts[0];
+        }
+        function addMonths(key, delta) {
+            const parts = key.split('-');
+            let y = parseInt(parts[0], 10);
+            let m = parseInt(parts[1], 10) - 1 + delta;
+            y += Math.floor(m / 12);
+            m = ((m % 12) + 12) % 12;
+            return y + '-' + String(m + 1).padStart(2, '0');
+        }
+        function lastDayOfMonth(key) {
+            const parts = key.split('-');
+            return toDateStr(new Date(parseInt(parts[0], 10), parseInt(parts[1], 10), 0));
+        }
+        function escapeHtml(s) {
+            return String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+        }
+
     document.getElementById('datePicker').value = getLocalDateString();
 
         // 1. Mobile Animation Logic
@@ -197,8 +249,6 @@
         const CARTO_KEY = 'cb1_25gw_1_f567bbe33f3553fef553eab3';
         const BASEMAP_STYLE = 'https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json?key=' + CARTO_KEY;
 
-        // MapLibre serves 512px vector tiles, so its zoom sits one level "out"
-        // from Leaflet's at the same scale: the old Leaflet 8 is 7 here.
         // CARTO's TileJSON hands back tile URLs without the key on them, so the
         // key on the style URL alone would only ever tag that one request.
         // Stamping it onto every CARTO request keeps usage attributed to our
@@ -210,6 +260,8 @@
             return { url: url + (url.indexOf('?') === -1 ? '?' : '&') + 'key=' + CARTO_KEY };
         }
 
+        // MapLibre serves 512px vector tiles, so its zoom sits one level "out"
+        // from Leaflet's at the same scale: the old Leaflet 8 is 7 here.
         const map = new maplibregl.Map({
             container: 'map',
             style: BASEMAP_STYLE,
@@ -225,7 +277,13 @@
 
         // Pins are inline SVG rather than remote PNGs, so the map has no
         // dependency on a third-party image host to draw its own markers.
-        const PIN_COLORS = { blue: '#2A81CB', red: '#CB2B3E', green: '#2AAD27', gold: '#FFD326' };
+        const PIN_COLORS = {
+            blue: '#2A81CB',
+            red: '#CB2B3E',
+            green: '#2AAD27',
+            gold: '#FFD326',
+            violet: '#9C2BCB'  // several games at one venue
+        };
 
         function pinDataUri(fill) {
             const svg = '<svg xmlns="http://www.w3.org/2000/svg" width="50" height="82" viewBox="0 0 25 41">' +
@@ -263,7 +321,8 @@
                 await Promise.all([
                     loadPin('pin-blue', PIN_COLORS.blue),
                     loadPin('pin-red', PIN_COLORS.red),
-                    loadPin('pin-green', PIN_COLORS.green)
+                    loadPin('pin-green', PIN_COLORS.green),
+                    loadPin('pin-violet', PIN_COLORS.violet)
                 ]);
 
                 map.addSource(EVENTS_SOURCE, {
@@ -316,7 +375,7 @@
 
                 map.on('click', 'event-points', function (e) {
                     const f = e.features[0];
-                    new maplibregl.Popup({ offset: [0, -38], maxWidth: '280px' })
+                    new maplibregl.Popup({ offset: [0, -38], maxWidth: '300px' })
                         .setLngLat(f.geometry.coordinates.slice())
                         .setHTML(f.properties.html)
                         .addTo(map);
@@ -379,16 +438,30 @@
             "3895 CHEROKEE ST NW STE 610, KENNESAW, GA 30144": [34.0266, -84.6154]
         };
 
+        function normalizeAddress(addr) {
+            let cleanAddr = addr.toUpperCase().split(', ,')[0];
+            return cleanAddr.replace(/,\s*USA?$/, '').trim();
+        }
+
+        // Same lookup as getCoordinates minus the network call, so a render can
+        // tell up front how many venues still need a (rate-limited) Nominatim hit.
+        function cachedCoordinates(addr) {
+            if (!addr) return null;
+            const cleanAddr = normalizeAddress(addr);
+            if (manualOverrides[cleanAddr]) return manualOverrides[cleanAddr];
+            const cache = JSON.parse(localStorage.getItem('pokemonGeoCache')) || {};
+            return cache[cleanAddr] || null;
+        }
+
         async function getCoordinates(addr) {
             if (!addr) return null;
-            
-            let cleanAddr = addr.toUpperCase().split(', ,')[0];
-            cleanAddr = cleanAddr.replace(/,\s*USA?$/, '').trim();
 
-            if (manualOverrides[cleanAddr]) return manualOverrides[cleanAddr];
-            
+            const cleanAddr = normalizeAddress(addr);
+
+            const known = cachedCoordinates(addr);
+            if (known) return known;
+
             let cache = JSON.parse(localStorage.getItem('pokemonGeoCache')) || {};
-            if (cache[cleanAddr]) return cache[cleanAddr];
             
             console.log("Asking internet for clean address: " + cleanAddr);
             
@@ -421,6 +494,7 @@
             const alertBox = document.getElementById('noEventsAlert');
             const alertPrefix = document.getElementById('alertPrefix');
             const nextLink = document.getElementById('nextEventLink');
+            document.getElementById('alertTitle').classList.add('hidden');
             alertPrefix.textContent = message;
             if (opts.retry) {
                 nextLink.style.display = "inline";
@@ -529,7 +603,8 @@
 
                 console.log("Loaded " + globalEventsList.length + " events.");
                 hideStatus();
-                renderEventsForDate();
+                buildMonthOptions();
+                renderEvents();
             } catch (e) {
                 console.error("Pipeline Failed:", e);
                 showStatus("Couldn't load events. ", { retry: true });
@@ -537,6 +612,73 @@
         }
 
         // 5. The "Split Brain" Filter Logic
+        //
+        // Everything a rendered pin or a filter needs is derived once per event
+        // and memoised — the month view walks the whole feed several times
+        // (pin grouping, month counts, "next event" lookup) and re-parsing each
+        // VEVENT every pass is wasted work.
+        const eventInfoCache = new WeakMap();
+
+        function getEventInfo(vevent) {
+            const cached = eventInfoCache.get(vevent);
+            if (cached) return cached;
+
+            const event = new ICAL.Event(vevent);
+            const desc = event.description || "";
+
+            let eventUrl = vevent.getFirstPropertyValue('url') || "";
+            const hrefMatch = desc.match(/href="([^"]+)"/i);
+            if (hrefMatch) eventUrl = hrefMatch[1];
+            eventUrl = eventUrl ? eventUrl.toString() : "";
+
+            // GAME TYPE DETECTION: Use RAW summary
+            const rawSummaryUp = (event.summary || "").toUpperCase();
+            const urlUp = eventUrl.toUpperCase();
+
+            let isTcg = urlUp.indexOf('_TCG') !== -1 || rawSummaryUp.indexOf('TCG') !== -1 || rawSummaryUp.indexOf('TRADING CARD') !== -1;
+            const isVgc = urlUp.indexOf('_VG') !== -1 || rawSummaryUp.indexOf('VGC') !== -1 || rawSummaryUp.indexOf('VG ') !== -1 || rawSummaryUp.indexOf('VIDEO GAME') !== -1;
+            const isGo = urlUp.indexOf('_GO') !== -1 || rawSummaryUp.indexOf(' GO ') !== -1 || rawSummaryUp.indexOf('GO ') === 0 || rawSummaryUp.indexOf('POKEMON GO') !== -1;
+
+            if (!isTcg && !isVgc && !isGo) isTcg = true;
+
+            // TIER DETECTION: Use CLEAN inner text
+            const anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
+            const innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
+            const cleanTitleUp = (innerText || event.summary || "").toUpperCase();
+
+            const start = event.startDate.toJSDate();
+
+            // Marker colour follows the game, matching the filter headings.
+            let game = 'tcg';
+            if (isVgc) game = 'vgc';
+            else if (isGo) game = 'go';
+
+            const info = {
+                // Show the calendar event's name exactly as written; the
+                // description anchor text is only a fallback for events
+                // that somehow lack a SUMMARY.
+                title: event.summary || innerText || "Event",
+                location: event.location || "",
+                url: eventUrl,
+                start: start,
+                dateStr: toDateStr(start),
+                month: toDateStr(start).slice(0, 7),
+                game: game,
+                isTcg: isTcg,
+                isVgc: isVgc,
+                isGo: isGo,
+                isCup: cleanTitleUp.indexOf('CUP') !== -1 || cleanTitleUp.indexOf('SHOWDOWN') !== -1,
+                isChallenge: cleanTitleUp.indexOf('CHALLENGE') !== -1,
+                isPrerelease: cleanTitleUp.indexOf('PRERELEASE') !== -1 || cleanTitleUp.indexOf('PRE-RELEASE') !== -1 || cleanTitleUp.indexOf('PRE RELEASE') !== -1
+            };
+
+            eventInfoCache.set(vevent, info);
+            return info;
+        }
+
+        const GAME_ICONS = { tcg: 'pin-blue', vgc: 'pin-red', go: 'pin-green' };
+        const GAME_DOTS = { tcg: '#2563eb', vgc: '#dc2626', go: '#16a34a' };
+
         function doesEventPassFilters(vevent) {
             const showTcgChallenge = document.getElementById('filterTcgChallenge').checked;
             const showTcgCup = document.getElementById('filterTcgCup').checked;
@@ -548,43 +690,20 @@
             const showGoChallenge = document.getElementById('filterGoChallenge').checked;
             const showGoCup = document.getElementById('filterGoCup').checked;
 
-            const event = new ICAL.Event(vevent);
-            const desc = event.description || "";
-            
-            let eventUrl = vevent.getFirstPropertyValue('url') || "";
-            let hrefMatch = desc.match(/href="([^"]+)"/i);
-            if (hrefMatch) eventUrl = hrefMatch[1];
-            
-            // GAME TYPE DETECTION: Use RAW summary
-            const rawSummaryUp = (event.summary || "").toUpperCase();
-            const urlUp = eventUrl.toString().toUpperCase();
-
-            let isTcg = urlUp.indexOf('_TCG') !== -1 || rawSummaryUp.indexOf('TCG') !== -1 || rawSummaryUp.indexOf('TRADING CARD') !== -1;
-            let isVgc = urlUp.indexOf('_VG') !== -1 || rawSummaryUp.indexOf('VGC') !== -1 || rawSummaryUp.indexOf('VG ') !== -1 || rawSummaryUp.indexOf('VIDEO GAME') !== -1;
-            let isGo = urlUp.indexOf('_GO') !== -1 || rawSummaryUp.indexOf(' GO ') !== -1 || rawSummaryUp.indexOf('GO ') === 0 || rawSummaryUp.indexOf('POKEMON GO') !== -1;
-
-            if (!isTcg && !isVgc && !isGo) isTcg = true; 
-
-            // TIER DETECTION: Use CLEAN inner text
-            let anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
-            let innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
-            let cleanTitleUp = (innerText || event.summary || "").toUpperCase();
-
-            let isCup = cleanTitleUp.indexOf('CUP') !== -1 || cleanTitleUp.indexOf('SHOWDOWN') !== -1;
-            let isChallenge = cleanTitleUp.indexOf('CHALLENGE') !== -1;
-            let isPrerelease = cleanTitleUp.indexOf('PRERELEASE') !== -1 || cleanTitleUp.indexOf('PRE-RELEASE') !== -1 || cleanTitleUp.indexOf('PRE RELEASE') !== -1;
+            const info = getEventInfo(vevent);
+            const isCup = info.isCup, isChallenge = info.isChallenge, isPrerelease = info.isPrerelease;
 
             // FILTER MATRIX
-            if (isTcg) {
+            if (info.isTcg) {
                 if (isCup && showTcgCup) return true;
                 if (isChallenge && showTcgChallenge) return true;
                 if (isPrerelease && showTcgPrerelease) return true;
                 if (!isCup && !isChallenge && !isPrerelease && (showTcgCup || showTcgChallenge || showTcgPrerelease)) return true; 
-            } else if (isVgc) {
+            } else if (info.isVgc) {
                 if (isCup && showVgcCup) return true;
                 if (isChallenge && showVgcChallenge) return true;
                 if (!isCup && !isChallenge && (showVgcCup || showVgcChallenge)) return true;
-            } else if (isGo) {
+            } else if (info.isGo) {
                 if (isCup && showGoCup) return true;
                 if (isChallenge && showGoChallenge) return true;
                 if (!isCup && !isChallenge && (showGoCup || showGoChallenge)) return true;
@@ -593,111 +712,143 @@
             return false;
         }
 
-        function findNextDate(currentStr) {
-            let dates = [];
+        function visibleEvents() {
+            const out = [];
             for (let i = 0; i < globalEventsList.length; i++) {
-                const vevent = globalEventsList[i];
-                if (!doesEventPassFilters(vevent)) continue;
-
-                const d = new ICAL.Event(vevent).startDate.toJSDate();
-                const s = new Date(d.getTime() - (d.getTimezoneOffset() * 60000)).toISOString().split('T')[0];
-                if (s > currentStr) dates.push(s);
+                if (doesEventPassFilters(globalEventsList[i])) out.push(getEventInfo(globalEventsList[i]));
             }
+            return out;
+        }
+
+        function findNextDate(currentStr) {
+            const dates = visibleEvents()
+                .map(info => info.dateStr)
+                .filter(s => s > currentStr);
             if (dates.length > 0) return dates.sort()[0];
             return null;
         }
 
-        // Geocoding makes a render long-lived and interruptible, so a
-        // generation token keeps a superseded run from writing stale features.
-        let renderGeneration = 0;
+        // 6. Rendering
+        //
+        // Day view pins one date; month view pins a whole "YYYY-MM". Both share
+        // the same path, so events sharing a venue always collapse into a single
+        // pin with a list popup instead of stacking invisibly on top of each other.
+        let viewMode = localStorage.getItem('pref_viewMode') === 'month' ? 'month' : 'day';
+        let selectedMonth = getLocalMonthString();
+        let renderToken = 0;
 
-        async function renderEventsForDate() {
-            const generation = ++renderGeneration;
+        function popupForVenue(events) {
+            const cleanLocation = events[0].location.replace(/,\s*USA?.*$/i, '').trim();
+            const mapsQuery = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(cleanLocation);
+            const locationLink = '<a href="' + mapsQuery + '" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; font-weight: 500;">' + escapeHtml(cleanLocation) + '</a>';
+
+            if (events.length === 1) {
+                const info = events[0];
+                const timeStr = info.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                let html = '<div style="min-width: 200px; font-family: sans-serif;">' +
+                    '<div style="font-weight: bold; font-size: 14px; margin-bottom: 8px; color: #111827;">' + escapeHtml(info.title) + '</div>' +
+                    '<div style="font-size: 12px; color: #374151; margin-bottom: 4px;">📅 ' + info.start.toLocaleDateString() + ' at ' + timeStr + '</div>' +
+                    '<div style="font-size: 12px; color: #374151; margin-bottom: 10px;">📍 ' + locationLink + '</div>';
+                if (info.url) {
+                    html += '<a href="' + escapeHtml(info.url) + '" target="_blank" style="display: block; text-align: center; background: #2563eb; color: white; text-decoration: none; padding: 6px; border-radius: 4px; font-size: 12px; font-weight: bold;">View Official Page</a>';
+                }
+                return html + '</div>';
+            }
+
+            let html = '<div style="min-width: 220px; max-width: 280px; font-family: sans-serif;">' +
+                '<div style="font-weight: bold; font-size: 14px; color: #111827;">' + events.length + ' events here</div>' +
+                '<div style="font-size: 12px; color: #374151; margin: 4px 0 6px;">📍 ' + locationLink + '</div>' +
+                '<div style="max-height: 230px; overflow-y: auto;">';
+
+            for (let i = 0; i < events.length; i++) {
+                const info = events[i];
+                const timeStr = info.start.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+                html += '<div style="border-top: 1px solid #e5e7eb; padding: 7px 0;">' +
+                    '<div style="font-weight: 600; font-size: 12px; color: #111827;">' +
+                    '<span style="display: inline-block; width: 8px; height: 8px; border-radius: 9999px; background: ' + GAME_DOTS[info.game] + '; margin-right: 6px;"></span>' +
+                    escapeHtml(info.title) + '</div>' +
+                    '<div style="font-size: 11px; color: #374151; margin-top: 3px;">📅 ' + info.start.toLocaleDateString() + ' at ' + timeStr + '</div>';
+                if (info.url) {
+                    html += '<a href="' + escapeHtml(info.url) + '" target="_blank" rel="noopener noreferrer" style="font-size: 11px; color: #2563eb; text-decoration: underline; font-weight: 600;">View Official Page</a>';
+                }
+                html += '</div>';
+            }
+
+            return html + '</div></div>';
+        }
+
+        function iconForVenue(events) {
+            const games = {};
+            events.forEach(info => { games[info.game] = true; });
+            const keys = Object.keys(games);
+            return keys.length === 1 ? GAME_ICONS[keys[0]] : 'pin-violet';
+        }
+
+        async function renderEvents() {
+            const token = ++renderToken;
             await mapReady;
-            if (generation !== renderGeneration) return;
+            if (token !== renderToken) return;
+
+            const isMonth = viewMode === 'month';
+            const selDate = document.getElementById('datePicker').value;
+            const selMonth = selectedMonth;
+
+            const matches = visibleEvents()
+                .filter(info => isMonth ? info.month === selMonth : info.dateStr === selDate)
+                .sort((a, b) => a.start - b.start);
+
+            // Geocoding is rate-limited, so warn instead of leaving the map frozen
+            // on a stale month while lookups trickle in.
+            const pendingLookups = [];
+            matches.forEach(info => {
+                if (info.location && !cachedCoordinates(info.location) && pendingLookups.indexOf(normalizeAddress(info.location)) === -1) {
+                    pendingLookups.push(normalizeAddress(info.location));
+                }
+            });
+            if (pendingLookups.length > 1) {
+                showStatus("Locating " + pendingLookups.length + " venues…");
+            }
+
+            // Resolve every location before touching the map: a render started
+            // while this one is awaiting Nominatim must not paint half of each.
+            const venues = new Map();
+            for (let i = 0; i < matches.length; i++) {
+                const coords = await getCoordinates(matches[i].location);
+                if (token !== renderToken) return; // superseded by a newer render
+                if (!coords) continue;
+                const key = coords[0].toFixed(5) + ',' + coords[1].toFixed(5);
+                if (!venues.has(key)) venues.set(key, { coords: coords, events: [] });
+                venues.get(key).events.push(matches[i]);
+            }
 
             eventFeatures = [];
-            syncEventFeatures();
-            const selDate = document.getElementById('datePicker').value;
-
             let count = 0;
-
-            for (let i = 0; i < globalEventsList.length; i++) {
-                const vevent = globalEventsList[i];
-                
-                if (!doesEventPassFilters(vevent)) continue;
-
-                const event = new ICAL.Event(vevent);
-                const d = event.startDate.toJSDate();
-                const s = new Date(d.getTime() - (d.getTimezoneOffset() * 60000)).toISOString().split('T')[0];
-                
-                if (s === selDate) {
-                    const loc = event.location || "";
-                    const coords = await getCoordinates(loc);
-                    if (coords) {
-                        const desc = event.description || "";
-                        let eventUrl = vevent.getFirstPropertyValue('url') || "";
-                        let hrefMatch = desc.match(/href="([^"]+)"/i);
-                        if (hrefMatch) eventUrl = hrefMatch[1];
-
-                        const rawSummaryUp = (event.summary || "").toUpperCase();
-                        const urlUp = eventUrl.toString().toUpperCase();
-
-                        let isVgc = urlUp.indexOf('_VG') !== -1 || rawSummaryUp.indexOf('VGC') !== -1 || rawSummaryUp.indexOf('VG ') !== -1 || rawSummaryUp.indexOf('VIDEO GAME') !== -1;
-                        let isGo = urlUp.indexOf('_GO') !== -1 || rawSummaryUp.indexOf(' GO ') !== -1 || rawSummaryUp.indexOf('GO ') === 0 || rawSummaryUp.indexOf('POKEMON GO') !== -1;
-
-                        let anchorMatch = desc.match(/<a[^>]*>(.*?)<\/a>/i);
-                        let innerText = anchorMatch ? anchorMatch[1].replace(/<[^>]*>/g, '').trim() : "";
-
-                        // Show the calendar event's name exactly as written; the
-                        // description anchor text is only a fallback for events
-                        // that somehow lack a SUMMARY.
-                        let finalTitle = event.summary || innerText || "Event";
-
-                        let markerIcon = 'pin-blue';
-                        if (isVgc) {
-                            markerIcon = 'pin-red';
-                        } else if (isGo) {
-                            markerIcon = 'pin-green';
-                        }
-                        let timeStr = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-
-                        let cleanLocation = loc.replace(/,\s*USA?.*$/i, '').trim();
-                        let mapsQuery = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(cleanLocation);
-
-                        let html = '<div style="min-width: 200px; font-family: sans-serif;">' +
-                            '<div style="font-weight: bold; font-size: 14px; margin-bottom: 8px; color: #111827;">' + finalTitle + '</div>' +
-                            '<div style="font-size: 12px; color: #374151; margin-bottom: 4px;">📅 ' + d.toLocaleDateString() + ' at ' + timeStr + '</div>' +
-                            '<div style="font-size: 12px; color: #374151; margin-bottom: 10px;">' +
-                            '📍 <a href="' + mapsQuery + '" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline; font-weight: 500;">' + cleanLocation + '</a></div>';
-                        
-                        if (eventUrl) {
-                            html += '<a href="' + eventUrl + '" target="_blank" style="display: block; text-align: center; background: #2563eb; color: white; text-decoration: none; padding: 6px; border-radius: 4px; font-size: 12px; font-weight: bold;">View Official Page</a>';
-                        }
-                        html += '</div>';
-
-                        if (generation !== renderGeneration) return;
-                        eventFeatures.push({
-                            type: 'Feature',
-                            geometry: { type: 'Point', coordinates: [coords[1], coords[0]] },
-                            properties: { icon: markerIcon, html: html }
-                        });
-                        syncEventFeatures();
-                        count++;
+            venues.forEach(venue => {
+                eventFeatures.push({
+                    type: 'Feature',
+                    geometry: { type: 'Point', coordinates: [venue.coords[1], venue.coords[0]] },
+                    properties: {
+                        icon: iconForVenue(venue.events),
+                        html: popupForVenue(venue.events)
                     }
-                }
-            }
-            
+                });
+                count += venue.events.length;
+            });
+            syncEventFeatures();
+
             const alertBox = document.getElementById('noEventsAlert');
+            const alertTitle = document.getElementById('alertTitle');
             const alertPrefix = document.getElementById('alertPrefix');
             const nextLink = document.getElementById('nextEventLink');
 
             if (count === 0) {
-                const next = findNextDate(selDate);
+                alertTitle.classList.remove('hidden');
+                alertTitle.textContent = isMonth ? ('No events in ' + monthLabel(selMonth) + '.') : 'No events today.';
+                const next = findNextDate(isMonth ? lastDayOfMonth(selMonth) : selDate);
                 if (next) {
                     alertPrefix.textContent = "Next event is on ";
                     nextLink.style.display = "inline";
-                    nextLink.textContent = next;
+                    nextLink.textContent = isMonth ? monthLabel(next.slice(0, 7)) : next;
                     nextLink.setAttribute('data-date', next);
                 } else {
                     alertPrefix.textContent = "There are no planned events at this time.";
@@ -709,35 +860,147 @@
             }
         }
 
-        // 6. Event Listeners
+        // 7. Day / Month view switching
+        //
+        // The month dropdown spans every month the feed covers (plus the current
+        // one), labelled with how many events survive the active filters, so the
+        // switcher doubles as a "where are the events" overview.
+        let monthOptionKeys = [];
+
+        function buildMonthOptions() {
+            const select = document.getElementById('monthPicker');
+
+            const counts = {};
+            visibleEvents().forEach(info => { counts[info.month] = (counts[info.month] || 0) + 1; });
+
+            const withEvents = Object.keys(counts).sort();
+            const current = getLocalMonthString();
+            let first = withEvents.length ? withEvents[0] : current;
+            let last = withEvents.length ? withEvents[withEvents.length - 1] : current;
+            // Always keep today's month and whatever is selected reachable.
+            [current, selectedMonth].forEach(key => {
+                if (key < first) first = key;
+                if (key > last) last = key;
+            });
+
+            monthOptionKeys = [];
+            for (let key = first; key <= last && monthOptionKeys.length < 240; key = addMonths(key, 1)) {
+                monthOptionKeys.push(key);
+            }
+
+            select.innerHTML = '';
+            monthOptionKeys.forEach(key => {
+                const option = document.createElement('option');
+                option.value = key;
+                option.textContent = monthLabel(key) + (counts[key] ? ' (' + counts[key] + ')' : '');
+                select.appendChild(option);
+            });
+            select.value = selectedMonth;
+
+            const index = monthOptionKeys.indexOf(selectedMonth);
+            document.getElementById('prevMonthBtn').disabled = index <= 0;
+            document.getElementById('nextMonthBtn').disabled = index === -1 || index >= monthOptionKeys.length - 1;
+        }
+
+        function setSelectedMonth(key) {
+            selectedMonth = key;
+            buildMonthOptions();
+            renderEvents();
+        }
+
+        function stepMonth(delta) {
+            const index = monthOptionKeys.indexOf(selectedMonth);
+            const next = index === -1 ? addMonths(selectedMonth, delta) : monthOptionKeys[index + delta];
+            if (next) setSelectedMonth(next);
+        }
+
+        function setSegmentState(btn, active) {
+            btn.setAttribute('aria-pressed', active ? 'true' : 'false');
+            btn.classList.toggle('bg-blue-600', active);
+            btn.classList.toggle('text-white', active);
+            btn.classList.toggle('shadow', active);
+            btn.classList.toggle('text-gray-400', !active);
+            btn.classList.toggle('hover:text-white', !active);
+        }
+
+        function updateViewModeUI() {
+            const isMonth = viewMode === 'month';
+            document.getElementById('dayControls').classList.toggle('hidden', isMonth);
+            document.getElementById('monthControls').classList.toggle('hidden', !isMonth);
+            setSegmentState(document.getElementById('viewDayBtn'), !isMonth);
+            setSegmentState(document.getElementById('viewMonthBtn'), isMonth);
+
+            document.getElementById('rangeLabelMobile').textContent = isMonth ? 'Select Month' : 'Select Date';
+            document.getElementById('rangeLabelDesktop').textContent = isMonth ? 'Select Month' : 'Select Date';
+            document.getElementById('todayBtnMobile').textContent = isMonth ? 'This Month' : 'Today';
+            document.getElementById('todayBtnDesktop').textContent = isMonth ? 'This Month' : 'Today';
+        }
+
+        function setViewMode(mode) {
+            viewMode = mode === 'month' ? 'month' : 'day';
+            localStorage.setItem('pref_viewMode', viewMode);
+
+            const datePicker = document.getElementById('datePicker');
+            if (viewMode === 'month') {
+                // Carry the day picker's month across so switching never jumps.
+                selectedMonth = (datePicker.value || getLocalDateString()).slice(0, 7);
+                buildMonthOptions();
+            } else if (datePicker.value.slice(0, 7) !== selectedMonth) {
+                const today = getLocalDateString();
+                datePicker.value = today.slice(0, 7) === selectedMonth ? today : selectedMonth + '-01';
+            }
+
+            updateViewModeUI();
+            renderEvents();
+        }
+
+        document.getElementById('viewDayBtn').addEventListener('click', () => setViewMode('day'));
+        document.getElementById('viewMonthBtn').addEventListener('click', () => setViewMode('month'));
+        document.getElementById('monthPicker').addEventListener('change', function() { setSelectedMonth(this.value); });
+        document.getElementById('prevMonthBtn').addEventListener('click', () => stepMonth(-1));
+        document.getElementById('nextMonthBtn').addEventListener('click', () => stepMonth(1));
+
+        // 8. Event Listeners
         function setDateToToday() {
-            document.getElementById('datePicker').value = getLocalDateString();
+            if (viewMode === 'month') {
+                selectedMonth = getLocalMonthString();
+                buildMonthOptions();
+            } else {
+                document.getElementById('datePicker').value = getLocalDateString();
+            }
             document.getElementById('noEventsAlert').classList.add('hidden');
-            renderEventsForDate();
+            renderEvents();
         }
         document.getElementById('todayBtnMobile').addEventListener('click', setDateToToday);
         if (document.getElementById('todayBtnDesktop')) {
             document.getElementById('todayBtnDesktop').addEventListener('click', setDateToToday);
         }
 
-        document.getElementById('datePicker').addEventListener('change', renderEventsForDate);
-        document.getElementById('prevDayBtn').addEventListener('click', () => { document.getElementById('datePicker').stepDown(); renderEventsForDate(); });
-        document.getElementById('nextDayBtn').addEventListener('click', () => { document.getElementById('datePicker').stepUp(); renderEventsForDate(); });
+        document.getElementById('datePicker').addEventListener('change', renderEvents);
+        document.getElementById('prevDayBtn').addEventListener('click', () => { document.getElementById('datePicker').stepDown(); renderEvents(); });
+        document.getElementById('nextDayBtn').addEventListener('click', () => { document.getElementById('datePicker').stepUp(); renderEvents(); });
         document.getElementById('closeAlertBtn').addEventListener('click', () => document.getElementById('noEventsAlert').classList.add('hidden'));
 
         document.getElementById('nextEventLink').addEventListener('click', function(e) {
             e.preventDefault();
             const d = this.getAttribute('data-date');
             if (d) {
-                document.getElementById('datePicker').value = d;
-                renderEventsForDate();
+                if (viewMode === 'month') {
+                    setSelectedMonth(d.slice(0, 7));
+                } else {
+                    document.getElementById('datePicker').value = d;
+                    renderEvents();
+                }
             } else {
                 // No date attached means this is the "Retry" action after a load failure.
                 fetchPokemonEvents();
             }
         });
 
-        // 7. Home Base Feature
+        updateViewModeUI();
+        buildMonthOptions();
+
+        // 9. Home Base Feature
         var hMarker = null;
 
         function setH(c, a) {
@@ -772,7 +1035,7 @@
         var sA = localStorage.getItem('pokemonHomeAddress');
         if (sC) mapReady.then(() => setH(JSON.parse(sC), sA));
 
-        // 8. Filters Memory
+        // 10. Filters Memory
         const ids = [
             'filterTcgChallenge', 'filterTcgCup', 'filterTcgPrerelease',
             'filterVgcChallenge', 'filterVgcCup',
@@ -782,7 +1045,11 @@
         ids.forEach(id => {
             const el = document.getElementById(id);
             if (localStorage.getItem('pref_' + id) === 'false') el.checked = false;
-            el.addEventListener('change', () => { localStorage.setItem('pref_' + id, el.checked); renderEventsForDate(); });
+            el.addEventListener('change', () => {
+                localStorage.setItem('pref_' + id, el.checked);
+                buildMonthOptions(); // per-month counts follow the active filters
+                renderEvents();
+            });
         });
 
         // Start!

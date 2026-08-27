@@ -435,12 +435,56 @@
             "8851 MACON HWY, ATHENS, GA 30606": [33.8732, -83.4243],
             "66 BULLSBORO DR, NEWNAN, GA 30263": [33.3855, -84.7830],
             "108 S COMMERCE ST, HINESVILLE, GA 31313": [31.8467, -81.5966],
-            "3895 CHEROKEE ST NW STE 610, KENNESAW, GA 30144": [34.0266, -84.6154]
+            "3895 CHEROKEE ST NW STE 610, KENNESAW, GA 30144": [34.0266, -84.6154],
+
+            // Nominatim returns nothing for any of these: the suite/unit token
+            // ("A120", "STE 13", "#240", "C04B") makes the whole lookup fail.
+            // Resolved by geocoding the same address without that token.
+            "5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328": [33.9167, -84.3815],
+            "4296 OLD SUWANEE RD STE 13, BUFORD, GA 30518": [34.0845, -84.0286],
+            "5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127": [33.8775, -84.7111],
+            "609 N CHURCH ST B, THOMASTON, GA 30286": [32.8966, -84.3280],
+            "10820 ABBOTTS BRIDGE RD #240, DULUTH, GA 30097": [34.0258, -84.1660],
+            "1210 E JACKSON ST STE E, THOMASVILLE, GA 31792": [30.8491, -83.9633],
+            "2752 E PONCE DE LEON AVE B, DECATUR, GA 30030": [33.7758, -84.2871],
+            "965 DULUTH HWY STE 102, LAWRENCEVILLE, GA 30043": [33.9674, -84.0171],
+            "144 MALL BLVD C04B, BRUNSWICK, GA 31525": [31.2171, -81.4900],
+
+            // Same venue as the "3334 STONE MOUNTAIN HWY" entries above (US-78
+            // *is* Stone Mountain Hwy) and same as "3650 SATELLITE BLVD" —
+            // reusing their coordinates so one store stays one pin rather than
+            // splitting into two under the venue grouping.
+            "3334 US-78 B, SNELLVILLE, GA 30078": [33.8290, -84.0200],
+            "3650 SATELLITE BLVD B, DULUTH, GA 30096": [33.9550, -84.1470],
+
+            // Point Bluff Pkwy does not exist in OpenStreetMap yet, so this is
+            // the Harlem town centre, not the venue. The popup still links to
+            // the real address on Google Maps; tighten if you know the spot.
+            "710 POINT BLUFF PARKWAY STE 1, HARLEM, GA 30814": [33.4146, -82.3126]
         };
 
         function normalizeAddress(addr) {
             let cleanAddr = addr.toUpperCase().split(', ,')[0];
             return cleanAddr.replace(/,\s*USA?$/, '').trim();
+        }
+
+        // Nominatim fails outright on a street line carrying a suite or unit
+        // ("5920 ROSWELL RD A120" finds nothing, "5920 ROSWELL RD" is fine),
+        // which silently dropped a quarter of the feed's events off the map.
+        // Returns null when there is no suite to strip, so the caller only
+        // spends a second retrying when it might actually help.
+        function withoutSuite(cleanAddr) {
+            const parts = cleanAddr.split(',');
+            const street = parts[0]
+                .replace(/\s+(STE|SUITE|UNIT|APT|BLDG|RM)\.?\s*[\w-]+$/, '')
+                .replace(/\s+#\s*[\w-]+$/, '')
+                // Requires a leading letter (A120, C04B) so a route number
+                // is never mistaken for a unit: "265 HWY 53" must stay whole.
+                .replace(/\s+[A-Z]{1,2}\d{1,4}[A-Z]?$/, '')
+                .replace(/\s+[A-Z]$/, '')
+                .trim();
+            if (!street || street === parts[0].trim()) return null;
+            return [street].concat(parts.slice(1)).join(',').trim();
         }
 
         // Same lookup as getCoordinates minus the network call, so a render can
@@ -464,24 +508,35 @@
             let cache = JSON.parse(localStorage.getItem('pokemonGeoCache')) || {};
             
             console.log("Asking internet for clean address: " + cleanAddr);
-            
-            try {
-                const response = await fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(cleanAddr) + '&limit=1');
-                const data = await response.json();
-                
-                if (data && data.length > 0) {
-                    const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
-                    cache[cleanAddr] = coords;
-                    localStorage.setItem('pokemonGeoCache', JSON.stringify(cache));
-                    await sleep(1100); 
-                    return coords;
-                } else {
-                    console.warn("Nominatim couldn't find: " + cleanAddr);
-                    console.warn("Original string to add to Manual Override: " + addr);
+
+            // Try the address as written, then again without any suite/unit.
+            const attempts = [cleanAddr];
+            const bare = withoutSuite(cleanAddr);
+            if (bare) attempts.push(bare);
+
+            for (let i = 0; i < attempts.length; i++) {
+                try {
+                    const response = await fetch('https://nominatim.openstreetmap.org/search?format=json&q=' + encodeURIComponent(attempts[i]) + '&limit=1');
+                    const data = await response.json();
+                    await sleep(1100);
+
+                    if (data && data.length > 0) {
+                        const coords = [parseFloat(data[0].lat), parseFloat(data[0].lon)];
+                        // Cache under the address we were asked for, so the
+                        // retry only ever happens once per venue.
+                        cache[cleanAddr] = coords;
+                        localStorage.setItem('pokemonGeoCache', JSON.stringify(cache));
+                        if (i > 0) console.log("Matched without suite: " + attempts[i]);
+                        return coords;
+                    }
+                } catch (e) {
+                    console.error("Geocoding error: ", e);
+                    return null;
                 }
-            } catch (e) { 
-                console.error("Geocoding error: ", e); 
             }
+
+            console.warn("Nominatim couldn't find: " + cleanAddr);
+            console.warn("Original string to add to Manual Override: " + addr);
             return null;
         }
 

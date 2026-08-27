@@ -135,6 +135,17 @@ via the `manualOverrides` table near the top of the script in
 `index.html` — the browser console logs the exact string to add when a
 lookup fails.
 
+**Suites break Nominatim.** A street line carrying a unit — `5920
+ROSWELL RD A120`, `144 MALL BLVD C04B`, `4296 OLD SUWANEE RD STE 13` —
+returns *no result at all*, not an approximate one. This had silently
+dropped 27 of the feed's 112 events off the map. So a failed lookup is
+now retried once with the unit stripped (`withoutSuite`), and the venues
+that were already affected are pinned explicitly in `manualOverrides`.
+
+The retry only strips a unit that starts with a letter (`A120`, `C04B`)
+or is introduced by `STE`/`SUITE`/`#`, so a route number survives:
+`265 HWY 53` must not become `265 HWY`.
+
 ## Local development
 
 No build step. Serve the folder and open it:

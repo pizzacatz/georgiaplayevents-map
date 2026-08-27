@@ -26,7 +26,7 @@ pokedata.ovh ICS feed          Georgia Play! Google Calendars (public ICS)
    index.html — loads ./events.ics, geocodes locations, renders pins
 ```
 
-- **`index.html`** is the whole site: Leaflet map, filters, and the
+- **`index.html`** is the whole site: MapLibre GL map, filters, and the
   ICS-parsing/rendering logic. It loads `events.ics` same-origin first;
   if that's missing or invalid it falls back to fetching pokedata live
   through public CORS proxies.
@@ -39,6 +39,26 @@ pokedata.ovh ICS feed          Georgia Play! Google Calendars (public ICS)
   `NN-NN-NNNNNN` in `play-pokemon-tournaments/` URLs) and replaces only
   each matched event's `SUMMARY`. Locations, times, descriptions, and
   URLs stay pokedata's, so geocoding and filters are unaffected.
+
+## Basemap
+
+The map is [MapLibre GL JS](https://maplibre.org/) rendering CARTO's
+**Dark Matter** vector basemap. Event pins live in a single clustered
+GeoJSON source; the pins themselves are inline SVG, so the map depends
+on no third-party image host to draw its own markers.
+
+The `CARTO_KEY` near the top of the map code is a **public, client-side
+basemap token**. This is a static site with no server and no build step,
+so anything the browser needs ships in the page source by design —
+the key is protected by the **domain allowlist on the CARTO account**,
+not by secrecy. Keep that allowlist restricted to `georgiaplayevents.com`.
+
+CARTO's TileJSON returns tile URLs without the key attached, so a key on
+the style URL alone would only ever tag that one request. `transformRequest`
+stamps it onto every `cartocdn.com` request instead, which keeps usage
+attributed to the account and keeps the map working if CARTO extends its
+key requirement to vector tiles (it already enforces one on raster).
+The free tier covers 5M tile requests per calendar month.
 
 ## Event names come from the Google Calendars
 

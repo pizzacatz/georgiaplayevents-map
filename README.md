@@ -69,10 +69,18 @@ months is instant.
 ## Basemap
 
 The map is [MapLibre GL JS](https://maplibre.org/) rendering CARTO's
-**Dark Matter** vector basemap. Event pins live in a single clustered
-GeoJSON source; the pins themselves are inline SVG (blue / red / green
-per game, violet for a mixed-game venue, gold for home base), so the map
-depends on no third-party image host to draw its own markers.
+**Dark Matter** vector basemap. Event pins live in a single GeoJSON
+source; the pins themselves are inline SVG (blue / red / green per game,
+violet for a mixed-game venue, gold for home base), so the map depends
+on no third-party image host to draw its own markers.
+
+Clustering is deliberately **off**. Pins do not collapse into a numbered
+circle as you zoom out — every venue keeps its own pin at every zoom
+level, so the spread of events stays visible. Metro Atlanta pins overlap
+at low zoom as a result; `icon-allow-overlap` and `icon-ignore-placement`
+keep MapLibre from dropping the ones underneath. (Events sharing a single
+venue are still one pin — that is the venue grouping described above, not
+distance-based clustering.)
 
 The `CARTO_KEY` near the top of the map code is a **public, client-side
 basemap token**. This is a static site with no server and no build step,

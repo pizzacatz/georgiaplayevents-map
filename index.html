@@ -305,8 +305,8 @@
             });
         }
 
-        // MapLibre clusters natively off a GeoJSON source, which replaces the
-        // Leaflet.markercluster layer. Features are rebuilt on every render.
+        // Venue pins live in one GeoJSON source, rebuilt on every render.
+        // This replaced the Leaflet.markercluster layer.
         const EVENTS_SOURCE = 'events';
         let eventFeatures = [];
 
@@ -325,51 +325,27 @@
                     loadPin('pin-violet', PIN_COLORS.violet)
                 ]);
 
+                // Clustering is deliberately off: pins collapsing into a
+                // numbered circle as you zoom out hid where events actually
+                // are. Every venue keeps its own pin at every zoom level.
                 map.addSource(EVENTS_SOURCE, {
                     type: 'geojson',
-                    data: { type: 'FeatureCollection', features: [] },
-                    cluster: true,
-                    clusterMaxZoom: 13,
-                    clusterRadius: 45
-                });
-
-                map.addLayer({
-                    id: 'clusters',
-                    type: 'circle',
-                    source: EVENTS_SOURCE,
-                    filter: ['has', 'point_count'],
-                    paint: {
-                        'circle-color': '#2563eb',
-                        'circle-opacity': 0.9,
-                        'circle-stroke-width': 4,
-                        'circle-stroke-color': 'rgba(37, 99, 235, 0.3)',
-                        'circle-radius': ['step', ['get', 'point_count'], 15, 5, 20, 15, 26]
-                    }
-                });
-
-                map.addLayer({
-                    id: 'cluster-count',
-                    type: 'symbol',
-                    source: EVENTS_SOURCE,
-                    filter: ['has', 'point_count'],
-                    layout: {
-                        'text-field': ['get', 'point_count_abbreviated'],
-                        'text-font': ['Open Sans Bold'],
-                        'text-size': 13
-                    },
-                    paint: { 'text-color': '#ffffff' }
+                    data: { type: 'FeatureCollection', features: [] }
                 });
 
                 map.addLayer({
                     id: 'event-points',
                     type: 'symbol',
                     source: EVENTS_SOURCE,
-                    filter: ['!', ['has', 'point_count']],
                     layout: {
                         'icon-image': ['get', 'icon'],
                         'icon-size': 0.5,
                         'icon-anchor': 'bottom',
-                        'icon-allow-overlap': true
+                        // Without clustering, pins in metro Atlanta overlap at
+                        // low zoom. Draw them all anyway rather than letting
+                        // MapLibre silently drop the ones underneath.
+                        'icon-allow-overlap': true,
+                        'icon-ignore-placement': true
                     }
                 });
 
@@ -381,17 +357,8 @@
                         .addTo(map);
                 });
 
-                map.on('click', 'clusters', async function (e) {
-                    const f = e.features[0];
-                    const zoom = await map.getSource(EVENTS_SOURCE)
-                        .getClusterExpansionZoom(f.properties.cluster_id);
-                    map.easeTo({ center: f.geometry.coordinates, zoom: zoom });
-                });
-
-                ['event-points', 'clusters'].forEach(function (id) {
-                    map.on('mouseenter', id, function () { map.getCanvas().style.cursor = 'pointer'; });
-                    map.on('mouseleave', id, function () { map.getCanvas().style.cursor = ''; });
-                });
+                map.on('mouseenter', 'event-points', function () { map.getCanvas().style.cursor = 'pointer'; });
+                map.on('mouseleave', 'event-points', function () { map.getCanvas().style.cursor = ''; });
 
                 resolve();
             });

@@ -669,6 +669,18 @@
             const cleanTitleUp = (innerText || event.summary || "").toUpperCase();
 
             const start = event.startDate.toJSDate();
+            // The feed always carries DTEND (4-hour blocks); fall back to two
+            // hours only if a future feed ever drops it, so a calendar entry
+            // never ends up zero-length.
+            const end = event.endDate ? event.endDate.toJSDate()
+                                      : new Date(start.getTime() + 2 * 60 * 60 * 1000);
+
+            // Stable per-event key for the calendar buttons. The pokemon.com
+            // tournament ID is the same join key merge_events.py uses, so it
+            // survives a feed refresh where an array index would not.
+            const idMatch = eventUrl.match(/(\d{2}-\d{2}-\d{6})/);
+            const key = idMatch ? idMatch[1]
+                               : (vevent.getFirstPropertyValue('uid') || '').toString() || ('idx-' + globalEventsList.indexOf(vevent));
 
             // Marker colour follows the game, matching the filter headings.
             let game = 'tcg';
@@ -683,6 +695,8 @@
                 location: event.location || "",
                 url: eventUrl,
                 start: start,
+                end: end,
+                key: key,
                 dateStr: toDateStr(start),
                 month: toDateStr(start).slice(0, 7),
                 game: game,
@@ -750,6 +764,140 @@
             return null;
         }
 
+        // 5b. Add to calendar
+        //
+        // Two paths per event, because neither covers everyone: Google ignores
+        // a downloaded .ics on mobile web, and Apple/Outlook ignore the Google
+        // template URL.
+        //
+        // Both emit UTC. The feed stamps every time with
+        // TZID=America/Kentucky/Monticello and ships no VTIMEZONE block to
+        // define it — a TZID with no definition is malformed, and clients that
+        // do not recognise it may treat the time as floating and drop the event
+        // at 11:30 in whatever zone the user happens to be in. ICAL.js resolves
+        // the zone correctly here (it is US Eastern today, matching Georgia), so
+        // converting to UTC sidesteps the whole problem.
+        const SITE_URL = 'https://map.georgiaplayevents.com/';
+
+        // Every event currently on the map, by info.key, so a popup button can
+        // find its event without closures — popup HTML is injected as a string.
+        const calendarIndex = new Map();
+
+        function utcStamp(d) {
+            return d.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
+        }
+
+        function cleanVenue(location) {
+            return location.replace(/,\s*USA?.*$/i, '').trim();
+        }
+
+        function calendarDetails(info) {
+            const lines = [];
+            if (info.url) lines.push('Official page: ' + info.url);
+            lines.push('Via GA Play! Events Map — ' + SITE_URL);
+            return lines.join('\n');
+        }
+
+        function googleCalendarUrl(info) {
+            const params = new URLSearchParams({
+                action: 'TEMPLATE',
+                text: info.title,
+                dates: utcStamp(info.start) + '/' + utcStamp(info.end),
+                location: cleanVenue(info.location),
+                details: calendarDetails(info)
+            });
+            return 'https://calendar.google.com/calendar/render?' + params;
+        }
+
+        function icsEscape(s) {
+            return String(s).replace(/\\/g, '\\\\').replace(/;/g, '\\;')
+                .replace(/,/g, '\\,').replace(/\r?\n/g, '\\n');
+        }
+
+        // RFC 5545 caps a content line at 75 octets; longer lines must be
+        // folded onto continuation lines beginning with a space. Our
+        // DESCRIPTION runs ~180 octets, and strict parsers reject or truncate
+        // an unfolded line. Fold on octet boundaries without splitting a
+        // multi-byte character (the em dash in the credit line is 3 bytes).
+        function icsFold(line) {
+            const bytes = new TextEncoder().encode(line);
+            if (bytes.length <= 75) return line;
+            const decoder = new TextDecoder();
+            const out = [];
+            let start = 0;
+            let limit = 75;
+            while (start < bytes.length) {
+                let end = Math.min(start + limit, bytes.length);
+                // 0b10xxxxxx is a UTF-8 continuation byte: never cut there.
+                while (end > start + 1 && end < bytes.length && (bytes[end] & 0xC0) === 0x80) end--;
+                out.push(decoder.decode(bytes.slice(start, end)));
+                start = end;
+                limit = 74;  // continuation lines spend one octet on the space
+            }
+            return out.join('\r\n ');
+        }
+
+        function icsFor(info) {
+            const lines = [
+                'BEGIN:VCALENDAR',
+                'VERSION:2.0',
+                'PRODID:-//georgiaplayevents-map//EN',
+                'CALSCALE:GREGORIAN',
+                'BEGIN:VEVENT',
+                'UID:' + info.key + '@georgiaplayevents-map',
+                'DTSTAMP:' + utcStamp(new Date()),
+                'DTSTART:' + utcStamp(info.start),
+                'DTEND:' + utcStamp(info.end),
+                'SUMMARY:' + icsEscape(info.title),
+                'LOCATION:' + icsEscape(cleanVenue(info.location)),
+                'DESCRIPTION:' + icsEscape(calendarDetails(info))
+            ];
+            if (info.url) lines.push('URL:' + info.url);
+            lines.push('END:VEVENT', 'END:VCALENDAR');
+            return lines.map(icsFold).join('\r\n') + '\r\n';
+        }
+
+        function downloadIcs(info) {
+            const blob = new Blob([icsFor(info)], { type: 'text/calendar;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = (info.key || 'event') + '.ics';
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+            // Revoke late: Safari can still be reading the blob when the
+            // synthetic click returns.
+            setTimeout(function () { URL.revokeObjectURL(url); }, 10000);
+        }
+
+        // Popup markup is a string, so the .ics button carries a data-cal-key
+        // rather than a closure and one delegated listener services every popup.
+        //
+        // Google is a plain anchor, not a button calling window.open: a popup
+        // blocker can swallow window.open, while a target="_blank" anchor is
+        // never blocked. It also means the Google path still works if the
+        // delegated listener ever fails to bind.
+        function calendarButtons(info, compact) {
+            const size = compact ? '10px' : '11px';
+            const pad = compact ? '3px 6px' : '5px 8px';
+            const base = 'display: inline-block; border: 1px solid #d1d5db; background: #f9fafb; '
+                + 'color: #374151; border-radius: 4px; cursor: pointer; font-weight: 600; '
+                + 'font-family: inherit; text-decoration: none; line-height: normal; '
+                + 'font-size: ' + size + '; padding: ' + pad + '; margin: 6px 4px 0 0;';
+            return '<a href="' + escapeHtml(googleCalendarUrl(info)) + '" target="_blank" rel="noopener noreferrer" style="' + base + '">📅 Google</a>'
+                 + '<button type="button" data-cal-key="' + escapeHtml(info.key) + '" style="' + base + '">⬇ .ics</button>';
+        }
+
+        document.addEventListener('click', function (e) {
+            const btn = e.target.closest ? e.target.closest('[data-cal-key]') : null;
+            if (!btn) return;
+            const info = calendarIndex.get(btn.getAttribute('data-cal-key'));
+            if (!info) return;
+            e.preventDefault();
+            downloadIcs(info);
+        });
+
         // 6. Rendering
         //
         // Day view pins one date; month view pins a whole "YYYY-MM". Both share
@@ -774,6 +922,7 @@
                 if (info.url) {
                     html += '<a href="' + escapeHtml(info.url) + '" target="_blank" style="display: block; text-align: center; background: #2563eb; color: white; text-decoration: none; padding: 6px; border-radius: 4px; font-size: 12px; font-weight: bold;">View Official Page</a>';
                 }
+                html += '<div>' + calendarButtons(info, false) + '</div>';
                 return html + '</div>';
             }
 
@@ -791,8 +940,9 @@
                     escapeHtml(info.title) + '</div>' +
                     '<div style="font-size: 11px; color: #374151; margin-top: 3px;">📅 ' + info.start.toLocaleDateString() + ' at ' + timeStr + '</div>';
                 if (info.url) {
-                    html += '<a href="' + escapeHtml(info.url) + '" target="_blank" rel="noopener noreferrer" style="font-size: 11px; color: #2563eb; text-decoration: underline; font-weight: 600;">View Official Page</a>';
+                    html += '<div><a href="' + escapeHtml(info.url) + '" target="_blank" rel="noopener noreferrer" style="font-size: 11px; color: #2563eb; text-decoration: underline; font-weight: 600;">View Official Page</a></div>';
                 }
+                html += calendarButtons(info, true);
                 html += '</div>';
             }
 
@@ -844,8 +994,10 @@
             }
 
             eventFeatures = [];
+            calendarIndex.clear();
             let count = 0;
             venues.forEach(venue => {
+                venue.events.forEach(info => calendarIndex.set(info.key, info));
                 eventFeatures.push({
                     type: 'Feature',
                     geometry: { type: 'Point', coordinates: [venue.coords[1], venue.coords[0]] },

@@ -66,6 +66,34 @@ keeps showing the previous pins and a "Locating N venues…" banner until
 they all resolve. After that the addresses are cached, so switching
 months is instant.
 
+## Add to calendar
+
+Every event in a popup carries two buttons, because neither covers
+everyone: Google ignores a downloaded `.ics` on mobile web, and
+Apple/Outlook ignore the Google template URL.
+
+- **📅 Google** is a plain `<a target="_blank">` to a
+  `calendar.google.com/calendar/render?action=TEMPLATE` URL — no API, no
+  auth. It is an anchor rather than a button calling `window.open` so a
+  popup blocker cannot swallow it.
+- **⬇ .ics** builds the file client-side and downloads it via a Blob.
+
+Grouped venue popups put a pair on **every row**, keyed by the
+pokemon.com tournament ID (the same join key `merge_events.py` uses), so
+the right event is exported from a venue hosting several.
+
+**Both emit UTC**, deliberately. The feed stamps every time with
+`TZID=America/Kentucky/Monticello` and ships **no `VTIMEZONE` block** to
+define it. A `TZID` with no definition is malformed under RFC 5545, and
+clients that do not recognise it may treat the time as floating — landing
+the event at 11:30 in whatever zone the user happens to be in. ICAL.js
+resolves the zone correctly (it is US Eastern today, which matches
+Georgia), so converting to UTC sidesteps it. Do not "simplify" this by
+re-serialising the upstream `VEVENT`.
+
+Generated lines are folded at 75 octets per RFC 5545 (`icsFold`); the
+`DESCRIPTION` runs ~180 octets unfolded and strict parsers reject it.
+
 ## Basemap
 
 The map is [MapLibre GL JS](https://maplibre.org/) rendering CARTO's

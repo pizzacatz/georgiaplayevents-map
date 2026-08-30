@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:5f2dca95-eadd-49f1-9f10-86994de03325
-DTSTAMP:20260827T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260827T180000
-DTEND;TZID=America/Kentucky/Monticello:20260827T220000
-SUMMARY:TCG  Worlds Celebration @ KILLERFINDS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-011983/">League Challenge @ KILLERFINDS</a>
-LOCATION:4215 JIMMY LEE SMITH PKWY, HIRAM, GA 30141, US, , Indian Lake/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-08-011983/
-END:VEVENT
-BEGIN:VEVENT
 UID:837184b2-bd41-47b3-a1f0-8b22101d7adc
 DTSTAMP:20260829T140000
 DTSTART;TZID=America/Kentucky/Monticello:20260829T140000
@@ -510,6 +500,16 @@ SUMMARY:TCG Challenge @ PRIME TIME GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006002/">League Challenge @ PRIME TIME GAMING</a>
 LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006002/
+END:VEVENT
+BEGIN:VEVENT
+UID:eac68d99-7db3-4e4d-bc39-82337aa0950f
+DTSTAMP:20260919T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260919T140000
+DTEND;TZID=America/Kentucky/Monticello:20260919T180000
+SUMMARY:TCG Challenge @ ARENA GAMES LLC
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007530/">League Challenge @ ARENA GAMES LLC</a>
+LOCATION:783 S MAIN ST UNIT 6, CLEVELAND, GA 30528, USA, , Cleveland/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007530/
 END:VEVENT
 BEGIN:VEVENT
 UID:fdf02c2e-4101-4beb-8930-efc8d9f82944

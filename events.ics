@@ -402,6 +402,36 @@ LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-004853/
 END:VEVENT
 BEGIN:VEVENT
+UID:65cf2ff2-1a9a-4221-acae-be0200a2cc36
+DTSTAMP:20260913T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260913T140000
+DTEND;TZID=America/Kentucky/Monticello:20260913T180000
+SUMMARY:TCG Challenge @ DRAGON STAR HOBBIES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-008066/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-008066/
+END:VEVENT
+BEGIN:VEVENT
+UID:a6303881-9800-48bc-80f3-8bc9aaf5ba04
+DTSTAMP:20260913T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260913T120000
+DTEND;TZID=America/Kentucky/Monticello:20260913T160000
+SUMMARY:VGC Challenge @ DRAGON STAR HOBBIES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-008059/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-008059/
+END:VEVENT
+BEGIN:VEVENT
+UID:a961f3b6-79d2-4957-a4e9-006bdb2a5266
+DTSTAMP:20260913T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260913T120000
+DTEND;TZID=America/Kentucky/Monticello:20260913T160000
+SUMMARY:TCG Cup @ LEVEL UP ATHENS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007816/">League Cup @ LEVEL UP ATHENS</a>
+LOCATION:8851 MACON HWY, ATHENS, GA 30606, US, , Athens/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007816/
+END:VEVENT
+BEGIN:VEVENT
 UID:de836815-52fe-4e32-b044-44a5d4c30818
 DTSTAMP:20260914T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260914T183000
@@ -620,6 +650,16 @@ SUMMARY:TCG Cup @ THE COOL PLACE ALBANY
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007186/">League Cup @ THE COOL PLACE ALBANY</a>
 LOCATION:2601 DAWSON RD D23, ALBANY, GA 31707, USA, , Albany/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007186/
+END:VEVENT
+BEGIN:VEVENT
+UID:d3e9ab2e-7761-470e-a66b-e745eac5c32a
+DTSTAMP:20260927T140000
+DTSTART;TZID=America/Kentucky/Monticello:20260927T140000
+DTEND;TZID=America/Kentucky/Monticello:20260927T180000
+SUMMARY:TCG Challenge @ LEVEL UP ATHENS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007827/">League Challenge @ LEVEL UP ATHENS</a>
+LOCATION:8851 MACON HWY, ATHENS, GA 30606, US, , Athens/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007827/
 END:VEVENT
 BEGIN:VEVENT
 UID:ff938eb7-2acb-43d4-9cc3-4fedc6b1d074
@@ -880,6 +920,16 @@ SUMMARY:TCG Challenge @ PRIME TIME GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002953/">League Challenge @ PRIME TIME GAMING</a>
 LOCATION:3076 RIVERSIDE DR, MACON, GA 31210, US, , Macon/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002953/
+END:VEVENT
+BEGIN:VEVENT
+UID:5a4353eb-8780-4f73-b794-23c8444a337b
+DTSTAMP:20261018T140000
+DTSTART;TZID=America/Kentucky/Monticello:20261018T140000
+DTEND;TZID=America/Kentucky/Monticello:20261018T180000
+SUMMARY:TCG Challenge @ LEVEL UP ATHENS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003798/">League Challenge @ LEVEL UP ATHENS</a>
+LOCATION:8851 MACON HWY, ATHENS, GA 30606, US, , Athens/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003798/
 END:VEVENT
 BEGIN:VEVENT
 UID:795de433-22c4-467a-a592-04f66bd70220
@@ -1220,6 +1270,16 @@ SUMMARY:TCG Challenge @ GALACTIC COMICS & GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001162/">League Challenge @ GALACTIC COMICS & GAMES</a>
 LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001162/
+END:VEVENT
+BEGIN:VEVENT
+UID:74b0573d-d9ea-4260-b2ac-86dfd736083a
+DTSTAMP:20261129T140000
+DTSTART;TZID=America/Kentucky/Monticello:20261129T140000
+DTEND;TZID=America/Kentucky/Monticello:20261129T180000
+SUMMARY:TCG Challenge @ LEVEL UP ATHENS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003058/">League Challenge @ LEVEL UP ATHENS</a>
+LOCATION:8851 MACON HWY, ATHENS, GA 30606, US, , Athens/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003058/
 END:VEVENT
 BEGIN:VEVENT
 UID:a3620771-b966-42db-8e13-adcc502c4ed2

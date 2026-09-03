@@ -342,6 +342,16 @@ LOCATION:8851 MACON HWY, ATHENS, GA 30606, US, , Athens/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007816/
 END:VEVENT
 BEGIN:VEVENT
+UID:f924bb26-4412-4b94-ae0d-169b3e2df361
+DTSTAMP:20260913T130000
+DTSTART;TZID=America/Kentucky/Monticello:20260913T130000
+DTEND;TZID=America/Kentucky/Monticello:20260913T170000
+SUMMARY:VGC Challenge @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-010977/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-010977/
+END:VEVENT
+BEGIN:VEVENT
 UID:de836815-52fe-4e32-b044-44a5d4c30818
 DTSTAMP:20260914T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260914T183000
@@ -622,6 +632,16 @@ LOCATION:3895 CHEROKEE ST NW #610, KENNESAW, GA 30144, USA, , Kennesaw/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-009195/
 END:VEVENT
 BEGIN:VEVENT
+UID:c3f72a03-ade4-456c-84d0-0ad06b02747e
+DTSTAMP:20260930T183000
+DTSTART;TZID=America/Kentucky/Monticello:20260930T183000
+DTEND;TZID=America/Kentucky/Monticello:20260930T223000
+SUMMARY:TCG Challenge @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-010969/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-010969/
+END:VEVENT
+BEGIN:VEVENT
 UID:10d6992c-378d-480e-bb86-cd5760bfe59c
 DTSTAMP:20261002T190000
 DTSTART;TZID=America/Kentucky/Monticello:20261002T190000
@@ -762,6 +782,16 @@ LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003941/
 END:VEVENT
 BEGIN:VEVENT
+UID:c997b385-88b3-4cae-836b-d1bd91560d3a
+DTSTAMP:20261011T150000
+DTSTART;TZID=America/Kentucky/Monticello:20261011T150000
+DTEND;TZID=America/Kentucky/Monticello:20261011T190000
+SUMMARY:VGC Cup @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004672/">League Cup @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004672/
+END:VEVENT
+BEGIN:VEVENT
 UID:da7b49ef-cc19-4de1-9f1c-adbf28066f0c
 DTSTAMP:20261011T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261011T120000
@@ -770,6 +800,16 @@ SUMMARY:TCG Challenge @ BATTLE AND BREW
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002381/">League Challenge @ BATTLE AND BREW</a>
 LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002381/
+END:VEVENT
+BEGIN:VEVENT
+UID:ed31c5dc-d8b1-4f48-a139-98c8055603d6
+DTSTAMP:20261011T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261011T130000
+DTEND;TZID=America/Kentucky/Monticello:20261011T170000
+SUMMARY:VGC Challenge @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004671/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004671/
 END:VEVENT
 BEGIN:VEVENT
 UID:93f47506-4bbb-49ae-95e6-8bf891707856
@@ -952,6 +992,16 @@ LOCATION:3650 SATELLITE BLVD, DULUTH, GA 30096, US, , Duluth/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-003939/
 END:VEVENT
 BEGIN:VEVENT
+UID:318f4ba8-4394-493f-ae15-98f6b306c262
+DTSTAMP:20261028T183000
+DTSTART;TZID=America/Kentucky/Monticello:20261028T183000
+DTEND;TZID=America/Kentucky/Monticello:20261028T223000
+SUMMARY:TCG Challenge @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004670/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004670/
+END:VEVENT
+BEGIN:VEVENT
 UID:663adb5b-0b06-4caf-8399-c18d4f9afe57
 DTSTAMP:20261031T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261031T120000
@@ -1030,6 +1080,16 @@ SUMMARY:TCG Challenge @ BATTLE AND BREW
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001908/">League Challenge @ BATTLE AND BREW</a>
 LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001908/
+END:VEVENT
+BEGIN:VEVENT
+UID:6b14d077-1fa7-43c8-baee-e9b610b51182
+DTSTAMP:20261108T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261108T130000
+DTEND;TZID=America/Kentucky/Monticello:20261108T170000
+SUMMARY:VGC Challenge @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003732/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003732/
 END:VEVENT
 BEGIN:VEVENT
 UID:e60576f1-7a3f-4ace-91d6-30e600cf2bc2
@@ -1140,6 +1200,16 @@ SUMMARY:TCG Challenge @ 1UP GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001854/">League Challenge @ 1UP GAMES</a>
 LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001854/
+END:VEVENT
+BEGIN:VEVENT
+UID:04873d19-75f9-4fe4-be8b-64e659fab29e
+DTSTAMP:20261118T183000
+DTSTART;TZID=America/Kentucky/Monticello:20261118T183000
+DTEND;TZID=America/Kentucky/Monticello:20261118T223000
+SUMMARY:TCG Challenge @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003731/">League Challenge @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003731/
 END:VEVENT
 BEGIN:VEVENT
 UID:f0c9e6c3-288d-4e90-bf49-078c686b5959

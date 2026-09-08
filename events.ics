@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:23af6c23-0bd5-4779-9c8e-7746c7f5d9c4
-DTSTAMP:20260905T140000
-DTSTART;TZID=America/Kentucky/Monticello:20260905T140000
-DTEND;TZID=America/Kentucky/Monticello:20260905T180000
-SUMMARY:TCG Challenge @ ROSE CITY TABLETOP
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-002345/">League Challenge @ ROSE CITY TABLETOP</a>
-LOCATION:1210 E JACKSON ST STE E, THOMASVILLE, GA 31792, USA, , Thomasville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-002345/
-END:VEVENT
-BEGIN:VEVENT
-UID:73ed5f0d-6b70-4a60-b075-3296eb99e5b3
-DTSTAMP:20260905T120000
-DTSTART;TZID=America/Kentucky/Monticello:20260905T120000
-DTEND;TZID=America/Kentucky/Monticello:20260905T160000
-SUMMARY:VGC Cup @ GUUBUU GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-004268/">League Cup @ GUUBUU GAMES</a>
-LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-004268/
-END:VEVENT
-BEGIN:VEVENT
-UID:94f1d17d-be88-4ec9-8745-db70c2304231
-DTSTAMP:20260905T110000
-DTSTART;TZID=America/Kentucky/Monticello:20260905T110000
-DTEND;TZID=America/Kentucky/Monticello:20260905T150000
-SUMMARY:TCG Cup @ THE WASTELAND GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001900/">League Cup @ THE WASTELAND GAMING</a>
-LOCATION:3650 SATELLITE BLVD, DULUTH, GA 30096, US, , Duluth/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001900/
-END:VEVENT
-BEGIN:VEVENT
 UID:2f6014cb-09b8-4f98-a3f5-1e0d317abf18
 DTSTAMP:20260906T110000
 DTSTART;TZID=America/Kentucky/Monticello:20260906T110000

@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:2f6014cb-09b8-4f98-a3f5-1e0d317abf18
-DTSTAMP:20260906T110000
-DTSTART;TZID=America/Kentucky/Monticello:20260906T110000
-DTEND;TZID=America/Kentucky/Monticello:20260906T150000
-SUMMARY:VGC Cup @ WIN CONDITION GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-008569/">League Cup @ WIN CONDITION GAMES</a>
-LOCATION:3895 CHEROKEE ST NW #610, KENNESAW, GA 30144, USA, , Kennesaw/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-008569/
-END:VEVENT
-BEGIN:VEVENT
-UID:b49f09bf-8488-4f66-a9d0-7f091d1eebb1
-DTSTAMP:20260906T113000
-DTSTART;TZID=America/Kentucky/Monticello:20260906T113000
-DTEND;TZID=America/Kentucky/Monticello:20260906T153000
-SUMMARY:TCG Cup @ GUUBUU GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001875/">League Cup @ GUUBUU GAMES</a>
-LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001875/
-END:VEVENT
-BEGIN:VEVENT
-UID:c6304d93-cb85-4b82-bb91-6024bc2e7cd1
-DTSTAMP:20260906T130000
-DTSTART;TZID=America/Kentucky/Monticello:20260906T130000
-DTEND;TZID=America/Kentucky/Monticello:20260906T170000
-SUMMARY:TCG Challenge @ OH PHARMACY
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-003230/">League Challenge @ OH PHARMACY</a>
-LOCATION:10820 ABBOTTS BRIDGE RD #240, DULUTH, GA 30097, USA, , Johns Creek/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-003230/
-END:VEVENT
-BEGIN:VEVENT
 UID:2fdc78b4-ad22-46ea-a1e3-ff8b0edadec3
 DTSTAMP:20260907T130000
 DTSTART;TZID=America/Kentucky/Monticello:20260907T130000

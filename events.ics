@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:1f3f2866-7eb6-46c4-aa33-e06ba6e88085
-DTSTAMP:20260909T193000
-DTSTART;TZID=America/Kentucky/Monticello:20260909T193000
-DTEND;TZID=America/Kentucky/Monticello:20260909T233000
-SUMMARY:TCG Challenge @ TEAM NET
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007239/">League Challenge @ TEAM NET</a>
-LOCATION:2250 LAKE HARBIN RD #108, MORROW, GA 30260, USA, , Woodstone/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-007239/
-END:VEVENT
-BEGIN:VEVENT
-UID:62883baf-4970-404f-a8b1-a49f21a2427e
-DTSTAMP:20260909T193000
-DTSTART;TZID=America/Kentucky/Monticello:20260909T193000
-DTEND;TZID=America/Kentucky/Monticello:20260909T233000
-SUMMARY:TCG Challenge @ DABBERS GAMING CAFE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-003378/">League Challenge @ DABBERS GAMING CAFE</a>
-LOCATION:4935 JIMMY CARTER BLVD #200, NORCROSS, GA 30093, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-003378/
-END:VEVENT
-BEGIN:VEVENT
 UID:2e5b554f-8bac-44f1-a9fe-16a9dc120901
 DTSTAMP:20260910T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260910T183000
@@ -260,6 +240,16 @@ SUMMARY:TCG Challenge @ COMICS&!
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-014281/">League Challenge @ COMICS&!</a>
 LOCATION:124 W JACKSON ST, DUBLIN, GA 31021, USA, , Dublin/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-014281/
+END:VEVENT
+BEGIN:VEVENT
+UID:70fdcd92-9a8b-4448-b911-c39b5f52467c
+DTSTAMP:20260917T183000
+DTSTART;TZID=America/Kentucky/Monticello:20260917T183000
+DTEND;TZID=America/Kentucky/Monticello:20260917T223000
+SUMMARY:TCG Challenge @ XP STORE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-017674/">League Challenge @ XP STORE</a>
+LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery Branch/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-017674/
 END:VEVENT
 BEGIN:VEVENT
 UID:cef0bbc7-1c76-4250-8853-3f3e37483089

@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:de836815-52fe-4e32-b044-44a5d4c30818
-DTSTAMP:20260914T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260914T183000
-DTEND;TZID=America/Kentucky/Monticello:20260914T223000
-SUMMARY:TCG Challenge @ SUPER GAMES\, INC.
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005108/">League Challenge @ SUPER GAMES, INC.</a>
-LOCATION:13093 GA-9, MILTON, GA 30004, US, , Milton/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005108/
-END:VEVENT
-BEGIN:VEVENT
 UID:6015bc7c-899b-46bb-a00a-56947b77cbad
 DTSTAMP:20260915T190000
 DTSTART;TZID=America/Kentucky/Monticello:20260915T190000

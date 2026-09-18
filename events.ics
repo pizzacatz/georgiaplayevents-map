@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:6015bc7c-899b-46bb-a00a-56947b77cbad
-DTSTAMP:20260915T190000
-DTSTART;TZID=America/Kentucky/Monticello:20260915T190000
-DTEND;TZID=America/Kentucky/Monticello:20260915T230000
-SUMMARY:TCG Challenge @ DABBERS SANDYSPRINGS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006296/">League Challenge @ DABBERS SANDYSPRINGS</a>
-LOCATION:8833 ROSWELL RD, SANDY SPRINGS, GA 30350, USA, , Sandy Springs/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-006296/
-END:VEVENT
-BEGIN:VEVENT
-UID:7d435e1a-b074-4ef6-b399-4774052fbb10
-DTSTAMP:20260915T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260915T180000
-DTEND;TZID=America/Kentucky/Monticello:20260915T220000
-SUMMARY:VGC Challenge @ LAKE HARTWELL COLLECTIBLES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-011354/">League Challenge @ LAKE HARTWELL COLLECTIBLES</a>
-LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-011354/
-END:VEVENT
-BEGIN:VEVENT
 UID:785b8843-853b-47b5-a9e8-87f0fc8dbf87
 DTSTAMP:20260916T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260916T183000
@@ -472,6 +452,16 @@ LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000387/
 END:VEVENT
 BEGIN:VEVENT
+UID:28652d14-8763-4ad7-84cb-f2682ee893b4
+DTSTAMP:20261003T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261003T130000
+DTEND;TZID=America/Kentucky/Monticello:20261003T170000
+SUMMARY:VGC Challenge @ THE WASTELAND GAMING
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-007153/">League Challenge @ THE WASTELAND GAMING</a>
+LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-007153/
+END:VEVENT
+BEGIN:VEVENT
 UID:6048c4ad-03d9-456c-8a79-d3398867ecd1
 DTSTAMP:20261003T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261003T120000
@@ -750,6 +740,16 @@ SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002872/">League Challenge @ SILVERSHIELD GAMING</a>
 LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002872/
+END:VEVENT
+BEGIN:VEVENT
+UID:388de5ad-9b78-4cb1-a805-dc27cff001ce
+DTSTAMP:20261017T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261017T120000
+DTEND;TZID=America/Kentucky/Monticello:20261017T160000
+SUMMARY:TCG Cup @ CARDBOARD CASTLE GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-007238/">League Cup @ CARDBOARD CASTLE GAMES</a>
+LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-007238/
 END:VEVENT
 BEGIN:VEVENT
 UID:3b538250-165e-402f-b002-dbc2e76fe8a1

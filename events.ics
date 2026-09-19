@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:785b8843-853b-47b5-a9e8-87f0fc8dbf87
-DTSTAMP:20260916T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260916T183000
-DTEND;TZID=America/Kentucky/Monticello:20260916T223000
-SUMMARY:TCG Challenge @ THE SPORTS SHACK
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005454/">League Challenge @ THE SPORTS SHACK</a>
-LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-005454/
-END:VEVENT
-BEGIN:VEVENT
-UID:f5e639d7-7e3a-409e-999a-862631f047c1
-DTSTAMP:20260916T170000
-DTSTART;TZID=America/Kentucky/Monticello:20260916T170000
-DTEND;TZID=America/Kentucky/Monticello:20260916T210000
-SUMMARY:TCG Challenge @ COMICS&!
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-014281/">League Challenge @ COMICS&!</a>
-LOCATION:124 W JACKSON ST, DUBLIN, GA 31021, USA, , Dublin/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-014281/
-END:VEVENT
-BEGIN:VEVENT
 UID:70fdcd92-9a8b-4448-b911-c39b5f52467c
 DTSTAMP:20260917T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260917T183000

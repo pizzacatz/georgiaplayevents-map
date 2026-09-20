@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:70fdcd92-9a8b-4448-b911-c39b5f52467c
-DTSTAMP:20260917T183000
-DTSTART;TZID=America/Kentucky/Monticello:20260917T183000
-DTEND;TZID=America/Kentucky/Monticello:20260917T223000
-SUMMARY:TCG Challenge @ XP STORE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-017674/">League Challenge @ XP STORE</a>
-LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery Branch/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-017674/
-END:VEVENT
-BEGIN:VEVENT
-UID:cef0bbc7-1c76-4250-8853-3f3e37483089
-DTSTAMP:20260917T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260917T180000
-DTEND;TZID=America/Kentucky/Monticello:20260917T220000
-SUMMARY:TCG Challenge @ WOLCOW GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001536/">League Challenge @ WOLCOW GAMING</a>
-LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-001536/
-END:VEVENT
-BEGIN:VEVENT
 UID:02c52662-c7e2-4904-b8b2-975509e60efa
 DTSTAMP:20260919T140000
 DTSTART;TZID=America/Kentucky/Monticello:20260919T140000
@@ -300,6 +280,16 @@ SUMMARY:TCG Cup @ 1UPGAMES ROME
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-004767/">League Cup @ 1UPGAMES ROME</a>
 LOCATION:2537 REDMOND CIR, ROME, GA 30165, USA, , Rome/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-004767/
+END:VEVENT
+BEGIN:VEVENT
+UID:0ee55e01-89df-4afd-ac17-3032b85d9c46
+DTSTAMP:20260927T120000
+DTSTART;TZID=America/Kentucky/Monticello:20260927T120000
+DTEND;TZID=America/Kentucky/Monticello:20260927T160000
+SUMMARY:TCG Challenge @ DAVE'S SPORTS CARDS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-022067/">League Challenge @ DAVE'S SPORTS CARDS</a>
+LOCATION:900 MANSELL RD STE 3, ROSWELL, GA 30076, US, , Roswell/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-022067/
 END:VEVENT
 BEGIN:VEVENT
 UID:d3e9ab2e-7761-470e-a66b-e745eac5c32a

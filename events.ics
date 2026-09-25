@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:6238275b-533d-4acc-befa-20e203f5eae8
-DTSTAMP:20260922T180000
-DTSTART;TZID=America/Kentucky/Monticello:20260922T180000
-DTEND;TZID=America/Kentucky/Monticello:20260922T220000
-SUMMARY:TCG Challenge @ LAKE HARTWELL COLLECTIBLES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-011182/">League Challenge @ LAKE HARTWELL COLLECTIBLES</a>
-LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-09-011182/
-END:VEVENT
-BEGIN:VEVENT
 UID:19ca794e-9683-40aa-9142-1ba50286e093
 DTSTAMP:20260924T183000
 DTSTART;TZID=America/Kentucky/Monticello:20260924T183000
@@ -570,6 +560,16 @@ SUMMARY:TCG Challenge @ WOLCOW GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000390/">League Challenge @ WOLCOW GAMING</a>
 LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000390/
+END:VEVENT
+BEGIN:VEVENT
+UID:2140b64d-f2eb-43b7-8c95-af4c44143a85
+DTSTAMP:20261015T183000
+DTSTART;TZID=America/Kentucky/Monticello:20261015T183000
+DTEND;TZID=America/Kentucky/Monticello:20261015T223000
+SUMMARY:TCG Challenge @ MINTED TCG - LAWRENCEVILLE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-008814/">League Challenge @ MINTED TCG - LAWRENCEVILLE</a>
+LOCATION:965 DULUTH HWY STE 102, LAWRENCEVILLE, GA 30043, USA, , Lawrenceville/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-008814/
 END:VEVENT
 BEGIN:VEVENT
 UID:3065c360-b32d-4b2f-9ef9-2cbe0d788ffe

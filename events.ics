@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:10d6992c-378d-480e-bb86-cd5760bfe59c
-DTSTAMP:20261002T190000
-DTSTART;TZID=America/Kentucky/Monticello:20261002T190000
-DTEND;TZID=America/Kentucky/Monticello:20261002T230000
-SUMMARY:TCG Challenge @ FAT PACKS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002007/">League Challenge @ FAT PACKS</a>
-LOCATION:4296 OLD SUWANEE RD STE 13, BUFORD, GA 30518, USA, , Sugar Hill/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002007/
-END:VEVENT
-BEGIN:VEVENT
 UID:00d264cd-6f5e-466f-82fd-e74b2c776c60
 DTSTAMP:20261003T100000
 DTSTART;TZID=America/Kentucky/Monticello:20261003T100000
@@ -252,16 +242,6 @@ LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002382/
 END:VEVENT
 BEGIN:VEVENT
-UID:9a13af7f-5bfb-44ff-bee9-aed91c8f0a37
-DTSTAMP:20261011T130000
-DTSTART;TZID=America/Kentucky/Monticello:20261011T130000
-DTEND;TZID=America/Kentucky/Monticello:20261011T170000
-SUMMARY:TCG Challenge @ MINTED TCG - DACULA
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014107/">League Challenge @ MINTED TCG - DACULA</a>
-LOCATION:3685 BRASELTON HWY, DACULA, GA 30019, USA, , Dacula/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014107/
-END:VEVENT
-BEGIN:VEVENT
 UID:9f7c2427-3fd6-4496-8164-dc02fc37fa05
 DTSTAMP:20261011T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261011T120000
@@ -452,6 +432,16 @@ LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County 
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-006580/
 END:VEVENT
 BEGIN:VEVENT
+UID:0d5e804f-bd8f-4b17-b883-d6f0083d85c3
+DTSTAMP:20261018T180000
+DTSTART;TZID=America/Kentucky/Monticello:20261018T180000
+DTEND;TZID=America/Kentucky/Monticello:20261018T220000
+SUMMARY:TCG Challenge @ XP STORE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020895/">League Challenge @ XP STORE</a>
+LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery Branch/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020895/
+END:VEVENT
+BEGIN:VEVENT
 UID:37df5525-fe6b-4d1b-8096-c5d62801e145
 DTSTAMP:20261018T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261018T130000
@@ -490,6 +480,16 @@ SUMMARY:TCG Challenge @ HAWK'S NEST GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-001460/">League Challenge @ HAWK'S NEST GAMING</a>
 LOCATION:6721 BELLS FERRY RD D104, WOODSTOCK, GA 30189, USA, , Cherokee County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-001460/
+END:VEVENT
+BEGIN:VEVENT
+UID:9a13af7f-5bfb-44ff-bee9-aed91c8f0a37
+DTSTAMP:20261018T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261018T130000
+DTEND;TZID=America/Kentucky/Monticello:20261018T170000
+SUMMARY:TCG Challenge @ MINTED TCG - DACULA
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014107/">League Challenge @ MINTED TCG - DACULA</a>
+LOCATION:3685 BRASELTON HWY, DACULA, GA 30019, USA, , Dacula/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014107/
 END:VEVENT
 BEGIN:VEVENT
 UID:bb37b8f3-bd87-43a5-aec0-ec06af581312
@@ -652,6 +652,16 @@ LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-011059/
 END:VEVENT
 BEGIN:VEVENT
+UID:3cb603f0-121d-47ca-8cdb-3808f63c5383
+DTSTAMP:20261024T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261024T120000
+DTEND;TZID=America/Kentucky/Monticello:20261024T160000
+SUMMARY:TCG Pre Release @ KRAVE CARDZ
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-021111/">Pre Release @ KRAVE CARDZ</a>
+LOCATION:106 REMCO SHOPS LN, RINGGOLD, GA 30736, USA, , Ringgold/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-021111/
+END:VEVENT
+BEGIN:VEVENT
 UID:41cdd888-9a30-449d-beb6-208556768001
 DTSTAMP:20261024T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261024T120000
@@ -760,6 +770,16 @@ SUMMARY:TCG Pre Release @ THE COOL PLACE ALBANY
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-016962/">Pre Release @ THE COOL PLACE ALBANY</a>
 LOCATION:2601 DAWSON RD D23, ALBANY, GA 31707, USA, , Albany/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-016962/
+END:VEVENT
+BEGIN:VEVENT
+UID:8c39d3f1-bf9a-454c-a560-1ad7663a15f8
+DTSTAMP:20261024T200000
+DTSTART;TZID=America/Kentucky/Monticello:20261024T200000
+DTEND;TZID=America/Kentucky/Monticello:20261025T000000
+SUMMARY:Delta Reign Pre-Release Event
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-021620/">Pre Release @ OH PHARMACY</a>
+LOCATION:10820 ABBOTTS BRIDGE RD #240, DULUTH, GA 30097, USA, , Johns Creek/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-021620/
 END:VEVENT
 BEGIN:VEVENT
 UID:8d6b4d78-bfb1-4645-8c34-9d455dd3bd85
@@ -990,6 +1010,16 @@ SUMMARY:TCG Pre Release @ HAWK'S NEST GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-009850/">Pre Release @ HAWK'S NEST GAMING</a>
 LOCATION:6721 BELLS FERRY RD D104, WOODSTOCK, GA 30189, USA, , Cherokee County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-009850/
+END:VEVENT
+BEGIN:VEVENT
+UID:8dfeae6e-73d6-46bb-b230-d94e261d3839
+DTSTAMP:20261025T180000
+DTSTART;TZID=America/Kentucky/Monticello:20261025T180000
+DTEND;TZID=America/Kentucky/Monticello:20261025T220000
+SUMMARY:TCG Pre Release @ XP STORE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020902/">Pre Release @ XP STORE</a>
+LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery Branch/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020902/
 END:VEVENT
 BEGIN:VEVENT
 UID:9bdb0556-7d51-41d2-a5e6-ab00a84c78f5
@@ -1536,7 +1566,7 @@ UID:9aa581a7-788e-4959-9678-0d069e18694c
 DTSTAMP:20261115T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261115T130000
 DTEND;TZID=America/Kentucky/Monticello:20261115T170000
-SUMMARY:Wasteland VGC Challenge - Nov 2026
+SUMMARY:VGC Challenge @ THE WASTELAND GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/">League Challenge @ THE WASTELAND GAMING</a>
 LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/

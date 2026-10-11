@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:ec37e5ff-095d-4e13-89db-c5cdacbf7863
-DTSTAMP:20261009T120000
-DTSTART;TZID=America/Kentucky/Monticello:20261009T120000
-DTEND;TZID=America/Kentucky/Monticello:20261009T160000
-SUMMARY:TCG Challenge @ THE RAVEN'S LOFT
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000845/">League Challenge @ THE RAVEN'S LOFT</a>
-LOCATION:507 N PATTERSON ST, VALDOSTA, GA 31601, USA, , Valdosta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000845/
-END:VEVENT
-BEGIN:VEVENT
 UID:66ed1ff3-6b22-4640-ab9d-ee2d370f69fd
 DTSTAMP:20261010T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261010T140000
@@ -110,6 +100,16 @@ SUMMARY:VGC Challenge @ DRAGON STAR HOBBIES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-006582/">League Challenge @ DRAGON STAR HOBBIES</a>
 LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-006582/
+END:VEVENT
+BEGIN:VEVENT
+UID:ec37e5ff-095d-4e13-89db-c5cdacbf7863
+DTSTAMP:20261011T150000
+DTSTART;TZID=America/Kentucky/Monticello:20261011T150000
+DTEND;TZID=America/Kentucky/Monticello:20261011T190000
+SUMMARY:TCG Challenge @ THE RAVEN'S LOFT
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000845/">League Challenge @ THE RAVEN'S LOFT</a>
+LOCATION:507 N PATTERSON ST, VALDOSTA, GA 31601, USA, , Valdosta/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000845/
 END:VEVENT
 BEGIN:VEVENT
 UID:ed31c5dc-d8b1-4f48-a139-98c8055603d6
@@ -992,6 +992,16 @@ LOCATION:8851 MACON HWY 100, ATHENS, GA 30606, US, , Oconee County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-025526/
 END:VEVENT
 BEGIN:VEVENT
+UID:1635ffeb-e70a-4f61-bad2-3ac0b0812693
+DTSTAMP:20261025T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261025T130000
+DTEND;TZID=America/Kentucky/Monticello:20261025T170000
+SUMMARY:TCG Pre Release @ KILLERFINDS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-026077/">Pre Release @ KILLERFINDS</a>
+LOCATION:4215 JIMMY LEE SMITH PKWY, HIRAM, GA 30141, US, , Indian Lake/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-026077/
+END:VEVENT
+BEGIN:VEVENT
 UID:289892e5-da52-424e-9fef-4c7263a00f49
 DTSTAMP:20261025T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261025T120000
@@ -1222,6 +1232,16 @@ LOCATION:3895 CHEROKEE ST NW #610, KENNESAW, GA 30144, USA, , Kennesaw/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-023481/
 END:VEVENT
 BEGIN:VEVENT
+UID:d555ec92-94da-4d29-8643-e79fbc3d87f2
+DTSTAMP:20261027T180000
+DTSTART;TZID=America/Kentucky/Monticello:20261027T180000
+DTEND;TZID=America/Kentucky/Monticello:20261027T220000
+SUMMARY:TCG Pre Release @ LEVEL UP GAMES - DAWSONVILLE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-027517/">Pre Release @ LEVEL UP GAMES - DAWSONVILLE</a>
+LOCATION:802 GEORGIA 400 S STE 120, DAWSONVILLE, GA 30534, USA, , Dawson County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-027517/
+END:VEVENT
+BEGIN:VEVENT
 UID:f4882435-99a0-4b72-8b5b-90909e07d8e2
 DTSTAMP:20261027T190000
 DTSTART;TZID=America/Kentucky/Monticello:20261027T190000
@@ -1340,16 +1360,6 @@ SUMMARY:TCG Pre Release @ MINTED TCG - LAWRENCEVILLE
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-017149/">Pre Release @ MINTED TCG - LAWRENCEVILLE</a>
 LOCATION:965 DULUTH HWY STE 102, LAWRENCEVILLE, GA 30043, USA, , Lawrenceville/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-017149/
-END:VEVENT
-BEGIN:VEVENT
-UID:1635ffeb-e70a-4f61-bad2-3ac0b0812693
-DTSTAMP:20261030T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261030T180000
-DTEND;TZID=America/Kentucky/Monticello:20261030T220000
-SUMMARY:TCG Pre Release @ KILLERFINDS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-026077/">Pre Release @ KILLERFINDS</a>
-LOCATION:4215 JIMMY LEE SMITH PKWY, HIRAM, GA 30141, US, , Indian Lake/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-026077/
 END:VEVENT
 BEGIN:VEVENT
 UID:169e23d2-cf59-4dc3-9160-99a4a83cd87f
@@ -1772,6 +1782,16 @@ LOCATION:2708 AIRPORT RD SUITE 1, DALTON, GA 30721, US, , Dalton/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002347/
 END:VEVENT
 BEGIN:VEVENT
+UID:9aa581a7-788e-4959-9678-0d069e18694c
+DTSTAMP:20261114T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261114T130000
+DTEND;TZID=America/Kentucky/Monticello:20261114T170000
+SUMMARY:VGC Challenge @ THE WASTELAND GAMING
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/">League Challenge @ THE WASTELAND GAMING</a>
+LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/
+END:VEVENT
+BEGIN:VEVENT
 UID:adda273a-9dbb-402f-a20f-62ae59a3ab3a
 DTSTAMP:20261114T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261114T120000
@@ -1820,16 +1840,6 @@ SUMMARY:TCG Cup @ SAVANNAH LION GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004167/">League Cup @ SAVANNAH LION GAMES</a>
 LOCATION:1108 US-80 SUITE 300, POOLER, GA 31322, US, , Pooler/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004167/
-END:VEVENT
-BEGIN:VEVENT
-UID:9aa581a7-788e-4959-9678-0d069e18694c
-DTSTAMP:20261115T130000
-DTSTART;TZID=America/Kentucky/Monticello:20261115T130000
-DTEND;TZID=America/Kentucky/Monticello:20261115T170000
-SUMMARY:VGC Challenge @ THE WASTELAND GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/">League Challenge @ THE WASTELAND GAMING</a>
-LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/
 END:VEVENT
 BEGIN:VEVENT
 UID:ff583d04-3cbd-42cc-9f54-e6cd148cedc8

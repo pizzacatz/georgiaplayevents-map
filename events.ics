@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:147fedd8-f4e7-4026-95e3-f4f590f57f28
-DTSTAMP:20261015T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261015T180000
-DTEND;TZID=America/Kentucky/Monticello:20261015T220000
-SUMMARY:TCG Challenge @ WOLCOW GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000390/">League Challenge @ WOLCOW GAMING</a>
-LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-000390/
-END:VEVENT
-BEGIN:VEVENT
-UID:2140b64d-f2eb-43b7-8c95-af4c44143a85
-DTSTAMP:20261015T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261015T183000
-DTEND;TZID=America/Kentucky/Monticello:20261015T223000
-SUMMARY:TCG Challenge @ MINTED TCG - LAWRENCEVILLE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-008814/">League Challenge @ MINTED TCG - LAWRENCEVILLE</a>
-LOCATION:965 DULUTH HWY STE 102, LAWRENCEVILLE, GA 30043, USA, , Lawrenceville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-008814/
-END:VEVENT
-BEGIN:VEVENT
-UID:3065c360-b32d-4b2f-9ef9-2cbe0d788ffe
-DTSTAMP:20261015T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261015T183000
-DTEND;TZID=America/Kentucky/Monticello:20261015T223000
-SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002872/">League Challenge @ SILVERSHIELD GAMING</a>
-LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-002872/
-END:VEVENT
-BEGIN:VEVENT
 UID:388de5ad-9b78-4cb1-a805-dc27cff001ce
 DTSTAMP:20261017T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261017T120000
@@ -460,16 +430,6 @@ SUMMARY:TCG Pre Release @ ATOMIC GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020581/">Pre Release @ ATOMIC GAMING</a>
 LOCATION:1005 BRENTWOOD PKWY 109, STOCKBRIDGE, GA 30281, US, , Stockbridge/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020581/
-END:VEVENT
-BEGIN:VEVENT
-UID:4bf04123-166e-4e61-ae30-9b802f81dbdb
-DTSTAMP:20261024T130000
-DTSTART;TZID=America/Kentucky/Monticello:20261024T130000
-DTEND;TZID=America/Kentucky/Monticello:20261024T170000
-SUMMARY:TCG Pre Release @ KAPOW COMICS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014064/">Pre Release @ KAPOW COMICS</a>
-LOCATION:540 LAKE CENTER PKWY SUITE 108, CUMMING, GA 30040, USA, , Cumming/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014064/
 END:VEVENT
 BEGIN:VEVENT
 UID:4c75ab12-c0b8-41d9-83fd-4d8b28c8c5dc
@@ -1350,6 +1310,16 @@ SUMMARY:TCG Pre Release @ LAKE HARTWELL COLLECTIBLES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-022230/">Pre Release @ LAKE HARTWELL COLLECTIBLES</a>
 LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-022230/
+END:VEVENT
+BEGIN:VEVENT
+UID:4bf04123-166e-4e61-ae30-9b802f81dbdb
+DTSTAMP:20261031T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261031T130000
+DTEND;TZID=America/Kentucky/Monticello:20261031T170000
+SUMMARY:TCG Pre Release @ KAPOW COMICS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014064/">Pre Release @ KAPOW COMICS</a>
+LOCATION:540 LAKE CENTER PKWY SUITE 108, CUMMING, GA 30040, USA, , Cumming/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014064/
 END:VEVENT
 BEGIN:VEVENT
 UID:5ebb6d59-46e4-42de-8ba5-3abbb9fe6b7c

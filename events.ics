@@ -1312,6 +1312,16 @@ LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-022230/
 END:VEVENT
 BEGIN:VEVENT
+UID:14d36716-76a4-4786-b9c2-c815da3a0152
+DTSTAMP:20261031T200000
+DTSTART;TZID=America/Kentucky/Monticello:20261031T200000
+DTEND;TZID=America/Kentucky/Monticello:20261101T000000
+SUMMARY:TCG Pre Release @ THE NERD STORE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-032804/">Pre Release @ THE NERD STORE</a>
+LOCATION:2726 LEDO RD STE 9, ALBANY, GA 31707, US, , Albany/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-032804/
+END:VEVENT
+BEGIN:VEVENT
 UID:4bf04123-166e-4e61-ae30-9b802f81dbdb
 DTSTAMP:20261031T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261031T130000
@@ -1412,6 +1422,16 @@ LOCATION:135 S BROAD ST, MONROE, GA 30655, USA, , Monroe/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-028730/
 END:VEVENT
 BEGIN:VEVENT
+UID:f835155e-c2e7-4b39-ae83-97c531a7d0bc
+DTSTAMP:20261031T160000
+DTSTART;TZID=America/Kentucky/Monticello:20261031T160000
+DTEND;TZID=America/Kentucky/Monticello:20261031T200000
+SUMMARY:TCG Pre Release @ THE NERD STORE
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007188/">Pre Release @ THE NERD STORE</a>
+LOCATION:2726 LEDO RD STE 9, ALBANY, GA 31707, US, , Albany/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007188/
+END:VEVENT
+BEGIN:VEVENT
 UID:fd2492ab-44a9-4a68-83c7-fcfe8e1a0d1c
 DTSTAMP:20261031T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261031T130000
@@ -1480,16 +1500,6 @@ SUMMARY:TCG Pre Release @ CARDS HQ
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007746/">Pre Release @ CARDS HQ</a>
 LOCATION:3101 COBB PKWY SE SUITE 100, ATLANTA, GA 30339, USA, , Atlanta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007746/
-END:VEVENT
-BEGIN:VEVENT
-UID:f835155e-c2e7-4b39-ae83-97c531a7d0bc
-DTSTAMP:20261101T160000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T160000
-DTEND;TZID=America/Kentucky/Monticello:20261101T200000
-SUMMARY:TCG Pre Release @ THE NERD STORE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007188/">Pre Release @ THE NERD STORE</a>
-LOCATION:2726 LEDO RD STE 9, ALBANY, GA 31707, US, , Albany/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007188/
 END:VEVENT
 BEGIN:VEVENT
 UID:fe17189c-39e1-45f7-a313-77693561daa3

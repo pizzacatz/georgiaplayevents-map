@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:246a831c-751a-4695-ac0e-2c2ebe555bf2
-DTSTAMP:20261019T173000
-DTSTART;TZID=America/Kentucky/Monticello:20261019T173000
-DTEND;TZID=America/Kentucky/Monticello:20261019T213000
-SUMMARY:TCG Challenge @ CARDBOARDS ANONYMOUS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-019220/">League Challenge @ CARDBOARDS ANONYMOUS</a>
-LOCATION:6035 PEACHTREE RD STE C205, ATLANTA, GA 30360, USA, , Doraville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-019220/
-END:VEVENT
-BEGIN:VEVENT
-UID:ce8e4db2-c34e-4cfe-b110-cb20c51d289e
-DTSTAMP:20261019T173000
-DTSTART;TZID=America/Kentucky/Monticello:20261019T173000
-DTEND;TZID=America/Kentucky/Monticello:20261019T213000
-SUMMARY:TCG Challenge @ ARENA GAMES LLC
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-007957/">League Challenge @ ARENA GAMES LLC</a>
-LOCATION:783 S MAIN ST UNIT 6, CLEVELAND, GA 30528, USA, , Cleveland/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-007957/
-END:VEVENT
-BEGIN:VEVENT
-UID:e07d5de1-fd27-4aa4-b36e-10acb3b11bb8
-DTSTAMP:20261019T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261019T180000
-DTEND;TZID=America/Kentucky/Monticello:20261019T220000
-SUMMARY:TCG Challenge @ TITAN GAMES & COMICS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-016820/">League Challenge @ TITAN GAMES & COMICS</a>
-LOCATION:2512 COBB PKWY SE, SMYRNA, GA 30080, US, , Smyrna/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-016820/
-END:VEVENT
-BEGIN:VEVENT
 UID:7631c682-7684-47dd-9e76-b298b6760da7
 DTSTAMP:20261020T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261020T180000

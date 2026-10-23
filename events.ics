@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:7631c682-7684-47dd-9e76-b298b6760da7
-DTSTAMP:20261020T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261020T180000
-DTEND;TZID=America/Kentucky/Monticello:20261020T220000
-SUMMARY:TCG Challenge @ LAKE HARTWELL COLLECTIBLES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004728/">League Challenge @ LAKE HARTWELL COLLECTIBLES</a>
-LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004728/
-END:VEVENT
-BEGIN:VEVENT
-UID:ce1ccaf5-3989-4aaa-a5b2-8970be765133
-DTSTAMP:20261020T190000
-DTSTART;TZID=America/Kentucky/Monticello:20261020T190000
-DTEND;TZID=America/Kentucky/Monticello:20261020T230000
-SUMMARY:TCG Challenge @ MEEPLE MADNESS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-001224/">League Challenge @ MEEPLE MADNESS</a>
-LOCATION:7400 SPOUT SPRINGS RD STE 205, FLOWERY BRANCH, GA 30542, US, , Braselton/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-001224/
-END:VEVENT
-BEGIN:VEVENT
 UID:222fc663-c9bf-43c9-9bc7-1de88614e440
 DTSTAMP:20261022T183000
 DTSTART;TZID=America/Kentucky/Monticello:20261022T183000

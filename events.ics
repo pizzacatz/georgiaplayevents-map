@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:222fc663-c9bf-43c9-9bc7-1de88614e440
-DTSTAMP:20261022T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261022T183000
-DTEND;TZID=America/Kentucky/Monticello:20261022T223000
-SUMMARY:TCG Challenge @ CARDS HQ
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-023504/">League Challenge @ CARDS HQ</a>
-LOCATION:3101 COBB PKWY SE SUITE 100, ATLANTA, GA 30339, USA, , Atlanta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-023504/
-END:VEVENT
-BEGIN:VEVENT
-UID:a6fbdee5-b093-43c9-aa1e-1022ed80d88d
-DTSTAMP:20261022T190000
-DTSTART;TZID=America/Kentucky/Monticello:20261022T190000
-DTEND;TZID=America/Kentucky/Monticello:20261022T230000
-SUMMARY:TCG Challenge @ GUUBUU GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-018232/">League Challenge @ GUUBUU GAMES</a>
-LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-018232/
-END:VEVENT
-BEGIN:VEVENT
 UID:68814d53-7e2a-4235-8cb6-2b5f04302c3b
 DTSTAMP:20261023T183000
 DTSTART;TZID=America/Kentucky/Monticello:20261023T183000

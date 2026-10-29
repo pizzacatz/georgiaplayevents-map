@@ -2,36 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:b9bed85d-593f-4f77-a0c3-c9044142f5ca
-DTSTAMP:20261026T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261026T183000
-DTEND;TZID=America/Kentucky/Monticello:20261026T223000
-SUMMARY:TCG Pre Release @ CARDBOARDS ANONYMOUS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020502/">Pre Release @ CARDBOARDS ANONYMOUS</a>
-LOCATION:6035 PEACHTREE RD STE C205, ATLANTA, GA 30360, USA, , Doraville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-020502/
-END:VEVENT
-BEGIN:VEVENT
-UID:bcc60383-e511-4f26-82f0-f4fb9649dd60
-DTSTAMP:20261026T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261026T180000
-DTEND;TZID=America/Kentucky/Monticello:20261026T220000
-SUMMARY:TCG Pre Release @ VIDEO GAME TRADER
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-028563/">Pre Release @ VIDEO GAME TRADER</a>
-LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-028563/
-END:VEVENT
-BEGIN:VEVENT
-UID:c795cfbb-bed2-4455-bace-87306b4218c1
-DTSTAMP:20261026T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261026T183000
-DTEND;TZID=America/Kentucky/Monticello:20261026T223000
-SUMMARY:TCG Pre Release @ ABX COMICS AND GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-028551/">Pre Release @ ABX COMICS AND GAMES</a>
-LOCATION:280 S BELAIR RD SUITE 5+6, MARTINEZ, GA 30907, US, , Columbia County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-028551/
-END:VEVENT
-BEGIN:VEVENT
 UID:7bcf7540-9ee2-491b-b009-0b034f8f5053
 DTSTAMP:20261027T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261027T180000
@@ -150,6 +120,16 @@ SUMMARY:TCG Pre Release @ THE SPORTS SHACK
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014933/">Pre Release @ THE SPORTS SHACK</a>
 LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-014933/
+END:VEVENT
+BEGIN:VEVENT
+UID:a028586f-fcd1-410a-9892-61c9a7133fdb
+DTSTAMP:20261028T183000
+DTSTART;TZID=America/Kentucky/Monticello:20261028T183000
+DTEND;TZID=America/Kentucky/Monticello:20261028T223000
+SUMMARY:TCG Pre Release @ DRAGON STAR HOBBIES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-037719/">Pre Release @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-037719/
 END:VEVENT
 BEGIN:VEVENT
 UID:c200adf7-d25e-43f9-8a10-22731943ef99
@@ -300,6 +280,16 @@ SUMMARY:TCG Pre Release @ LAKE HARTWELL COLLECTIBLES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-022230/">Pre Release @ LAKE HARTWELL COLLECTIBLES</a>
 LOCATION:150 W FRANKLIN ST, HARTWELL, GA 30643, US, , Hartwell/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-022230/
+END:VEVENT
+BEGIN:VEVENT
+UID:b5743f8c-42af-4098-88b2-deccd0088122
+DTSTAMP:20261030T190000
+DTSTART;TZID=America/Kentucky/Monticello:20261030T190000
+DTEND;TZID=America/Kentucky/Monticello:20261030T230000
+SUMMARY:TCG Pre Release @ WIN CONDITION GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-038047/">Pre Release @ WIN CONDITION GAMES</a>
+LOCATION:3895 CHEROKEE ST NW #610, KENNESAW, GA 30144, USA, , Kennesaw/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-038047/
 END:VEVENT
 BEGIN:VEVENT
 UID:11a139ea-d0ed-497d-a4b1-6f9713d10b16
@@ -992,6 +982,26 @@ LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery B
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-010877/
 END:VEVENT
 BEGIN:VEVENT
+UID:320bcff8-8fbc-4bfb-ae5a-b9376bdf41a3
+DTSTAMP:20261122T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261122T120000
+DTEND;TZID=America/Kentucky/Monticello:20261122T160000
+SUMMARY:VGC Cup @ DRAGON STAR HOBBIES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011245/">League Cup @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011245/
+END:VEVENT
+BEGIN:VEVENT
+UID:610db747-3f39-44bf-9e7c-d8fb743abe6d
+DTSTAMP:20261122T160000
+DTSTART;TZID=America/Kentucky/Monticello:20261122T160000
+DTEND;TZID=America/Kentucky/Monticello:20261122T200000
+SUMMARY:VGC Challenge @ DRAGON STAR HOBBIES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011347/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011347/
+END:VEVENT
+BEGIN:VEVENT
 UID:944041f2-b68f-4f05-85b5-d5addcd0e191
 DTSTAMP:20261122T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261122T130000
@@ -1042,6 +1052,16 @@ LOCATION:7400 ABERCORN ST STE 704, SAVANNAH, GA 31406, USA, , Savannah/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002866/
 END:VEVENT
 BEGIN:VEVENT
+UID:3b2e1ead-c3b7-4a32-849c-6a3a0ad65898
+DTSTAMP:20261128T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261128T120000
+DTEND;TZID=America/Kentucky/Monticello:20261128T160000
+SUMMARY:GO Challenge @ GALACTIC COMICS & GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011499/">League Challenge @ GALACTIC COMICS & GAMES</a>
+LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011499/
+END:VEVENT
+BEGIN:VEVENT
 UID:5768b2b6-c200-4ec5-aa87-d5e79eeac713
 DTSTAMP:20261128T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261128T130000
@@ -1060,6 +1080,16 @@ SUMMARY:TCG Challenge @ GALACTIC COMICS & GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001162/">League Challenge @ GALACTIC COMICS & GAMES</a>
 LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001162/
+END:VEVENT
+BEGIN:VEVENT
+UID:71678643-d02e-462c-990d-0bf38c971c73
+DTSTAMP:20261129T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261129T130000
+DTEND;TZID=America/Kentucky/Monticello:20261129T170000
+SUMMARY:TCG Challenge @ DRAGON STAR HOBBIES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011484/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County Unified Government/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011484/
 END:VEVENT
 BEGIN:VEVENT
 UID:737a366e-7f99-42db-b0f0-49a6059e65a6

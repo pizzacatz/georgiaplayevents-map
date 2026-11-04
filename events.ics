@@ -2,86 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:152aa103-5707-463f-ba76-984d82ed0512
-DTSTAMP:20261101T150000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T150000
-DTEND;TZID=America/Kentucky/Monticello:20261101T190000
-SUMMARY:TCG Pre Release @ BOARD 2 BOARD
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-006779/">Pre Release @ BOARD 2 BOARD</a>
-LOCATION:250 GOLDEN ISLES PLZ STE 106, BRUNSWICK, GA 31520, USA, , Glynn County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-006779/
-END:VEVENT
-BEGIN:VEVENT
-UID:25318bdd-f5f3-4f5d-97a7-3b3b386ef559
-DTSTAMP:20261101T170000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T170000
-DTEND;TZID=America/Kentucky/Monticello:20261101T210000
-SUMMARY:TCG Pre Release @ YATAI CARD CORNER
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-023499/">Pre Release @ YATAI CARD CORNER</a>
-LOCATION:10 BARNARD ST, SAVANNAH, GA 31401, USA, , Savannah/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-023499/
-END:VEVENT
-BEGIN:VEVENT
-UID:7858be8d-7eb9-4d1b-934a-e8f5466d8dfc
-DTSTAMP:20261101T120000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T120000
-DTEND;TZID=America/Kentucky/Monticello:20261101T160000
-SUMMARY:TCG Pre Release @ DAVE'S SPORTS CARDS
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007197/">Pre Release @ DAVE'S SPORTS CARDS</a>
-LOCATION:900 MANSELL RD STE 3, ROSWELL, GA 30076, US, , Roswell/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007197/
-END:VEVENT
-BEGIN:VEVENT
-UID:bc7bcfd7-6f61-42ed-a14b-0b09799bdedb
-DTSTAMP:20261101T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T180000
-DTEND;TZID=America/Kentucky/Monticello:20261101T220000
-SUMMARY:TCG Pre Release @ XP STORE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-008686/">Pre Release @ XP STORE</a>
-LOCATION:6360 SPOUT SPRINGS RD STE A, FLOWERY BRANCH, GA 30542, USA, , Flowery Branch/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-008686/
-END:VEVENT
-BEGIN:VEVENT
-UID:ca905bd0-ce67-4e37-b601-3f1a240b612c
-DTSTAMP:20261101T163000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T163000
-DTEND;TZID=America/Kentucky/Monticello:20261101T203000
-SUMMARY:TCG Pre Release @ HOBBYTOWN USA
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-013277/">Pre Release @ HOBBYTOWN USA</a>
-LOCATION:840 ERNEST W BARRETT PKWY NW SUITE 650, KENNESAW, GA 30144, US, , Kennesaw/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-013277/
-END:VEVENT
-BEGIN:VEVENT
-UID:e14e6ee8-5a70-4df6-bab6-d9dab464b636
-DTSTAMP:20261101T130000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T130000
-DTEND;TZID=America/Kentucky/Monticello:20261101T170000
-SUMMARY:TCG Pre Release @ HOBBYTOWN USA
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007550/">Pre Release @ HOBBYTOWN USA</a>
-LOCATION:840 ERNEST W BARRETT PKWY NW SUITE 650, KENNESAW, GA 30144, US, , Kennesaw/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007550/
-END:VEVENT
-BEGIN:VEVENT
-UID:ec06eb32-ad3f-48f1-b80e-4856064ee674
-DTSTAMP:20261101T140000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T140000
-DTEND;TZID=America/Kentucky/Monticello:20261101T180000
-SUMMARY:TCG Pre Release @ CARDS HQ
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007746/">Pre Release @ CARDS HQ</a>
-LOCATION:3101 COBB PKWY SE SUITE 100, ATLANTA, GA 30339, USA, , Atlanta/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007746/
-END:VEVENT
-BEGIN:VEVENT
-UID:fe17189c-39e1-45f7-a313-77693561daa3
-DTSTAMP:20261101T140000
-DTSTART;TZID=America/Kentucky/Monticello:20261101T140000
-DTEND;TZID=America/Kentucky/Monticello:20261101T180000
-SUMMARY:TCG Pre Release @ SAVANNAH LION GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-006884/">Pre Release @ SAVANNAH LION GAMES</a>
-LOCATION:1108 US-80 SUITE 300, POOLER, GA 31322, US, , Pooler/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-006884/
-END:VEVENT
-BEGIN:VEVENT
 UID:1de179aa-3190-40c2-8725-ae765f784a60
 DTSTAMP:20261103T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261103T180000
@@ -230,6 +150,16 @@ SUMMARY:TCG Challenge @ GUUBUU HOBBY
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-010390/">League Challenge @ GUUBUU HOBBY</a>
 LOCATION:3334 STONE MOUNTAIN HWY, SNELLVILLE, GA 30078, US, , Gwinnett County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-010390/
+END:VEVENT
+BEGIN:VEVENT
+UID:e43f3f63-2c4e-47e3-ba3a-775be2d3e1d7
+DTSTAMP:20261108T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261108T130000
+DTEND;TZID=America/Kentucky/Monticello:20261108T170000
+SUMMARY:GO Challenge @ BATTLE AND BREW
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015234/">League Challenge @ BATTLE AND BREW</a>
+LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015234/
 END:VEVENT
 BEGIN:VEVENT
 UID:e60576f1-7a3f-4ace-91d6-30e600cf2bc2
@@ -432,6 +362,16 @@ LOCATION:1108 US-80 SUITE 300, POOLER, GA 31322, US, , Pooler/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004167/
 END:VEVENT
 BEGIN:VEVENT
+UID:a3803016-437f-44e8-892f-76fa0af13e36
+DTSTAMP:20261115T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261115T130000
+DTEND;TZID=America/Kentucky/Monticello:20261115T170000
+SUMMARY:VGC Challenge @ SUPER GAMES\, INC.
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-014884/">League Challenge @ SUPER GAMES, INC.</a>
+LOCATION:13093 GA-9, MILTON, GA 30004, US, , Milton/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-014884/
+END:VEVENT
+BEGIN:VEVENT
 UID:adda273a-9dbb-402f-a20f-62ae59a3ab3a
 DTSTAMP:20261115T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261115T140000
@@ -560,6 +500,16 @@ SUMMARY:TCG Challenge @ SUPER HEROES COMICS CARDS AND GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002891/">League Challenge @ SUPER HEROES COMICS CARDS AND GAMES</a>
 LOCATION:66 BULLSBORO DR, NEWNAN, GA 30263, US, , Newnan/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002891/
+END:VEVENT
+BEGIN:VEVENT
+UID:21178aa1-6530-49ff-935c-cfabc888e796
+DTSTAMP:20261122T133000
+DTSTART;TZID=America/Kentucky/Monticello:20261122T133000
+DTEND;TZID=America/Kentucky/Monticello:20261122T173000
+SUMMARY:TCG Challenge @ COMICS&!
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-014826/">League Challenge @ COMICS&!</a>
+LOCATION:124 W JACKSON ST, DUBLIN, GA 31021, USA, , Dublin/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-014826/
 END:VEVENT
 BEGIN:VEVENT
 UID:31d46bfa-a136-4432-a9a9-f12808aa4c0c

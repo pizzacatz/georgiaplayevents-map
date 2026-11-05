@@ -312,6 +312,16 @@ LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-007014/
 END:VEVENT
 BEGIN:VEVENT
+UID:b457a273-0356-4e39-9774-19e21a798338
+DTSTAMP:20261114T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261114T120000
+DTEND;TZID=America/Kentucky/Monticello:20261114T160000
+SUMMARY:TCG Challenge @ KAPOW COMICS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-016035/">League Challenge @ KAPOW COMICS</a>
+LOCATION:540 LAKE CENTER PKWY SUITE 108, CUMMING, GA 30040, USA, , Cumming/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-016035/
+END:VEVENT
+BEGIN:VEVENT
 UID:c8b218eb-1ccb-4bfb-b623-c5cf418d4237
 DTSTAMP:20261114T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261114T140000
@@ -392,6 +402,16 @@ LOCATION:265 HWY 53, CALHOUN, GA 30701, US, , Calhoun/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001854/
 END:VEVENT
 BEGIN:VEVENT
+UID:8f2f6577-16c5-4ca6-b45b-7704e8cdee0a
+DTSTAMP:20261116T173000
+DTSTART;TZID=America/Kentucky/Monticello:20261116T173000
+DTEND;TZID=America/Kentucky/Monticello:20261116T213000
+SUMMARY:TCG Challenge @ ARENA GAMES LLC
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015760/">League Challenge @ ARENA GAMES LLC</a>
+LOCATION:783 S MAIN ST UNIT 6, CLEVELAND, GA 30528, USA, , Cleveland/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015760/
+END:VEVENT
+BEGIN:VEVENT
 UID:f0c47757-0cf0-4acc-bf71-9aad6f77a280
 DTSTAMP:20261117T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261117T180000
@@ -420,6 +440,16 @@ SUMMARY:TCG Challenge @ THE SPORTS SHACK
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002146/">League Challenge @ THE SPORTS SHACK</a>
 LOCATION:4977 LANIER ISLANDS PKWY #107, BUFORD, GA 30518, USA, , Buford/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002146/
+END:VEVENT
+BEGIN:VEVENT
+UID:f8217862-d801-4aba-b5eb-4adb132813c1
+DTSTAMP:20261118T180000
+DTSTART;TZID=America/Kentucky/Monticello:20261118T180000
+DTEND;TZID=America/Kentucky/Monticello:20261118T220000
+SUMMARY:TCG Challenge @ ATLANTATCG
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015943/">League Challenge @ ATLANTATCG</a>
+LOCATION:626 HOLCOMB BRIDGE RD UNIT 600, ROSWELL, GA 30076, USA, , Roswell/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015943/
 END:VEVENT
 BEGIN:VEVENT
 UID:34c4332e-bdc2-41b3-a3a6-cf12f1331d38

@@ -332,6 +332,16 @@ LOCATION:2537 REDMOND CIR, ROME, GA 30165, USA, , Rome/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001867/
 END:VEVENT
 BEGIN:VEVENT
+UID:1037163b-70b5-4597-85ad-5ffea19843c3
+DTSTAMP:20261115T134500
+DTSTART;TZID=America/Kentucky/Monticello:20261115T134500
+DTEND;TZID=America/Kentucky/Monticello:20261115T174500
+SUMMARY:OHP League Challenge November
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017598/">League Challenge @ OH PHARMACY</a>
+LOCATION:10820 ABBOTTS BRIDGE RD #240, DULUTH, GA 30097, USA, , Johns Creek/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017598/
+END:VEVENT
+BEGIN:VEVENT
 UID:4651406b-862d-43a1-89c6-4d0437129ec8
 DTSTAMP:20261115T040000
 DTSTART;TZID=America/Kentucky/Monticello:20261115T040000
@@ -620,6 +630,16 @@ SUMMARY:TCG Challenge @ DABBERS GAMING CAFE
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-013184/">League Challenge @ DABBERS GAMING CAFE</a>
 LOCATION:4935 JIMMY CARTER BLVD #200, NORCROSS, GA 30093, USA, , Gwinnett County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-013184/
+END:VEVENT
+BEGIN:VEVENT
+UID:dc94c034-3c16-4d0b-b705-7ff4b53ffbc1
+DTSTAMP:20261125T180000
+DTSTART;TZID=America/Kentucky/Monticello:20261125T180000
+DTEND;TZID=America/Kentucky/Monticello:20261125T220000
+SUMMARY:TCG Challenge @ CARDCO
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017076/">League Challenge @ CARDCO</a>
+LOCATION:3162 JOHNSON FERRY RD #118, MARIETTA, GA 30062, USA, , Cobb County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017076/
 END:VEVENT
 BEGIN:VEVENT
 UID:bd60e09e-6d91-44de-9f4a-d2d7046712ab

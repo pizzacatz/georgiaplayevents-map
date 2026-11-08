@@ -2,26 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:1150078b-9480-4ce2-82dc-bfe364d9090d
-DTSTAMP:20261105T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261105T183000
-DTEND;TZID=America/Kentucky/Monticello:20261105T223000
-SUMMARY:TCG Challenge @ ABX COMICS AND GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-016607/">League Challenge @ ABX COMICS AND GAMES</a>
-LOCATION:280 S BELAIR RD SUITE 5+6, MARTINEZ, GA 30907, US, , Columbia County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-016607/
-END:VEVENT
-BEGIN:VEVENT
-UID:d4f81e9b-4c34-46ee-aa29-f9c46640c81c
-DTSTAMP:20261105T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261105T183000
-DTEND;TZID=America/Kentucky/Monticello:20261105T223000
-SUMMARY:TCG Challenge @ THE COOL PLACE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004595/">League Challenge @ THE COOL PLACE</a>
-LOCATION:7830 VETERANS PKWY SUITE E, COLUMBUS, GA 31909, US, , Columbus/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004595/
-END:VEVENT
-BEGIN:VEVENT
 UID:cbc93906-9ede-4dab-9b78-62dd9b5fface
 DTSTAMP:20261106T190000
 DTSTART;TZID=America/Kentucky/Monticello:20261106T190000
@@ -336,7 +316,7 @@ UID:1037163b-70b5-4597-85ad-5ffea19843c3
 DTSTAMP:20261115T134500
 DTSTART;TZID=America/Kentucky/Monticello:20261115T134500
 DTEND;TZID=America/Kentucky/Monticello:20261115T174500
-SUMMARY:OHP League Challenge November
+SUMMARY:TCG Challenge @ OH PHARMACY
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017598/">League Challenge @ OH PHARMACY</a>
 LOCATION:10820 ABBOTTS BRIDGE RD #240, DULUTH, GA 30097, USA, , Johns Creek/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017598/
@@ -580,6 +560,16 @@ SUMMARY:TCG Challenge @ HAWK'S NEST GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001119/">League Challenge @ HAWK'S NEST GAMING</a>
 LOCATION:6721 BELLS FERRY RD D104, WOODSTOCK, GA 30189, USA, , Cherokee County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001119/
+END:VEVENT
+BEGIN:VEVENT
+UID:c550ed1f-cc1b-42d3-85d7-83d451e3a8ec
+DTSTAMP:20261122T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261122T130000
+DTEND;TZID=America/Kentucky/Monticello:20261122T170000
+SUMMARY:TCG Challenge @ MINTED TCG - DACULA
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017996/">League Challenge @ MINTED TCG - DACULA</a>
+LOCATION:3685 BRASELTON HWY, DACULA, GA 30019, USA, , Dacula/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017996/
 END:VEVENT
 BEGIN:VEVENT
 UID:296ea10d-5c57-4f33-a33d-fcb2be16b893

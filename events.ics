@@ -2,66 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:47b8d354-7245-4656-8837-adbdd82458e4
-DTSTAMP:20261108T120000
-DTSTART;TZID=America/Kentucky/Monticello:20261108T120000
-DTEND;TZID=America/Kentucky/Monticello:20261108T160000
-SUMMARY:TCG Challenge @ BATTLE AND BREW
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001908/">League Challenge @ BATTLE AND BREW</a>
-LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001908/
-END:VEVENT
-BEGIN:VEVENT
-UID:6b14d077-1fa7-43c8-baee-e9b610b51182
-DTSTAMP:20261108T130000
-DTSTART;TZID=America/Kentucky/Monticello:20261108T130000
-DTEND;TZID=America/Kentucky/Monticello:20261108T170000
-SUMMARY:VGC Challenge @ CARDBOARD CASTLE GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003732/">League Challenge @ CARDBOARD CASTLE GAMES</a>
-LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-003732/
-END:VEVENT
-BEGIN:VEVENT
-UID:c997b385-88b3-4cae-836b-d1bd91560d3a
-DTSTAMP:20261108T150000
-DTSTART;TZID=America/Kentucky/Monticello:20261108T150000
-DTEND;TZID=America/Kentucky/Monticello:20261108T190000
-SUMMARY:VGC Cup @ CARDBOARD CASTLE GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004672/">League Cup @ CARDBOARD CASTLE GAMES</a>
-LOCATION:3836 WASHINGTON RD #9, AUGUSTA, GA 30907, USA, , Columbia County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-10-004672/
-END:VEVENT
-BEGIN:VEVENT
-UID:d2b59c14-f573-4b10-8ef4-7758dc968e38
-DTSTAMP:20261108T140000
-DTSTART;TZID=America/Kentucky/Monticello:20261108T140000
-DTEND;TZID=America/Kentucky/Monticello:20261108T180000
-SUMMARY:TCG Challenge @ GUUBUU HOBBY
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-010390/">League Challenge @ GUUBUU HOBBY</a>
-LOCATION:3334 STONE MOUNTAIN HWY, SNELLVILLE, GA 30078, US, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-010390/
-END:VEVENT
-BEGIN:VEVENT
-UID:e43f3f63-2c4e-47e3-ba3a-775be2d3e1d7
-DTSTAMP:20261108T130000
-DTSTART;TZID=America/Kentucky/Monticello:20261108T130000
-DTEND;TZID=America/Kentucky/Monticello:20261108T170000
-SUMMARY:GO Challenge @ BATTLE AND BREW
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015234/">League Challenge @ BATTLE AND BREW</a>
-LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015234/
-END:VEVENT
-BEGIN:VEVENT
-UID:e60576f1-7a3f-4ace-91d6-30e600cf2bc2
-DTSTAMP:20261108T120000
-DTSTART;TZID=America/Kentucky/Monticello:20261108T120000
-DTEND;TZID=America/Kentucky/Monticello:20261108T160000
-SUMMARY:VGC Challenge @ BATTLE AND BREW
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001909/">League Challenge @ BATTLE AND BREW</a>
-LOCATION:5920 ROSWELL RD A120, SANDY SPRINGS, GA 30328, USA, , Sandy Springs/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001909/
-END:VEVENT
-BEGIN:VEVENT
 UID:c0a94093-25c5-4d25-bafe-42b38acfc63d
 DTSTAMP:20261109T183000
 DTSTART;TZID=America/Kentucky/Monticello:20261109T183000

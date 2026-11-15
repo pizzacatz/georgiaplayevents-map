@@ -2,46 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:c262b1f8-3d48-437d-98ab-eef121b080b9
-DTSTAMP:20261112T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261112T183000
-DTEND;TZID=America/Kentucky/Monticello:20261112T223000
-SUMMARY:TCG Challenge @ MINTED TCG LAWRENCEVILLE
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-009780/">League Challenge @ MINTED TCG LAWRENCEVILLE</a>
-LOCATION:965 DULUTH HWY SUITE 102, LAWRENCEVILLE, GA 30043, USA, , Lawrenceville/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-009780/
-END:VEVENT
-BEGIN:VEVENT
-UID:c677c26c-ba79-4169-8576-9d0505e1b958
-DTSTAMP:20261112T190000
-DTSTART;TZID=America/Kentucky/Monticello:20261112T190000
-DTEND;TZID=America/Kentucky/Monticello:20261112T230000
-SUMMARY:TCG Challenge @ GUUBUU GAMES
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-016578/">League Challenge @ GUUBUU GAMES</a>
-LOCATION:3334 US-78 B, SNELLVILLE, GA 30078, USA, , Gwinnett County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-016578/
-END:VEVENT
-BEGIN:VEVENT
-UID:ce20efed-69b4-4338-af03-a3efd467491e
-DTSTAMP:20261112T191500
-DTSTART;TZID=America/Kentucky/Monticello:20261112T191500
-DTEND;TZID=America/Kentucky/Monticello:20261112T231500
-SUMMARY:TCG Challenge @ TCF GAMING ARENA
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004162/">League Challenge @ TCF GAMING ARENA</a>
-LOCATION:561 JONESBORO RD, MCDONOUGH, GA 30253, USA, , Henry County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-004162/
-END:VEVENT
-BEGIN:VEVENT
-UID:e11d491d-95fb-48e2-b975-88526fe9c8eb
-DTSTAMP:20261112T183000
-DTSTART;TZID=America/Kentucky/Monticello:20261112T183000
-DTEND;TZID=America/Kentucky/Monticello:20261112T223000
-SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002296/">League Challenge @ SILVERSHIELD GAMING</a>
-LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-002296/
-END:VEVENT
-BEGIN:VEVENT
 UID:efaa4d17-23fc-4348-8115-7d0d77602b0a
 DTSTAMP:20261113T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261113T180000

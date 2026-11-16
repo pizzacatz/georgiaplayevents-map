@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:efaa4d17-23fc-4348-8115-7d0d77602b0a
-DTSTAMP:20261113T180000
-DTSTART;TZID=America/Kentucky/Monticello:20261113T180000
-DTEND;TZID=America/Kentucky/Monticello:20261113T220000
-SUMMARY:TCG Challenge @ KRAVE CARDZ
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-000721/">League Challenge @ KRAVE CARDZ</a>
-LOCATION:106 REMCO SHOPS LN, RINGGOLD, GA 30736, USA, , Ringgold/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-000721/
-END:VEVENT
-BEGIN:VEVENT
 UID:25836185-c48f-4e99-b212-5d3cd20cec3b
 DTSTAMP:20261114T120000
 DTSTART;TZID=America/Kentucky/Monticello:20261114T120000
@@ -412,6 +402,16 @@ LOCATION:3685 BRASELTON HWY, DACULA, GA 30019, USA, , Dacula/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-017996/
 END:VEVENT
 BEGIN:VEVENT
+UID:fc63ada5-bef0-4df2-81d9-5d6380438528
+DTSTAMP:20261122T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261122T120000
+DTEND;TZID=America/Kentucky/Monticello:20261122T160000
+SUMMARY:TCG Challenge @ DAVE'S SPORTS CARDS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-023152/">League Challenge @ DAVE'S SPORTS CARDS</a>
+LOCATION:900 MANSELL RD STE 3, ROSWELL, GA 30076, US, , Roswell/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-023152/
+END:VEVENT
+BEGIN:VEVENT
 UID:296ea10d-5c57-4f33-a33d-fcb2be16b893
 DTSTAMP:20261123T190000
 DTSTART;TZID=America/Kentucky/Monticello:20261123T190000
@@ -542,6 +542,16 @@ LOCATION:116 SCRUBBY BLUFF RD SUITE A, KINGSLAND, GA 31548, USA, , Kingsland/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-019640/
 END:VEVENT
 BEGIN:VEVENT
+UID:60ec361a-34ba-4ae0-b59c-92ca7be55d44
+DTSTAMP:20261129T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261129T130000
+DTEND;TZID=America/Kentucky/Monticello:20261129T170000
+SUMMARY:TCG Cup @ MINTED TCG - DACULA
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-023366/">League Cup @ MINTED TCG - DACULA</a>
+LOCATION:3685 BRASELTON HWY, DACULA, GA 30019, USA, , Dacula/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-023366/
+END:VEVENT
+BEGIN:VEVENT
 UID:71678643-d02e-462c-990d-0bf38c971c73
 DTSTAMP:20261129T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261129T130000
@@ -580,6 +590,16 @@ SUMMARY:TCG Cup @ HAWK'S NEST GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001124/">League Cup @ HAWK'S NEST GAMING</a>
 LOCATION:6721 BELLS FERRY RD D104, WOODSTOCK, GA 30189, USA, , Cherokee County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-001124/
+END:VEVENT
+BEGIN:VEVENT
+UID:c3671c20-e246-4990-a2bd-4f229ae6e2a3
+DTSTAMP:20261129T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261129T120000
+DTEND;TZID=America/Kentucky/Monticello:20261129T160000
+SUMMARY:TCG Cup @ DAVE'S SPORTS CARDS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-023153/">League Cup @ DAVE'S SPORTS CARDS</a>
+LOCATION:900 MANSELL RD STE 3, ROSWELL, GA 30076, US, , Roswell/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-023153/
 END:VEVENT
 BEGIN:VEVENT
 UID:4f0b2e8d-d1e5-4caf-ac22-74dd2a19f00b

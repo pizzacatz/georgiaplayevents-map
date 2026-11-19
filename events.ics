@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:8f2f6577-16c5-4ca6-b45b-7704e8cdee0a
-DTSTAMP:20261116T173000
-DTSTART;TZID=America/Kentucky/Monticello:20261116T173000
-DTEND;TZID=America/Kentucky/Monticello:20261116T213000
-SUMMARY:TCG Challenge @ ARENA GAMES LLC
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015760/">League Challenge @ ARENA GAMES LLC</a>
-LOCATION:783 S MAIN ST UNIT 6, CLEVELAND, GA 30528, USA, , Cleveland/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-015760/
-END:VEVENT
-BEGIN:VEVENT
 UID:f0c47757-0cf0-4acc-bf71-9aad6f77a280
 DTSTAMP:20261117T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261117T180000
@@ -192,6 +182,16 @@ LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, US, , Athens-Clarke County 
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011347/
 END:VEVENT
 BEGIN:VEVENT
+UID:80094ff9-da6d-4390-b829-9beb0ce81a5b
+DTSTAMP:20261122T120000
+DTSTART;TZID=America/Kentucky/Monticello:20261122T120000
+DTEND;TZID=America/Kentucky/Monticello:20261122T160000
+SUMMARY:TCG Cup @ SAVANNAH LION GAMES
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-024372/">League Cup @ SAVANNAH LION GAMES</a>
+LOCATION:1108 US-80 SUITE 300, POOLER, GA 31322, US, , Pooler/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-024372/
+END:VEVENT
+BEGIN:VEVENT
 UID:885a41d8-cdc4-4728-941d-7059e1ee998e
 DTSTAMP:20261122T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261122T140000
@@ -313,9 +313,9 @@ URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-
 END:VEVENT
 BEGIN:VEVENT
 UID:3b2e1ead-c3b7-4a32-849c-6a3a0ad65898
-DTSTAMP:20261128T120000
-DTSTART;TZID=America/Kentucky/Monticello:20261128T120000
-DTEND;TZID=America/Kentucky/Monticello:20261128T160000
+DTSTAMP:20261128T110000
+DTSTART;TZID=America/Kentucky/Monticello:20261128T110000
+DTEND;TZID=America/Kentucky/Monticello:20261128T150000
 SUMMARY:GO Challenge @ GALACTIC COMICS & GAMES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-011499/">League Challenge @ GALACTIC COMICS & GAMES</a>
 LOCATION:21 E VINE ST, STATESBORO, GA 30458, US, , Statesboro/US
@@ -472,6 +472,16 @@ LOCATION:507 N PATTERSON ST, VALDOSTA, GA 31601, USA, , Valdosta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-002216/
 END:VEVENT
 BEGIN:VEVENT
+UID:8e4c3880-62fa-49ab-9f63-aaf21f3986dd
+DTSTAMP:20261212T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261212T130000
+DTEND;TZID=America/Kentucky/Monticello:20261212T170000
+SUMMARY:TCG Challenge @ CARDSHARKS
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-003668/">League Challenge @ CARDSHARKS</a>
+LOCATION:277 GA-74 #213, PEACHTREE CITY, GA 30269, USA, , Peachtree City/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-003668/
+END:VEVENT
+BEGIN:VEVENT
 UID:07e85af8-79ea-4868-b053-b37abf9dc719
 DTSTAMP:20261213T130000
 DTSTART;TZID=America/Kentucky/Monticello:20261213T130000
@@ -490,6 +500,16 @@ SUMMARY:TCG Challenge @ WOLCOW GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-002963/">League Challenge @ WOLCOW GAMING</a>
 LOCATION:800 N MAIN ST SUITE 210, ALPHARETTA, GA 30009, USA, , Alpharetta/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-002963/
+END:VEVENT
+BEGIN:VEVENT
+UID:b78d1383-3330-4f5c-ac0e-0409a2d4d713
+DTSTAMP:20261220T140000
+DTSTART;TZID=America/Kentucky/Monticello:20261220T140000
+DTEND;TZID=America/Kentucky/Monticello:20261220T180000
+SUMMARY:TCG Challenge @ GUUBUU HOBBY
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-003767/">League Challenge @ GUUBUU HOBBY</a>
+LOCATION:3334 STONE MOUNTAIN HWY SUITE E, SNELLVILLE, GA 30078, US, , Gwinnett County/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-003767/
 END:VEVENT
 BEGIN:VEVENT
 UID:5c1c1f20-6bc2-463e-a40d-13757c495333

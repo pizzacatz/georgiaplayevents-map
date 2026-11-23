@@ -2,16 +2,6 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//hacksw/handcal//NONSGML v1.0//EN
 BEGIN:VEVENT
-UID:bb2ddec1-d63f-420c-b2bb-8250f2fda516
-DTSTAMP:20261120T193000
-DTSTART;TZID=America/Kentucky/Monticello:20261120T193000
-DTEND;TZID=America/Kentucky/Monticello:20261120T233000
-SUMMARY:TCG Challenge @ THE WASTELAND GAMING
-DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-006832/">League Challenge @ THE WASTELAND GAMING</a>
-LOCATION:3650 SATELLITE BLVD B, DULUTH, GA 30096, USA, , Duluth/US
-URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-11-006832/
-END:VEVENT
-BEGIN:VEVENT
 UID:40339a8f-48f3-4f8b-99cb-6430971be44d
 DTSTAMP:20261121T140000
 DTSTART;TZID=America/Kentucky/Monticello:20261121T140000
@@ -542,6 +532,16 @@ LOCATION:6721 BELLS FERRY RD D104, WOODSTOCK, GA 30189, USA, , Cherokee County/U
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-002737/
 END:VEVENT
 BEGIN:VEVENT
+UID:2e7780f8-6abc-47bf-9554-4f2a54b6461c
+DTSTAMP:20261213T130000
+DTSTART;TZID=America/Kentucky/Monticello:20261213T130000
+DTEND;TZID=America/Kentucky/Monticello:20261213T170000
+SUMMARY:CCPL TCG December Challenge
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-005476/">League Challenge @ DRAGON STAR HOBBIES</a>
+LOCATION:1961 S BARNETT SHOALS RD, ATHENS, GA 30605, USA, , Athens/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-005476/
+END:VEVENT
+BEGIN:VEVENT
 UID:52f20c3f-5a7a-45cc-9c47-b8d684fc79d6
 DTSTAMP:20261217T180000
 DTSTART;TZID=America/Kentucky/Monticello:20261217T180000
@@ -560,6 +560,16 @@ SUMMARY:TCG Challenge @ SILVERSHIELD GAMING
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-004223/">League Challenge @ SILVERSHIELD GAMING</a>
 LOCATION:5780 C.H. JAMES PARKWAY #230, POWDER SPRINGS, GA 30127, USA, , Cobb County/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-004223/
+END:VEVENT
+BEGIN:VEVENT
+UID:48988db2-7fa6-447f-b086-b6ba96f45d4e
+DTSTAMP:20261219T180000
+DTSTART;TZID=America/Kentucky/Monticello:20261219T180000
+DTEND;TZID=America/Kentucky/Monticello:20261219T220000
+SUMMARY:TCG Challenge @ THE BORED GAMER
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-005307/">League Challenge @ THE BORED GAMER</a>
+LOCATION:4079 CLOUD SPRINGS RD, RINGGOLD, GA 30736, USA, , Fort Oglethorpe/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/26-12-005307/
 END:VEVENT
 BEGIN:VEVENT
 UID:8be68ab1-5582-49d9-a0a8-44219d4c6a4d
@@ -640,6 +650,16 @@ SUMMARY:TCG Challenge @ ROLL THE BONES
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-01-002015/">League Challenge @ ROLL THE BONES</a>
 LOCATION:7400 ABERCORN ST STE 704, SAVANNAH, GA 31406, USA, , Savannah/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-01-002015/
+END:VEVENT
+BEGIN:VEVENT
+UID:9784fd6d-149c-40a4-a9b6-3c3350734aa3
+DTSTAMP:20270109T180000
+DTSTART;TZID=America/Kentucky/Monticello:20270109T180000
+DTEND;TZID=America/Kentucky/Monticello:20270109T220000
+SUMMARY:TCG Challenge @ THE BORED GAMER
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-01-002478/">League Challenge @ THE BORED GAMER</a>
+LOCATION:4079 CLOUD SPRINGS RD, RINGGOLD, GA 30736, USA, , Fort Oglethorpe/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-01-002478/
 END:VEVENT
 BEGIN:VEVENT
 UID:c0da8d6e-4d65-4db0-8517-d24273156d61
@@ -830,6 +850,26 @@ SUMMARY:TCG Challenge @ DEEP DIVE GAMES KINGSLAND
 DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-02-000793/">League Challenge @ DEEP DIVE GAMES KINGSLAND</a>
 LOCATION:116 SCRUBBY BLUFF RD SUITE A, KINGSLAND, GA 31548, USA, , Kingsland/US
 URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-02-000793/
+END:VEVENT
+BEGIN:VEVENT
+UID:cfb69d1f-50c2-474c-8e2a-fa330312bd26
+DTSTAMP:20270213T120000
+DTSTART;TZID=America/Kentucky/Monticello:20270213T120000
+DTEND;TZID=America/Kentucky/Monticello:20270213T160000
+SUMMARY:TCG Cup @ VIDEO GAME TRADER LLC
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-02-002089/">League Cup @ VIDEO GAME TRADER LLC</a>
+LOCATION:1350 BUFORD HWY NE, BUFORD, GA 30518, USA, , Buford/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-02-002089/
+END:VEVENT
+BEGIN:VEVENT
+UID:e425f7d4-98bf-48cb-b3cd-454fbd85cfad
+DTSTAMP:20270213T180000
+DTSTART;TZID=America/Kentucky/Monticello:20270213T180000
+DTEND;TZID=America/Kentucky/Monticello:20270213T220000
+SUMMARY:TCG Challenge @ THE BORED GAMER
+DESCRIPTION:<a href="https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-02-002116/">League Challenge @ THE BORED GAMER</a>
+LOCATION:4079 CLOUD SPRINGS RD, RINGGOLD, GA 30736, USA, , Fort Oglethorpe/US
+URL:https://www.pokemon.com/us/pokemon-trainer-club/play-pokemon-tournaments/27-02-002116/
 END:VEVENT
 BEGIN:VEVENT
 UID:3eadf846-303d-4f8a-aed8-3a04d7fab70d
